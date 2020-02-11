@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Structures &#8212; Runestone Interactive Overview</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/presenter_mode.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css?v=58BC228F" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css?v=58C4E18A" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css?v=424F1CC9" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css?v=3BA0E63E" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css?v=E5385B3B" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css?v=B36B48D" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css?v=910DF1E1" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css?v=9CF75563" />
+    <link rel="stylesheet" type="text/css" href="../_static/spreadsheet.css?v=B5F018A" />
+    <link rel="stylesheet" type="text/css" href="../_static/jexcel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/japp.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/reveal.css?v=4A81D381" />
+    <link rel="stylesheet" type="text/css" href="../_static/CodeChat.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css?v=2F3E13EE" />
+    <link rel="stylesheet" type="text/css" href="../_static/js_lib/prettify.css?v=2A364B6B" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css?v=239FC54E" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css?v=8A1A42E4" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css?v=F471F95B" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css?v=C184EB8A" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css?v=C6382F3" />
+    <link rel="stylesheet" type="text/css" href="../_static/accessibility.css?v=DB047029" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css?v=1FF7F927" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css?v=E220AC33" />
+    <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/runestone-custom-sphinx-bootstrap.css?v=4.1.17" type="text/css" />
+    <link rel="stylesheet" href="../_static/theme-overrides.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js?v=4.1.17"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js?v=D64CFA5A"></script>
+    <script type="text/javascript" src="../_static/clickable.js?v=DEB56CF8"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js?v=93989C23"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js?v=5BE6106"></script>
+    <script type="text/javascript" src="../_static/fitb.js?v=890C94D5"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js?v=2AA17071"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js?v=599B42B0"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js?v=88A1430F"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js?v=AE15A4A1"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js?v=8ABDFE7F"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js?v=747279FF"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js?v=7B020E13"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js?v=660E85C3"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js?v=54B21948"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js?v=389ED00C"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js?v=53E888DE"></script>
+    <script type="text/javascript" src="../_static/codemirror.js?v=25B54D0A"></script>
+    <script type="text/javascript" src="../_static/xml.js?v=236EDFF7"></script>
+    <script type="text/javascript" src="../_static/css.js?v=623153CE"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js?v=4EBE05BF"></script>
+    <script type="text/javascript" src="../_static/javascript.js?v=6F38CA04"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js?v=2B768384"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js?v=8408C997"></script>
+    <script type="text/javascript" src="../_static/Blob.js?v=AEC2447"></script>
+    <script type="text/javascript" src="../_static/spreadsheet.js?v=9DA8BEAB"></script>
+    <script type="text/javascript" src="../_static/jexcel.js"></script>
+    <script type="text/javascript" src="../_static/japp.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js?v=9C3AAF60"></script>
+    <script type="text/javascript" src="../_static/lp.js?v=F137FF7A"></script>
+    <script type="text/javascript" src="../_static/gas.js?v=129CE036"></script>
+    <script type="text/javascript" src="../_static/js_lib/prettify.js?v=CA7E8928"></script>
+    <script type="text/javascript" src="../_static/js_lib/hammer.min.js?v=73056367"></script>
+    <script type="text/javascript" src="../_static/parsons.js?v=10FAE53A"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js?v=2EEA9E5A"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js?v=A9C11155"></script>
+    <script type="text/javascript" src="../_static/animationbase.js?v=A043C3A7"></script>
+    <script type="text/javascript" src="../_static/mchoice.js?v=E62871D4"></script>
+    <script type="text/javascript" src="../_static/timedmc.js?v=B010A457"></script>
+    <script type="text/javascript" src="../_static/timed.js?v=FD1C5153"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js?v=354E6CD"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js?v=D42E4CE3"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js?v=B3A117D7"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js?v=836E01C"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js?v=B64CF0A8"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js?v=42F9EBEA"></script>
+    <script type="text/javascript" src="../_static/pytutor.js?v=82B022B9"></script>
+    <script type="text/javascript" src="../_static/codelens.js?v=CABECD49"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js?v=F1C496C8"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js?v=24766D61"></script>
+    <script type="text/javascript" src="../_static/python.js?v=76B9CFA2"></script>
+    <script type="text/javascript" src="../_static/sql.js?v=49D0BD74"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js?v=65CA0724"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js?v=BDC8551F"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js?v=5731007D"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.2/build/vega.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.0/build/vega-lite.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@3.14.0/build/vega-embed.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js?v=D9908052"></script>
+    <script type="text/javascript" src="../_static/clike.js?v=4247C891"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js?v=1FA6F2AF"></script>
+    <script type="text/javascript" src="../_static/sql-wasm.js?v=44FE0709"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handsontable@7.2.2/dist/handsontable.full.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js?v=3ED1A80C"></script>
+    <script type="text/javascript" src="../_static/showEval.js?v=5B2DD7A6"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js?v=E433CEAB"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js?v=378F237E"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js?v=40C28531"></script>
+    <script type="text/javascript" src="../_static/poll.js?v=13CE919A"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js?v=4.1.17"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/presenter_mode.js?v=4.1.17"></script>
+    <script type="text/javascript" src="../_static/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="/runestone/static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  
+    eBookConfig.useRunestoneServices = false;
+    eBookConfig.host = 'http://127.0.0.1:8000' || 'http://127.0.0.1:8000';
+    eBookConfig.app = eBookConfig.host+'/runestone';
+    eBookConfig.course = 'ThinkCPP';
+    eBookConfig.basecourse = 'ThinkCPP';
+    eBookConfig.isLoggedIn = false;
+  
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.python3 = true;
+  eBookConfig.acDefaultLanguage = 'python' ? 'python' : 'python'
+  eBookConfig.runestone_version = '4.1.17';
+  eBookConfig.jobehost = 'http://jobe2.cosc.canterbury.ac.nz';
+  eBookConfig.proxyuri_runs = '/jobe/index.php/restapi/runs/';
+  eBookConfig.proxyuri_files = '/jobe/index.php/restapi/files/';
+  eBookConfig.enable_chatcodes = false ? false : false;
+
+
+</script>
+
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="icon-bar" aria-label="navbar toggle" class="visuallyhidden">toggle navbar</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div>
+        
+          <a class="brand-logo" style='background: transparent url("../_static/img/logo_small.png") no-repeat 0px 0px;' href="/runestone/default/user/login">&nbsp; </a>
+        
+        <a class="navbar-brand" href="../index.html" aria-label="index-page">
+          
+          ThinkCPP
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="navbar-collapse collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right" >
+
+        <li class="divider-vertical"></li>
+	  
+			  
+        <!-- social media dropdown -->
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-globe" style="opacity: 0.9"><span aria-label="Social" class="visuallyhidden">Social</span></i>
+          </a>
+          <ul class="dropdown-menu social-menu">
+              <li>
+                <div>
+                  <b>Runestone in social media:</b>
+                </div>
+                <a href="https://twitter.com/iRunestone" class="twitter-follow-button" data-show-count="true">Follow @iRunestone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/RunestoneInteractive" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div>
+                  <b>Help support us:</b>
+                </div>
+                <div>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAcrkqh1hn3lYqIpfXxNqe1T82EhXzCJGy1yMAmklpyZshyMkfDGe1Bhx+iwyGeoYRTTyphFmP+9M3NyO0+Q5XdHxgZPx/zYjjBxlZHgEV6jhE8bN2fHkkPf0VHfz0a0QQylQOPlKiOTZV7B37Jpk6yM47oVZ1tG/KNm0NkfmB76DELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIi0GmFfOlcjuAgZBbYOo9UO+CpMQa+PYqwsUmUnJvXIImeMeNI3KVTUx5Cfk9gNMo3WzPeiB5IqZo9nRAQ0mf1qL2ecLeB5tidM+lgBUhOxfj3/FecpnVFa0263gp4g+PLw8jzhvVRdUon1K3SeO1Rzh23fIRKwnrD6btt73uwtj0sl3tGd8qz+6GIcwPDdRk9VcUffiBJT/ZagKgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xMzExMDMxMzQxMzFaMCMGCSqGSIb3DQEJBDEWBBRDJF8w+zsMr7FSk+pwinB5f5D4rzANBgkqhkiG9w0BAQEFAASBgHw1LMHpkpaqHIvDGdFE0eG+2mZlmMnUeDCBhQlbc7QMzFQYKTV94NfaebBO4PmNdADe1rq4WidSRZZbE7CzkX9IGENYnBTWY0hb2l0lGdGrJdGeWyV3ekg9WVaFMMumrekds96h3Cx7dGz2kWDzIai2iEXE/qoE+xpkyXAYZNV3-----END PKCS7-----
+                  ">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                </div>
+              </li>
+          </ul>
+        </li><!-- end social media dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        <!-- search dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-search" style='opacity:0.9;'><span aria-label="Search" class="visuallyhidden">Search</span></i>
+          </a>
+          <ul class='dropdown-menu'>
+            
+                <li><a href='../index.html' aria-label="index-page">Table of Contents</a></li>
+            
+            <li><a href='../genindex.html'>Book Index</a></li>
+            <li class="divider"></li>
+            <li style="width: 240px;">
+              <form class="navbar-search" style="margin:10px;" action="../search.html" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="Search this book" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" style="margin:0;" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </span>
+                </div><!-- /input-group -->
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end search dropdown -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <li class="divider-vertical"></li>
+        <!-- <li id="scratch_ac_link"><a href="javascript:ACFactory.toggleScratchActivecode()">Scratch ActiveCode</a></li> -->
+
+        <!-- <li class="dropdown">             -->
+          <li id="scratch_ac_link" class="dropdown"><a href="javascript:ACFactory.toggleScratchActivecode()">
+              <i class="glyphicon glyphicon-pencil" style="opacity:0.9;"><span aria-label="Scratch Activecode" class="visuallyhidden">Scratch Activecode</span></i></a></li>
+        <!-- </li> -->
+
+        <li class="divider-vertical"></li>
+
+        
+        <!-- help menu dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="glyphicon glyphicon-question-sign" style="opacity:0.9;"><span aria-label="Help" class="visuallyhidden">Help</span></i>
+          </a>
+          <ul class="dropdown-menu user-menu">
+            <li><a href='http://runestoneinteractive.org/pages/faq.html'>FAQ</a></li>
+            <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
+            <li class="divider"></li>
+            <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
+            <li><a href='/runestone/default/reportabug?course=ThinkCPP&page=Chapter8'>Report A Problem</a></li>
+          </ul>
+        </li>
+        <!-- end help menu dropdown -->
+
+        <li class="divider-vertical"></li>
+      
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li class="divider-vertical"></li>
+        
+          
+          <li class="divider-vertical"></li>
+        
+        <!-- 
+          
+
+<script type="text/javascript">
+  opts = {'placement':'bottom',
+          'selector': '',
+          'delay': { show: 100, hide: 50}
+         };
+
+  $('#relations-prev').tooltip(opts);
+  $('#relations-next').tooltip(opts);
+</script>
+        -->
+        
+          <li></li>
+        
+      </ul>
+
+      </div> <!-- navbar -->
+
+
+
+
+
+
+
+    </div> <!-- container -->
+  </div>
+</div>
+
+
+<div class="container" id="continue-reading"></div>
+
+<div class="container" id="main-content" role="main">
+  
+  <div class="section" id="structures">
+<span id="structs"></span><h1>Structures<a class="headerlink" href="#structures" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="compound-values">
+<h2>Compound values<a class="headerlink" href="#compound-values" title="Permalink to this headline">¶</a></h2>
+<p>Most of the data types we have been working with represent a single
+value—an integer, a floating-point number, a boolean value.
+<code class="docutils literal notranslate"><span class="pre">string</span></code>s are different in the sense that they are made up of
+smaller pieces, the characters. Thus, <code class="docutils literal notranslate"><span class="pre">string</span></code>s are an example of a
+<strong>compound</strong> type.</p>
+<p>Depending on what we are doing, we may want to treat a compound type as
+a single thing (or object), or we may want to access its parts (or
+instance variables). This ambiguity is useful.</p>
+<p>It is also useful to be able to create your own compound values. C++
+provides two mechanisms for doing that: <strong>structures</strong> and <strong>classes</strong>.
+We will start out with structures and get to classes in
+Chapter <a class="reference external" href="#class">[class]</a> (there is not much difference between
+them).</p>
+</div>
+<div class="section" id="point-objects">
+<h2><code class="docutils literal notranslate"><span class="pre">Point</span></code> objects<a class="headerlink" href="#point-objects" title="Permalink to this headline">¶</a></h2>
+<p>As a simple example of a compound structure, consider the concept of a
+mathematical point. At one level, a point is two numbers (coordinates)
+that we treat collectively as a single object. In mathematical notation,
+points are often written in parentheses, with a comma separating the
+coordinates. For example, <span class="math notranslate nohighlight">\((0, 0)\)</span> indicates the origin, and
+<span class="math notranslate nohighlight">\((x, y)\)</span> indicates the point <span class="math notranslate nohighlight">\(x\)</span> units to the right and
+<span class="math notranslate nohighlight">\(y\)</span> units up from the origin.</p>
+<p>A natural way to represent a point in C++ is with two <code class="docutils literal notranslate"><span class="pre">double</span></code>s. The
+question, then, is how to group these two values into a compound object,
+or structure. The answer is a <code class="docutils literal notranslate"><span class="pre">struct</span></code> definition:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">struct</span> <span class="n">Point</span> <span class="p">{</span>
+  <span class="n">double</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">struct</span></code> definitions appear outside of any function definition,
+usually at the beginning of the program (after the <code class="docutils literal notranslate"><span class="pre">include</span></code>
+statements).</p>
+<p>This definition indicates that there are two elements in this structure,
+named <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. These elements are called <strong>instance variables</strong>,
+for reasons I will explain a little later.</p>
+<p>It is a common error to leave off the semi-colon at the end of a
+structure definition. It might seem odd to put a semi-colon after a
+squiggly-brace, but you’ll get used to it.</p>
+<p>Once you have defined the new structure, you can create variables with
+that type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Point</span> <span class="n">blank</span><span class="p">;</span>
+<span class="n">blank</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">3.0</span><span class="p">;</span>
+<span class="n">blank</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">4.0</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The first line is a conventional variable declaration: <code class="docutils literal notranslate"><span class="pre">blank</span></code> has
+type <code class="docutils literal notranslate"><span class="pre">Point</span></code>. The next two lines initialize the instance variables of
+the structure. The “dot notation” used here is similar to the syntax for
+invoking a function on an object, as in <code class="docutils literal notranslate"><span class="pre">fruit.length()</span></code>. Of course,
+one difference is that function names are always followed by an argument
+list, even if it is empty.</p>
+<p>The result of these assignments is shown in the following state diagram:</p>
+<p>As usual, the name of the variable <code class="docutils literal notranslate"><span class="pre">blank</span></code> appears outside the box and
+its value appears inside the box. In this case, that value is a compound
+object with two named instance variables.</p>
+</div>
+<div class="section" id="accessing-instance-variables">
+<h2>Accessing instance variables<a class="headerlink" href="#accessing-instance-variables" title="Permalink to this headline">¶</a></h2>
+<p>You can read the values of an instance variable using the same syntax we
+used to write them:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">blank</span><span class="o">.</span><span class="n">x</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The expression <code class="docutils literal notranslate"><span class="pre">blank.x</span></code> means “go to the object named <code class="docutils literal notranslate"><span class="pre">blank</span></code> and
+get the value of <code class="docutils literal notranslate"><span class="pre">x</span></code>.” In this case we assign that value to a local
+variable named <code class="docutils literal notranslate"><span class="pre">x</span></code>. Notice that there is no conflict between the local
+variable named <code class="docutils literal notranslate"><span class="pre">x</span></code> and the instance variable named <code class="docutils literal notranslate"><span class="pre">x</span></code>. The purpose
+of dot notation is to identify <em>which</em> variable you are referring to
+unambiguously.</p>
+<p>You can use dot notation as part of any C++ expression, so the following
+are legal.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">blank</span><span class="o">.</span><span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;, &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">blank</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="n">double</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">blank</span><span class="o">.</span><span class="n">x</span> <span class="o">*</span> <span class="n">blank</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">blank</span><span class="o">.</span><span class="n">y</span> <span class="o">*</span> <span class="n">blank</span><span class="o">.</span><span class="n">y</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The first line outputs <code class="docutils literal notranslate"><span class="pre">3,</span> <span class="pre">4</span></code>; the second line calculates the value
+25.</p>
+</div>
+<div class="section" id="operations-on-structures">
+<h2>Operations on structures<a class="headerlink" href="#operations-on-structures" title="Permalink to this headline">¶</a></h2>
+<p>Most of the operators we have been using on other types, like
+mathematical operators ( <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">%</span></code>, etc.) and comparison operators
+(<code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, etc.), do not work on structures. Actually, it is
+possible to define the meaning of these operators for the new type, but
+we won’t do that in this book.</p>
+<p>On the other hand, the assignment operator <em>does</em> work for structures.
+It can be used in two ways: to initialize the instance variables of a
+structure or to copy the instance variables from one structure to
+another. An initialization looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Point</span> <span class="n">blank</span> <span class="o">=</span> <span class="p">{</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span> <span class="p">};</span>
+</pre></div>
+</div>
+<p>The values in squiggly braces get assigned to the instance variables of
+the structure one by one, in order. So in this case, <code class="docutils literal notranslate"><span class="pre">x</span></code> gets the
+first value and <code class="docutils literal notranslate"><span class="pre">y</span></code> gets the second.</p>
+<p>Unfortunately, this syntax can be used only in an initialization, not in
+an assignment statement. So the following is illegal.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Point blank;
+blank = { 3.0, 4.0 };       // WRONG !!
+</pre></div>
+</div>
+<p>You might wonder why this perfectly reasonable statement should be
+illegal; I’m not sure, but I think the problem is that the compiler
+doesn’t know what type the right hand side should be. If you add a
+typecast:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Point</span> <span class="n">blank</span><span class="p">;</span>
+<span class="n">blank</span> <span class="o">=</span> <span class="p">(</span><span class="n">Point</span><span class="p">){</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span> <span class="p">};</span>
+</pre></div>
+</div>
+<p>That works.</p>
+<p>It is legal to assign one structure to another. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Point</span> <span class="n">p1</span> <span class="o">=</span> <span class="p">{</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span> <span class="p">};</span>
+<span class="n">Point</span> <span class="n">p2</span> <span class="o">=</span> <span class="n">p1</span><span class="p">;</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">p2</span><span class="o">.</span><span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;, &quot;</span> <span class="o">&lt;&lt;</span>  <span class="n">p2</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The output of this program is <code class="docutils literal notranslate"><span class="pre">3,</span> <span class="pre">4</span></code>.</p>
+</div>
+<div class="section" id="structures-as-parameters">
+<h2>Structures as parameters<a class="headerlink" href="#structures-as-parameters" title="Permalink to this headline">¶</a></h2>
+<p>You can pass structures as parameters in the usual way. For example,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">printPoint</span> <span class="p">(</span><span class="n">Point</span> <span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;(&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;, &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">p</span><span class="o">.</span><span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;)&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">printPoint</span></code> takes a point as an argument and outputs it in the
+standard format. If you call <code class="docutils literal notranslate"><span class="pre">printPoint</span> <span class="pre">(blank)</span></code>, it will output
+<code class="docutils literal notranslate"><span class="pre">(3,</span> <span class="pre">4)</span></code>.</p>
+<p>As a second example, we can rewrite the <code class="docutils literal notranslate"><span class="pre">distance</span></code> function from
+Section <a class="reference external" href="#distance">[distance]</a> so that it takes two <code class="docutils literal notranslate"><span class="pre">Point</span></code>s as
+parameters instead of four <code class="docutils literal notranslate"><span class="pre">double</span></code>s.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">double</span> <span class="n">distance</span> <span class="p">(</span><span class="n">Point</span> <span class="n">p1</span><span class="p">,</span> <span class="n">Point</span> <span class="n">p2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">double</span> <span class="n">dx</span> <span class="o">=</span> <span class="n">p2</span><span class="o">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">p1</span><span class="o">.</span><span class="n">x</span><span class="p">;</span>
+  <span class="n">double</span> <span class="n">dy</span> <span class="o">=</span> <span class="n">p2</span><span class="o">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">p1</span><span class="o">.</span><span class="n">y</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">sqrt</span> <span class="p">(</span><span class="n">dx</span><span class="o">*</span><span class="n">dx</span> <span class="o">+</span> <span class="n">dy</span><span class="o">*</span><span class="n">dy</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="call-by-value">
+<h2>Call by value<a class="headerlink" href="#call-by-value" title="Permalink to this headline">¶</a></h2>
+<p>When you pass a structure as an argument, remember that the argument and
+the parameter are not the same variable. Instead, there are two
+variables (one in the caller and one in the callee) that have the same
+value, at least initially. For example, when we call <code class="docutils literal notranslate"><span class="pre">printPoint</span></code>, the
+stack diagram looks like this:</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">printPoint</span></code> happened to change one of the instance variables of
+<code class="docutils literal notranslate"><span class="pre">p</span></code>, it would have no effect on <code class="docutils literal notranslate"><span class="pre">blank</span></code>. Of course, there is no
+reason for <code class="docutils literal notranslate"><span class="pre">printPoint</span></code> to modify its parameter, so this isolation
+between the two functions is appropriate.</p>
+<p>This kind of parameter-passing is called “pass by value” because it is
+the value of the structure (or other type) that gets passed to the
+function.</p>
+</div>
+<div class="section" id="call-by-reference">
+<h2>Call by reference<a class="headerlink" href="#call-by-reference" title="Permalink to this headline">¶</a></h2>
+<p>An alternative parameter-passing mechanism that is available in C++ is
+called “pass by reference.” This mechanism makes it possible to pass a
+structure to a procedure and modify it.</p>
+<p>For example, you can reflect a point around the 45-degree line by
+swapping the two coordinates. The most obvious (but incorrect) way to
+write a <code class="docutils literal notranslate"><span class="pre">reflect</span></code> function is something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>void reflect (Point p)      // WRONG !!
+{
+  double temp = p.x;
+  p.x = p.y;
+  p.y = temp;
+}
+</pre></div>
+</div>
+<p>But this won’t work, because the changes we make in <code class="docutils literal notranslate"><span class="pre">reflect</span></code> will
+have no effect on the caller.</p>
+<p>Instead, we have to specify that we want to pass the parameter by
+reference. We do that by adding an ampersand (<code class="docutils literal notranslate"><span class="pre">&amp;</span></code>) to the parameter
+declaration:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">reflect</span> <span class="p">(</span><span class="n">Point</span><span class="o">&amp;</span> <span class="n">p</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">double</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">x</span><span class="p">;</span>
+  <span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">y</span><span class="p">;</span>
+  <span class="n">p</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Now we can call the function in the usual way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">printPoint</span> <span class="p">(</span><span class="n">blank</span><span class="p">);</span>
+<span class="n">reflect</span> <span class="p">(</span><span class="n">blank</span><span class="p">);</span>
+<span class="n">printPoint</span> <span class="p">(</span><span class="n">blank</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The output of this program is as expected:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here’s how we would draw a stack diagram for this program:</p>
+<p>The parameter <code class="docutils literal notranslate"><span class="pre">p</span></code> is a reference to the structure named <code class="docutils literal notranslate"><span class="pre">blank</span></code>. The
+usual representation for a reference is a dot with an arrow that points
+to whatever the reference refers to.</p>
+<p>The important thing to see in this diagram is that any changes that
+<code class="docutils literal notranslate"><span class="pre">reflect</span></code> makes in <code class="docutils literal notranslate"><span class="pre">p</span></code> will also affect <code class="docutils literal notranslate"><span class="pre">blank</span></code>.</p>
+<p>Passing structures by reference is more versatile than passing by value,
+because the callee can modify the structure. It is also faster, because
+the system does not have to copy the whole structure. On the other hand,
+it is less safe, since it is harder to keep track of what gets modified
+where. Nevertheless, in C++ programs, almost all structures are passed
+by reference almost all the time. In this book I will follow that
+convention.</p>
+</div>
+<div class="section" id="rectangles">
+<h2>Rectangles<a class="headerlink" href="#rectangles" title="Permalink to this headline">¶</a></h2>
+<p>Now let’s say that we want to create a structure to represent a
+rectangle. The question is, what information do I have to provide in
+order to specify a rectangle? To keep things simple let’s assume that
+the rectangle will be oriented vertically or horizontally, never at an
+angle.</p>
+<p>There are a few possibilities: I could specify the center of the
+rectangle (two coordinates) and its size (width and height), or I could
+specify one of the corners and the size, or I could specify two opposing
+corners.</p>
+<p>The most common choice in existing programs is to specify the upper left
+corner of the rectangle and the size. To do that in C++, we will define
+a structure that contains a <code class="docutils literal notranslate"><span class="pre">Point</span></code> and two doubles.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">struct</span> <span class="n">Rectangle</span> <span class="p">{</span>
+  <span class="n">Point</span> <span class="n">corner</span><span class="p">;</span>
+  <span class="n">double</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>Notice that one structure can contain another. In fact, this sort of
+thing is quite common. Of course, this means that in order to create a
+<code class="docutils literal notranslate"><span class="pre">Rectangle</span></code>, we have to create a <code class="docutils literal notranslate"><span class="pre">Point</span></code> first:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Point</span> <span class="n">corner</span> <span class="o">=</span> <span class="p">{</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span> <span class="p">};</span>
+<span class="n">Rectangle</span> <span class="n">box</span> <span class="o">=</span> <span class="p">{</span> <span class="n">corner</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">,</span> <span class="mf">200.0</span> <span class="p">};</span>
+</pre></div>
+</div>
+<p>This code creates a new <code class="docutils literal notranslate"><span class="pre">Rectangle</span></code> structure and initializes the
+instance variables. The figure shows the effect of this assignment.</p>
+<p>We can access the <code class="docutils literal notranslate"><span class="pre">width</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span></code> in the usual way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">box</span><span class="o">.</span><span class="n">width</span> <span class="o">+=</span> <span class="mf">50.0</span><span class="p">;</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">box</span><span class="o">.</span><span class="n">height</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>In order to access the instance variables of <code class="docutils literal notranslate"><span class="pre">corner</span></code>, we can use a
+temporary variable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Point</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="p">;</span>
+<span class="n">double</span> <span class="n">x</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="n">x</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Alternatively, we can compose the two statements:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">double</span> <span class="n">x</span> <span class="o">=</span> <span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="o">.</span><span class="n">x</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>It makes the most sense to read this statement from right to left:
+“Extract <code class="docutils literal notranslate"><span class="pre">x</span></code> from the <code class="docutils literal notranslate"><span class="pre">corner</span></code> of the <code class="docutils literal notranslate"><span class="pre">box</span></code>, and assign it to the
+local variable <code class="docutils literal notranslate"><span class="pre">x</span></code>.”</p>
+<p>While we are on the subject of composition, I should point out that you
+can, in fact, create the <code class="docutils literal notranslate"><span class="pre">Point</span></code> and the <code class="docutils literal notranslate"><span class="pre">Rectangle</span></code> at the same
+time:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Rectangle</span> <span class="n">box</span> <span class="o">=</span> <span class="p">{</span> <span class="p">{</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span> <span class="p">},</span> <span class="mf">100.0</span><span class="p">,</span> <span class="mf">200.0</span> <span class="p">};</span>
+</pre></div>
+</div>
+<p>The innermost squiggly braces are the coordinates of the corner point;
+together they make up the first of the three values that go into the new
+<code class="docutils literal notranslate"><span class="pre">Rectangle</span></code>. This statement is an example of <strong>nested structure</strong>.</p>
+</div>
+<div class="section" id="structures-as-return-types">
+<h2>Structures as return types<a class="headerlink" href="#structures-as-return-types" title="Permalink to this headline">¶</a></h2>
+<p>You can write functions that return structures. For example,
+<code class="docutils literal notranslate"><span class="pre">findCenter</span></code> takes a <code class="docutils literal notranslate"><span class="pre">Rectangle</span></code> as an argument and returns a
+<code class="docutils literal notranslate"><span class="pre">Point</span></code> that contains the coordinates of the center of the
+<code class="docutils literal notranslate"><span class="pre">Rectangle</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Point</span> <span class="n">findCenter</span> <span class="p">(</span><span class="n">Rectangle</span><span class="o">&amp;</span> <span class="n">box</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">double</span> <span class="n">x</span> <span class="o">=</span> <span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">box</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+  <span class="n">double</span> <span class="n">y</span> <span class="o">=</span> <span class="n">box</span><span class="o">.</span><span class="n">corner</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">box</span><span class="o">.</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+  <span class="n">Point</span> <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">};</span>
+  <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>To call this function, we have to pass a box as an argument (notice that
+it is being passed by reference), and assign the return value to a
+<code class="docutils literal notranslate"><span class="pre">Point</span></code> variable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Rectangle</span> <span class="n">box</span> <span class="o">=</span> <span class="p">{</span> <span class="p">{</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">},</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span> <span class="p">};</span>
+<span class="n">Point</span> <span class="n">center</span> <span class="o">=</span> <span class="n">findCenter</span> <span class="p">(</span><span class="n">box</span><span class="p">);</span>
+<span class="n">printPoint</span> <span class="p">(</span><span class="n">center</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The output of this program is <code class="docutils literal notranslate"><span class="pre">(50,</span> <span class="pre">100)</span></code>.</p>
+</div>
+<div class="section" id="passing-other-types-by-reference">
+<h2>Passing other types by reference<a class="headerlink" href="#passing-other-types-by-reference" title="Permalink to this headline">¶</a></h2>
+<p>It’s not just structures that can be passed by reference. All the other
+types we’ve seen can, too. For example, to swap two integers, we could
+write something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">swap</span> <span class="p">(</span><span class="nb">int</span><span class="o">&amp;</span> <span class="n">x</span><span class="p">,</span> <span class="nb">int</span><span class="o">&amp;</span> <span class="n">y</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="nb">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
+  <span class="n">y</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>We would call this function in the usual way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+<span class="nb">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="n">swap</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The output of this program is <code class="docutils literal notranslate"><span class="pre">97</span></code>. Draw a stack diagram for this
+program to convince yourself this is true. If the parameters <code class="docutils literal notranslate"><span class="pre">x</span></code> and
+<code class="docutils literal notranslate"><span class="pre">y</span></code> were declared as regular parameters (without the <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>s),
+<code class="docutils literal notranslate"><span class="pre">swap</span></code> would not work. It would modify <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> and have no
+effect on <code class="docutils literal notranslate"><span class="pre">i</span></code> and <code class="docutils literal notranslate"><span class="pre">j</span></code>.</p>
+<p>When people start passing things like integers by reference, they often
+try to use an expression as a reference argument. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>int i = 7;
+int j = 9;
+swap (i, j+1);         // WRONG!!
+</pre></div>
+</div>
+<p>This is not legal because the expression <code class="docutils literal notranslate"><span class="pre">j+1</span></code> is not a variable—it
+does not occupy a location that the reference can refer to. It is a
+little tricky to figure out exactly what kinds of expressions can be
+passed by reference. For now a good rule of thumb is that reference
+arguments have to be variables.</p>
+</div>
+<div class="section" id="getting-user-input">
+<span id="input"></span><h2>Getting user input<a class="headerlink" href="#getting-user-input" title="Permalink to this headline">¶</a></h2>
+<p>The programs we have written so far are pretty predictable; they do the
+same thing every time they run. Most of the time, though, we want
+programs that take input from the user and respond accordingly.</p>
+<p>There are many ways to get input, including keyboard input, mouse
+movements and button clicks, as well as more exotic mechanisms like
+voice control and retinal scanning. In this text we will consider only
+keyboard input.</p>
+<p>In the header file <code class="docutils literal notranslate"><span class="pre">iostream</span></code>, C++ defines an object named <code class="docutils literal notranslate"><span class="pre">cin</span></code>
+that handles input in much the same way that <code class="docutils literal notranslate"><span class="pre">cout</span></code> handles output. To
+get an integer value from the user:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code> operator causes the program to stop executing and wait for
+the user to type something. If the user types a valid integer, the
+program converts it into an integer value and stores it in <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
+<p>If the user types something other than an integer, C++ doesn’t report an
+error, or anything sensible like that. Instead, it puts some meaningless
+value in <code class="docutils literal notranslate"><span class="pre">x</span></code> and continues.</p>
+<p>Fortunately, there is a way to check and see if an input statement
+succeeds. We can invoke the <code class="docutils literal notranslate"><span class="pre">good</span></code> function on <code class="docutils literal notranslate"><span class="pre">cin</span></code> to check what
+is called the <strong>stream state</strong>. <code class="docutils literal notranslate"><span class="pre">good</span></code> returns a <code class="docutils literal notranslate"><span class="pre">bool</span></code>: if true,
+then the last input statement succeeded. If not, we know that some
+previous operation failed, and also that the next operation will fail.</p>
+<p>Thus, getting input from the user might look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &lt;iostream&gt;</span>
+
+<span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="nb">int</span> <span class="n">main</span> <span class="p">()</span>
+<span class="p">{</span>
+  <span class="nb">int</span> <span class="n">x</span><span class="p">;</span>
+
+  <span class="o">//</span> <span class="n">prompt</span> <span class="n">the</span> <span class="n">user</span> <span class="k">for</span> <span class="nb">input</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;Enter an integer: &quot;</span><span class="p">;</span>
+
+  <span class="o">//</span> <span class="n">get</span> <span class="nb">input</span>
+  <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span><span class="p">;</span>
+
+  <span class="o">//</span> <span class="n">check</span> <span class="ow">and</span> <span class="n">see</span> <span class="k">if</span> <span class="n">the</span> <span class="nb">input</span> <span class="n">statement</span> <span class="n">succeeded</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">cin</span><span class="o">.</span><span class="n">good</span><span class="p">()</span> <span class="o">==</span> <span class="n">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;That was not an integer.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="o">//</span> <span class="nb">print</span> <span class="n">the</span> <span class="n">value</span> <span class="n">we</span> <span class="n">got</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">user</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">cin</span></code> can also be used to input a <code class="docutils literal notranslate"><span class="pre">string</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;What is your name? &quot;</span><span class="p">;</span>
+<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">name</span><span class="p">;</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Unfortunately, this statement only takes the first word of input, and
+leaves the rest for the next input statement. So, if you run this
+program and type your full name, it will only output your first name.</p>
+<p>Because of these problems (inability to handle errors and funny
+behavior), I avoid using the <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code> operator altogether, unless I am
+reading data from a source that is known to be error-free.</p>
+<p>Instead, I use a function in the header <code class="docutils literal notranslate"><span class="pre">string</span></code> called <code class="docutils literal notranslate"><span class="pre">getline</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;What is your name? &quot;</span><span class="p">;</span>
+<span class="n">getline</span> <span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>The first argument to <code class="docutils literal notranslate"><span class="pre">getline</span></code> is <code class="docutils literal notranslate"><span class="pre">cin</span></code>, which is where the input
+is coming from. The second argument is the name of the <code class="docutils literal notranslate"><span class="pre">string</span></code> where
+you want the result to be stored.</p>
+<p><code class="docutils literal notranslate"><span class="pre">getline</span></code> reads the entire line until the user hits Return or Enter.
+This is useful for inputting strings that contain spaces.</p>
+<p>In fact, <code class="docutils literal notranslate"><span class="pre">getline</span></code> is generally useful for getting input of any kind.
+For example, if you wanted the user to type an integer, you could input
+a string and then check to see if it is a valid integer. If so, you can
+convert it to an integer value. If not, you can print an error message
+and ask the user to try again.</p>
+<p>To convert a string to an integer you can use the <code class="docutils literal notranslate"><span class="pre">atoi</span></code> function
+defined in the header file <code class="docutils literal notranslate"><span class="pre">cstdlib</span></code>. We will get to that in
+Section <a class="reference external" href="#parsing">[parsing]</a>.</p>
+</div>
+<div class="section" id="glossary">
+<h2>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>structure:</dt><dd><p>A collection of data grouped together and treated as a single object.</p>
+</dd>
+<dt>instance variable:</dt><dd><p>One of the named pieces of data that make up a structure.</p>
+</dd>
+<dt>reference:</dt><dd><p>A value that indicates or refers to a variable or structure. In a
+state diagram, a reference appears as an arrow.</p>
+</dd>
+<dt>pass by value:</dt><dd><p>A method of parameter-passing in which the value provided as an
+argument is copied into the corresponding parameter, but the
+parameter and the argument occupy distinct locations.</p>
+</dd>
+<dt>pass by reference:</dt><dd><p>A method of parameter-passing in which the parameter is a reference
+to the argument variable. Changes to the parameter also affect the
+argument variable.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+  <div id=scprogresscontainer>
+    You have attempted <span id=scprogresstotal></span> of <span id=scprogressposs></span> activities on this page <div id="subchapterprogress"></div>
+  </div>
+  
+      
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+
+<script>
+	function mouseOverPrev() {
+		document.getElementById("relations-prev").style.opacity=1;
+	}
+
+	function mouseOutPrev() {
+		document.getElementById("relations-prev").style.opacity=0.4;
+	}
+	function mouseOverNext() {
+		document.getElementById("relations-next").style.opacity=1;
+	}
+
+	function mouseOutNext() {
+		document.getElementById("relations-next").style.opacity=0.4;
+	}
+</script>
+  
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      
+      | <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017 ewelinapapiez.
+      Created using <a href="http://runestoneinteractive.org/">Runestone</a> 4.1.17.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<script> getSwitch(); </script>
+
+
+  </body>
+</html>

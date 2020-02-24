@@ -57,3 +57,11 @@ soon.
       cout << "o";
       cout << "o";
     }
+
+.. dragndrop:: dragndrop_two_two
+    :feedback: Try again!
+    :match_1:  1|||integer
+    :match_2: "1"|||string
+    :match_3: '1'|||character
+
+    Match the value to its data type.

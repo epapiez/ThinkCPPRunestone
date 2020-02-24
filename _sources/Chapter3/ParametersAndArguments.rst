@@ -112,3 +112,12 @@ rule, and we will deal with exceptions later.
       printTwice (argument);
       return 0;
     }
+
+.. dragndrop:: dragndrop_two_one
+    :feedback: Try again!
+    :match_1: int timesTwo(int x, int y);|||timesTwo(4, 7);
+    :match_2: int timesTwo(string y, int x);|||timesTwo("hello", 10);
+    :match_3: int timesTwo(double x, string y);|||timesTwo(4.5, "hello");
+    :match_4: int timesTwo(string x, string y);|||timesTwo("hello", "hi");
+
+    Match the function declaration to the function call.

@@ -76,3 +76,14 @@ Observe the conditional statement below.
 
 
    Observe the code above. "Bigger" never prints! How can you fix this so that all of the statements print?
+
+.. dragndrop:: dragndrop_four_one
+    :feedback: Try again!
+    :match_1:  x == y|||x equals y
+    :match_2: x != y|||x is not equal to y
+    :match_3: x > y|||x is greater than y
+    :match_4: x < y|||x is less than y
+    :match_5: x >= y|||x is greater than or equal to y
+    :match_6: x <= y|||x is less than or equal to y
+
+    Match the operator to its definition in words.

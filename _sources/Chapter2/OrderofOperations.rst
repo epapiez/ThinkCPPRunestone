@@ -39,3 +39,12 @@ started:
       cout << 2 / (3 -1) << endl;
       return 0;
     }
+
+.. dragndrop:: dragndrop_two_six
+    :feedback: Try again!
+    :match_1:  (6*4)+1|||11
+    :match_2: 6*(4+1)|||30
+    :match_3: (6/4)+1|||2
+    :match_4: 6/(4+1)|||1
+
+    Match the expression to its correct output. Don't forget to consider integer division!

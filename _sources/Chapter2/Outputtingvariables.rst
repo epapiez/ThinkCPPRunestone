@@ -89,3 +89,11 @@ and the special value endl. Very impressive!
     cout << z << endl;
     return 0;
     }
+
+.. dragndrop:: dragndrop_two_four
+    :feedback: Try again!
+    :match_1:  x = 12|||int
+    :match_2: y = "Bye!"|||string
+    :match_3: z = '.'|||char
+
+    Match the variable initialization to its correct type.

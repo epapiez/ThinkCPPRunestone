@@ -185,3 +185,32 @@ implementation below would fix the error in the code.
 As an aside, you should know that there is a function in the math
 library called fabs that calculates the absolute value of a
 double—correctly.
+
+.. mchoice:: test_question_five_one_one
+   :answer_a: 4
+   :answer_b: 2
+   :answer_c: 16
+   :correct: b
+   :feedback_a: The function returns y before reaching the line where y is doubled, therefore, it never reaches that line. This is why 4 does not print.
+   :feedback_b: Correct! Because the return statement in the timesTwo function returns prior to the modification of y, 2 is returned and then printed.
+   :feedback_c: Try again!
+
+   What will print?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    int timesTwo(int x) {
+      int y = x;
+      return y;
+      y = y * 2;
+    }
+
+    int main ()
+    {
+      int i = 9;
+      cout << timesTwo(i);
+      return 0;
+    }

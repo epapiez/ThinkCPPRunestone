@@ -125,3 +125,16 @@ example only demonstrates two:
    repetitive code. For example, a short way to print nine consecutive
    new lines is to call threeLine three times. How would you print 27
    new lines?
+
+.. mchoice:: test_question_three_one_plus
+   :answer_a: void printName(string name)
+   :answer_b: totalCost(double cost, double tax) {
+   :answer_c: string todaysWeather(int temperature) {
+   :answer_d: double finalGrade {
+   :correct: c
+   :feedback_a: This function header is missing a {, which is need to start and end a function definition.
+   :feedback_b: This function header is missing a return type.
+   :feedback_c: Correct!
+   :feedback_d: This function header is missing parentheses and parameters. Even if a function does not take in any parameters, empty parentheses should be used.
+
+   Which of the following is a correct function header (first line of a function definition)?

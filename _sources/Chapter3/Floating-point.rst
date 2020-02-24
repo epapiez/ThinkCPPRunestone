@@ -81,4 +81,10 @@ interested to know that the underlying mechanism is completely
 different. In fact, most processors have special hardware just for
 performing floating-point operations.
 
-.. _rounding:
+.. dragndrop:: dragndrop_three_one
+    :feedback: Try again!
+    :match_1:  double pi = 3.14;|||initialization
+    :match_2: pi = 3.14;|||assignment
+    :match_3: double pi;|||declaration
+
+    Match the statement to the word that best describes it.

@@ -91,3 +91,12 @@ a milkshake, and a hamburger) using one of the operators.**
       cout << << " dollars." << endl;
       return 0;
     }
+
+.. dragndrop:: dragndrop_two_five
+    :feedback: Try again!
+    :match_1:  x*10|||100
+    :match_2: x-10|||0
+    :match_3: 100/x|||10
+    :match_4: (x+x+x+x+x)*20|||1000
+
+    Match the statement to the result, given x = 10.

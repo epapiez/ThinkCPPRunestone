@@ -22,3 +22,17 @@ so there are no more instances of countdown.
 The instance of main is empty because main does not have any parameters
 or local variables. As an exercise, draw a stack diagram for nLines,
 invoked with the parameter n=4.
+
+shared_birthdays = {}
+        shared_birthday_list = []
+        for i in self.data_dict['DOB']:
+            split_date = monday_and_day.split('/')
+            month_and_day = split_date[0] + '/' + split_date[1]
+            shared_birthdays[month_and_day] = shared_birthdays.get(month_and_day, 0) + 1
+
+        for i in shared_birthdays[month_and_day]:
+            if shared_birthdays.get(month_and_day) > 1:
+                shared_birthday_list.append(shared_birthdays[month_and_day], shared_birthdays[i])
+
+        shared_birthdays_list = sorted(shared_birthdays_list.items(), key=lambda x: x[1], reverse=True)
+        return shared_birthdays_list

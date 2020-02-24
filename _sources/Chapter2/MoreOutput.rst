@@ -83,3 +83,10 @@ That would work, too, although you have probably noticed that the
 program is getting harder and harder to read. Newlines and spaces are
 useful for organizing your program visually, making it easier to read
 the program and locate syntax errors.
+
+.. dragndrop:: dragndrop_two_one
+    :feedback: Try again!
+    :match_1:  cout<<"Hello"; cout<<"Hello";|||one line
+    :match_2: cout<<"Hello" << endl; cout<<"Hello";|||two lines
+
+    Match the code snippet to the correct amount of lines that would be printed.

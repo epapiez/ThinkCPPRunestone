@@ -45,3 +45,11 @@ you could probably make a good guess at what values would be stored in
 them. This example also demonstrates the syntax for declaring multiple
 variables with the same type: hour and minute are both integers (int
 type).
+
+.. dragndrop:: dragndrop_two_three
+    :feedback: Try again!
+    :match_1:  char tree;|||'x'
+    :match_2: string blue;|||"Coding is fun!"
+    :match_3: int joe;|||17
+
+    Match the variable to the kind of value it can store.

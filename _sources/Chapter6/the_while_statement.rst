@@ -1,4 +1,4 @@
-The ``while`` statement
+The while statement
 -----------------------
 
 Using a ``while`` statement, we can rewrite ``countdown``:
@@ -23,6 +23,8 @@ Using a ``while`` statement, we can rewrite ``countdown``:
       countdown(9);
       return 0;
    }
+
+Try changing 9 to a different integer to see how the function works!
 
 You can almost read a ``while`` statement as if it were English. What
 this means is, “While ``n`` is greater than zero, continue displaying

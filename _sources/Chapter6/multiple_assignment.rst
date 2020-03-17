@@ -14,7 +14,6 @@ is to replace the old value of the variable with a new value.
 
     int main ()
     {
-
      int fred = 5;
      cout << fred;
      fred = 7;
@@ -34,7 +33,6 @@ The output of this program is ``57``, because the first time we print
 
     int main ()
     {
-
      int fred = 5;
      fred = 7;
      cout << fred;

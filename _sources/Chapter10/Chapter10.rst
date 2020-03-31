@@ -55,7 +55,7 @@ assigned to each of the elements.
      vector<int> count (4, 0);
 
 This statement creates a vector of four elements and initializes all of
-them to zero.
+them to zero. 
 
 .. mchoice:: question10_1
    :multiple_answers:

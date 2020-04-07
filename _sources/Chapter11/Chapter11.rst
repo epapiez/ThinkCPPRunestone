@@ -1,4 +1,4 @@
-Member functions
+﻿Member functions
 ================
 
 Objects and functions

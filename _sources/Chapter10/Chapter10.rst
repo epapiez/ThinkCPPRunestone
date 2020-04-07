@@ -1,4 +1,4 @@
-Vectors
+﻿Vectors
 =======
 
 A **vector** is a set of values where each value is identified by a
@@ -6,7 +6,7 @@ number (called an index). An ``string`` is similar to a vector, since it
 is made up of an indexed set of characters. The nice thing about vectors
 is that they can be made up of any type of element, including basic
 types like ``int``\ s and ``double``\ s, and user-defined types like
-``Point`` and ``Time``.
+``Point`` and ``Time``. *All elements of a vector must have the same type.*
 
 The ``vector`` type is defined in the C++ Standard Template Library
 (STL). In order to use it, you have to include the header file
@@ -55,8 +55,8 @@ assigned to each of the elements.
      vector<int> count (4, 0);
 
 This statement creates a vector of four elements and initializes all of
-them to zero.
-
+them to zero. 
+   
 Accessing elements
 ------------------
 
@@ -205,7 +205,7 @@ this program as an excercise.
 Vector functions
 ----------------
 
-The best feature of a vector is its resizeability A vector, once
+The best feature of a vector is its resizeability. A vector, once
 declared, can be resized from anywhere within the program. Suppose we
 have a situation where we input numbers from the user and store them in
 a vector till he inputs ``-1``, and then display them. In such a case,
@@ -222,7 +222,7 @@ then vector function ``push_back()`` for that purpose.
      {
        vector<int> values;
        int c,i,len;
-       cin>>c;
+       cin >> c;
 
        while(c != -1) {
          values.push_back(c);

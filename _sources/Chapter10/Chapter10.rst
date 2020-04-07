@@ -56,23 +56,7 @@ assigned to each of the elements.
 
 This statement creates a vector of four elements and initializes all of
 them to zero. 
-
-.. mchoice:: question10_1
-   :multiple_answers:
-   :answer_a: 1
-   :answer_b: "a"
-   :answer_c: 'a'
-   :answer_d: "word"
-   :answer_e: "1"
-   :correct: b,d,e
-   :feedback_a: Incorrect! This is an integer, not a string.
-   :feedback_b: Correct!
-   :feedback_c: Incorrect! This is a character, not a string.
-   :feedback_d: Correct!
-   :feedback_e: Correct!
-
-   Which of the following could be an element of **words**, if **words** is a vector of strings?
-
+   
 Accessing elements
 ------------------
 
@@ -118,19 +102,6 @@ Each time through the loop we use ``i`` as an index into the vector,
 outputting the ``i``\ th element. This type of vector traversal is very
 common. Vectors and loops go together like fava beans and a nice
 Chianti.
-
-.. mchoice:: question10_2
-   :answer_a: vec[3] = 3
-   :answer_b: vec(3) = 3
-   :answer_c: vec[2] = 3
-   :answer_d: vec(2) = 3
-   :correct: c
-   :feedback_a: Incorrect! This is actually accessing the 4th element of **vec**, since vectors are zero indexed.
-   :feedback_b: Incorrect! This is not proper syntax.
-   :feedback_c: Correct!
-   :feedback_d: Incorrect! This is not proper syntax.
-
-   How would you assign a value of 3 to the third element of a vector called **vec**?
 
 Copying vectors
 ---------------
@@ -201,13 +172,6 @@ is equivalent to
        i++;
      }
 
-.. fillintheblank:: question10_3
-
-    True or False: ``for`` loops are incremented in the body of the loop?
-
-    - :[Ff]alse: Correct!
-      :.*: Incorrect! For loops are incremented inside of the parentheses!
-
 Vector size
 -----------
 
@@ -237,26 +201,6 @@ again reduces execution speed, so it would be better to store the size
 in some variable by calling the ``size()`` function before the loop
 begins, and use this variable to check for the last element. You can try
 this program as an excercise.
-
-.. fillintheblank:: question10_4
-
-    Let **nums** be the vector { 0, 1, 2, 3, 4 }. What is the value *of* ``nums.size()``?
-
-    - :5: Correct!
-      :.*: Incorrect, Try again!
-
-.. mchoice:: question10_5
-   :answer_a: 5
-   :answer_b: 4
-   :answer_c: 3
-   :answer_d: none of the above
-   :correct: d
-   :feedback_a: Incorrect! This is what gets returned by nums.size()
-   :feedback_b: Incorrect! This is the element before nums[nums.size()]
-   :feedback_c: Incorrect!
-   :feedback_d: Correct! This would be indexing out of bounds and would cause a runtime error.
-
-   Let **nums** be the vector { 0, 1, 2, 3, 4 }. What is the value *at* ``nums[nums.size()]``?
 
 Vector functions
 ----------------
@@ -289,19 +233,6 @@ then vector function ``push_back()`` for that purpose.
          cout << values[i] << endl;
        }
      }
-
-.. mchoice:: question10_6
-   :answer_a: 5
-   :answer_b: 6
-   :answer_c: 7
-   :answer_d: 8
-   :correct: b
-   :feedback_a: Incorrect! This is the size of the vector before we ran the command.
-   :feedback_b: Correct!
-   :feedback_c: Incorrect!
-   :feedback_d: Incorrect! We are adding the element 3 to the end of the vector, not 3 elements!
-
-   Let **nums** be the vector { 0, 1, 2, 3, 4 }. If we run the command ``nums.push_back(3)``, what will be returned by ``nums.size()``?
 
 .. _random:
 
@@ -385,33 +316,6 @@ both end points. As an exercise, you might want to think about how to
 generate a random floating-point value in a given range; for example,
 between 100.0 and 200.0.
 
-.. mchoice:: question10_7
-   :answer_a: cstdlib
-   :answer_b: random
-   :answer_c: cmath
-   :answer_d: iostream
-   :correct: a
-   :feedback_a: Correct!
-   :feedback_b: Incorrect!
-   :feedback_c: Incorrect!
-   :feedback_d: Incorrect!
-
-   What header file do we need to declare in order to use the ``random`` function?
-
-.. mchoice:: question10_8
-   :answer_a: int y = x / 12
-   :answer_b: int y = x % 12
-   :answer_c: int y = x / 13
-   :answer_d: int y = x % 13
-   :correct: d
-   :feedback_a: Incorrect! This returns some random number between 0 and x / 12, which is out of range.
-   :feedback_b: Incorrect! This returns a random number between 0 and 11.
-   :feedback_c: Incorrect! This returns some random number between 0 and x / 13, which is out of range.
-   :feedback_d: Correct!
-
-   If we wanted to generate a random number between 0 and 12, and we have previously declared int ``int x = random ();``, what should be our next line of code?
-
-
 Statistics
 ----------
 
@@ -493,13 +397,6 @@ To test this theory, we’ll write some programs that count the number of
 times each value appears, and then see what happens when we increase
 ``numValues``.
 
-.. fillintheblank:: question10_9
-
-    How should we declare the parameter, **vector**, if we don't intend to make any changes to it?
-
-    - :[Cc]onst: Correct!
-      :.*: Incorrect, Try again!
-
 Counting
 --------
 
@@ -538,29 +435,6 @@ return value is the number of times the value appears.
        if (vec[i] == value) count++;
      }
      return count;
-   }
-
-.. parsonsprob:: question10_10
-
-   Construct a block of code that counts how many numbers are between **lowerbound** and **upperbound** inclusive.
-   -----
-   int just_right(const vector<int>& vec, int lowerbound, int upperbound) {
-   =====
-      int count = 0;
-   =====
-      for (int i=0; i&#60; vec.size(); i++) {
-   =====
-      for (int i=0; i&#60; upperbound; i++)                         #paired
-   =====
-         if (vec[i] i&#62;= lowerbound && vec[i] i&#60;= upperbound) {
-   =====
-         if (vec[i] i&#62; lowerbound && vec[i] i&#60; upperbound) {                         #paired
-   =====
-            count++;   
-         }
-      }
-   =====
-      return count;
    }
 
 Checking the other values

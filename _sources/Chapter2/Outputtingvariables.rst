@@ -41,7 +41,7 @@ the following:
 
 When we talk about “outputting a variable,” we mean outputting the
 *value* of the variable. To output the *name* of a variable, you have to
-put it in quotes. For example: cout << "hour";
+put it in quotes. For example: ``cout << "hour";``
 
 As we have seen before, you can include more than one value in a single
 output statement, which can make the previous program more concise:

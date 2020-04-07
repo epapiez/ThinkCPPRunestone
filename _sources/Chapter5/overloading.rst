@@ -1,17 +1,17 @@
 Overloading
 -----------
 
-In the previous section you might have noticed that fred and area
+In the previous section you might have noticed that ''fred'' and ''area''
 perform similar functions—finding the area of a circle—but take
-different parameters. For area, we have to provide the radius; for fred
+different parameters. For ''area'', we have to provide the radius; for ''fred''
 we provide two points.
 
 If two functions do the same thing, it is natural to give them the same
-name. In other words, it would make more sense if fred were called area.
+name. In other words, it would make more sense if ''fred'' were called ''area''.
 
 Having more than one function with the same name, which is called
 **overloading**, is legal in C++ *as long as each version takes
-different parameters*. So we can go ahead and rename fred:
+different parameters*. So we can go ahead and rename ''fred'':
 
 ::
 
@@ -20,7 +20,7 @@ different parameters*. So we can go ahead and rename fred:
     }
 
 This looks like a recursive function, but it is not. Actually, this
-version of area is calling the other version. When you call an
+version of ''area'' is calling the other version. When you call an
 overloaded function, C++ knows which version you want by looking at the
 arguments that you provide. If you write:
 
@@ -28,14 +28,14 @@ arguments that you provide. If you write:
 
         double x = area (3.0);
 
-C++ goes looking for a function named area that takes a double as an
+C++ goes looking for a function named ''area'' that takes a double as an
 argument, and so it uses the first version. If you write
 
 ::
 
         double x = area (1.0, 2.0, 4.0, 6.0);
 
-C++ uses the second version of area.
+C++ uses the second version of ''area''.
 
 Many of the built-in C++ commands are overloaded, meaning that there are
 different versions that accept different numbers or types of parameters.

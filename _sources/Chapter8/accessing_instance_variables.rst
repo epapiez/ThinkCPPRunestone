@@ -23,5 +23,69 @@ are legal.
      cout << blank.x << ", " << blank.y << endl;
      double distance = blank.x * blank.x + blank.y * blank.y;
 
+
 The first line outputs ``3, 4``; the second line calculates the value
 25.
+
+.. activecode:: eightone_two_one
+  :language: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    struct Point {
+      double x, y;
+    };
+
+    int main() {
+      Point blank;
+      blank.x = 3.0;
+      blank.y = 4.0;
+      cout << blank.x << ", " << blank.y << endl;
+      double distance = blank.x * blank.x + blank.y * blank.y;
+      cout << distance << endl;
+    }
+
+.. mchoice:: question_eight_one_one
+   :multiple_answers:
+   :answer_a: ``string`` is the instance variable, ``cube`` is the object
+   :answer_b: ``x`` is the instance variable, ``thing`` is the object
+   :answer_c: ``thing`` is the instance variable, ``cube`` is the object
+   :answer_d: ``cube`` is the instance variable, ``thing`` is the object
+   :correct: d
+   :feedback_a: ``string`` is a data type
+   :feedback_b: ``x`` is the local variable
+   :feedback_c: Consider the placement of ``thing`` -- it is before the ``.``
+   :feedback_d: Correct!
+
+   In ``string x = thing.cube;``, what is the object and what is the instance variable we are reading the value of?
+
+
+.. mchoice:: question_eight_one_onetwo
+   :multiple_answers:
+   :answer_a: 2.0 7.0 53
+   :answer_b: 2.07.053
+   :answer_c: 7.0, 2.0 53
+   :answer_d: 7.02.053
+   :correct: b
+   :feedback_a: Spaces need to be printed out like any other output.
+   :feedback_b: Correct!
+   :feedback_c: The order in which the variables are printed out do not need to match the order in which they are declared.
+   :feedback_d: The order in which the variables are printed out do not need to match the order in which they are declared.
+
+   What will print?
+
+   .. code-block:: cpp
+
+      struct Blue {
+        double x, y;
+      };
+
+      int main() {
+        Blue blank;
+        blank.x = 7.0;
+        blank.y = 2.0;
+        cout << blank.y << blank.x;
+        double distance = blank.x * blank.x + blank.y * blank.y;
+        cout << distance << endl;
+      }

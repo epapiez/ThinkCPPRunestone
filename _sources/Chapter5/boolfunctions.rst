@@ -22,7 +22,7 @@ bool, which means that every return statement has to provide a bool
 expression.
 
 The code itself is straightforward, although it is a bit longer than it
-needs to be. Remember that the expression x >= 0 && x < 10 has type
+needs to be. Remember that the expression ''x >= 0 && x < 10'' has type
 bool, so there is nothing wrong with returning it directly, and avoiding
 the if statement altogether:
 

@@ -118,8 +118,8 @@ example only demonstrates two:
 #. Creating a new function gives you an opportunity to give a name to a
    group of statements. Functions can simplify a program by hiding a
    complex computation behind a single command, and by using English
-   words in place of arcane code. Which is clearer, newLine or cout <<
-   endl?
+   words in place of arcane code. Which is clearer, ``newLine`` or ``cout <<
+   endl``?
 
 #. Creating a new function can make a program smaller by eliminating
    repetitive code. For example, a short way to print nine consecutive

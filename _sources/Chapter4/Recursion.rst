@@ -23,7 +23,7 @@ For example, look at the following function:
 The name of the function is countdown and it takes a single integer as a
 parameter. If the parameter is zero, it outputs the word “Blastoff.”
 Otherwise, it outputs the parameter and then calls a function named
-countdown—itself—passing n-1 as an argument.
+countdown—itself—passing ``n-1`` as an argument.
 
 What happens if we call this function like this:
 
@@ -60,23 +60,23 @@ What happens if we call this function like this:
       return 0;
     }
 
-The execution of countdown begins with n=3, and since n is not zero, it
+The execution of countdown begins with ``n=3``, and since n is not zero, it
 outputs the value 3, and then calls itself...
 
-    The execution of countdown begins with n=2, and since n is not zero,
+    The execution of countdown begins with ``n=2``, and since n is not zero,
     it outputs the value 2, and then calls itself...
 
-        The execution of countdown begins with n=1, and since n is not
+        The execution of countdown begins with ``n=1``, and since n is not
         zero, it outputs the value 1, and then calls itself...
 
-            The execution of countdown begins with n=0, and since n is
+            The execution of countdown begins with ``n=0``, and since n is
             zero, it outputs the word “Blastoff!” and then returns.
 
-        The countdown that got n=1 returns.
+        The countdown that got ``n=1`` returns.
 
-    The countdown that got n=2 returns.
+    The countdown that got ``n=2`` returns.
 
-The countdown that got n=3 returns.
+The countdown that got ``n=3`` returns.
 
 And then you’re back in main (what a trip). So the total output looks
 like:
@@ -114,8 +114,8 @@ newlines, or 106. A better alternative would be
     }
 
 This program is similar to countdown; as long as n is greater than zero,
-it outputs one newline, and then calls itself to output n-1 additional
-newlines. Thus, the total number of newlines is 1 + (n-1), which usually
+it outputs one newline, and then calls itself to output ``n-1`` additional
+newlines. Thus, the total number of newlines is ``1 + (n-1)``, which usually
 comes out to roughly n.
 
 The process of a function calling itself is called **recursion**, and

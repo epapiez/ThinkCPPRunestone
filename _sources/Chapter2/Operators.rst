@@ -5,7 +5,7 @@ Operators
 computations like addition and multiplication. Most of the operators in
 C++ do exactly what you would expect them to do, because they are common
 mathematical symbols. For example, the operator for adding two integers
-is +.
+is ``+``.
 
 The following are all legal C++ expressions whose meaning is more or
 less obvious:

@@ -138,7 +138,7 @@ This program is not correct because if x happens to be 0, then neither
 condition will be true and the function will end without hitting a
 return statement. Unfortunately, many C++ compilers do not catch this
 error. As a result, the program may compile and run, but the return
-value when x==0 could be anything, and will probably be different in
+value when ''x==0'' could be anything, and will probably be different in
 different environments.
 
 By now you are probably sick of seeing compiler errors, but as you gain

@@ -7,8 +7,8 @@ existing functions. For example, what if someone gave you two points,
 the center of the circle and a point on the perimeter, and asked for the
 area of the circle?
 
-Let’s say the center point is stored in the variables xc and yc, and the
-perimeter point is in xp and yp. The first step is to find the radius of
+Let’s say the center point is stored in the variables ''xc'' and ''yc'', and the
+perimeter point is in ''xp'' and ''yp''. The first step is to find the radius of
 the circle, which is the distance between the two points. Fortunately,
 we have a function, distance, that does that.
 
@@ -34,7 +34,7 @@ Wrapping that all up in a function, we get:
       return result;
     }
 
-The name of this function is fred, which may seem odd. I will explain
+The name of this function is ''fred'', which may seem odd. I will explain
 why in the next section.
 
 The temporary variables radius and area are useful for development and

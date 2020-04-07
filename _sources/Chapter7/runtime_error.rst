@@ -22,7 +22,7 @@ Try it in your development environment and see how it looks.
     :iscode:
     :feedback: Remember, an index that is negative or greater than the length of the string - 1 will give a run-time error.
 
-    :click-incorrect:def main() {::endclick:
+    :click-incorrect:def main() {:endclick:
         :click-incorrect:string fruit = "apple";:endclick:
         char letter = :click-incorrect:fruit[0];:endclick:
         char letter = :click-correct:fruit[9];:endclick:
@@ -30,3 +30,27 @@ Try it in your development environment and see how it looks.
         cout <<  :click-correct:fruit[-4]:endclick:  << endl;
         cout <<  :click-incorrect:fruit[4]:endclick:  << endl;
         }
+
+.. parsonsprob:: question_seven_two_one
+
+   Construct a block of code that correctly changes the string to say "cat in the hat" instead of "cat on the mat", then print it.
+   -----
+   int main() {
+
+      string sentence = "cat on the mat";
+
+      sentence[4] = "i";
+
+      sentence[5] = "i"; #distractor
+
+      sentence[3] = "i"; #distractor
+
+      sentence[11] = "c";
+
+      sentence [12] = "c"; #distractor
+
+      sentence[11] = "c" #distractor
+
+      cout << sentence << endl;
+
+   }

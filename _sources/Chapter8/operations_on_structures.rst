@@ -63,3 +63,26 @@ The output of this program is ``3, 4``.
         :click-incorrect:new = (Point){3.0, 4.0};:endclick:
         :click-correct:new = {3.0, 4.0};:endclick:
         }
+
+.. parsonsprob:: question_8_1_2
+
+   Construct a block of code that correctly initializes the instance variables of a structure.
+   -----
+   struct Point {
+
+      double x, y;
+
+   };
+
+   int main() {
+
+      Point blank;
+
+      int blank; #distractor
+
+      blank = (Point){ 12.0, 3.2 };
+
+      blank = (Point){ 12.0, 3.2 } #distractor
+
+      blank = { 12.0, 3.2 }; #distractor
+   }

@@ -13,7 +13,7 @@ the type of every parameter. For example
         cout << minute;
       }
 
-It might be tempting to write (int hour, minute), but that format is
+It might be tempting to write ``(int hour, minute)``, but that format is
 only legal for variable declarations, not for parameters.
 
 Another common source of confusion is that you do not have to declare

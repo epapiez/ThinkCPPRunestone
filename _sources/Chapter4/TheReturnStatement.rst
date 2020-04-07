@@ -42,7 +42,7 @@ there is a floating-point variable on the left.
 Remember that any time you want to use one a function from the math
 library, you have to include the header file math.h.
 
-Putting **return 0;** in your code ends your program. Let's look back at a program from section 4.3. How would your answer change?
+Putting ``return 0;`` in your code ends your program. Let's look back at a program from section 4.3. How would your answer change?
 
 **Check your understanding!**
 

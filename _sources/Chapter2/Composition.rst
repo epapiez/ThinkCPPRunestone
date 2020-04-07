@@ -100,4 +100,4 @@ notably, the left-hand side of an assignment statement has to be a
 *variable* name, not an expression. That’s because the left side
 indicates the storage location where the result will go. Expressions do
 not represent storage locations, only values. So the following is
-illegal: minute+1 = hour;.
+illegal: ``minute+1 = hour;``.

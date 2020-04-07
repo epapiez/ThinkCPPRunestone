@@ -79,7 +79,7 @@ the square brackets:
     :iscode:
     :feedback: Remember, square brackets [] are used to access a character in a string.
 
-    :click-incorrect:def main() {::endclick:
+    :click-incorrect:def main() {:endclick:
         :click-incorrect:string fruit = "apple";:endclick:
         char letter = :click-correct:fruit[2];:endclick:
         :click-incorrect:cout << fruit << endl;:endclick:

@@ -62,23 +62,29 @@ the argument we provide.
 
     :click-incorrect:def main() {::endclick:
         :click-incorrect:string fruit = "apple";:endclick:
-        int :click-incorrect: index_a :endclick: = fruit.find('e');
-        int :click-correct: index_b :endclick: = fruit.find("app");
-        int :click-correct: index_c :endclick: = fruit.find('a');
-        int :click-incorrect: index_d :endclick: = fruit.find('l');
+        int:click-incorrect: index_a :endclick:= fruit.find('e');
+        int:click-correct: index_b :endclick:= fruit.find("app");
+        int:click-correct: index_c :endclick:= fruit.find('a');
+        int:click-incorrect: index_d :endclick:= fruit.find('l');
         }
 
 .. parsonsprob:: question_seven_three
 
-   Construct a block of code that correctly finds and prints where the first "b" is in the string.
+   Construct a block of code that correctly finds and prints where the first "B" is in the string. Declare ``city`` before ``index``.
    -----
    int main() {
 
       string city = "New Baltimore";
 
+      string city = "New Baltimore" #distractor
+
       int index;
 
       index = city.find('B');
+
+      index = city.find(B); #distractor
+
+      index = city.find('b'); #distractor
 
       cout << index << endl;
 

@@ -16,6 +16,7 @@ different from what we’ve seen before:
      string fruit = "Watermelon";
      int length;
      length = fruit.length();
+     cout << length << endl;
      }
 
 To describe this function call, we would say that we are **invoking**
@@ -78,7 +79,7 @@ from 0 to 5. To get the last character, you have to subtract 1 from
    :answer_a: 11
    :answer_b: 12
    :correct: b
-   :feedback_a: The blank counts as a character.
+   :feedback_a: The space counts as a character.
    :feedback_b: Yes, there are 12 characters in the string.
 
 
@@ -121,7 +122,11 @@ from 0 to 5. To get the last character, you have to subtract 1 from
 
       int num_chars;
 
-      num_chars = course.length()
+      string num_chars; #distractor
+
+      num_chars = course.length();
+
+      num_chars = length(course); #distractor
 
       cout << num_chars << endl;
 

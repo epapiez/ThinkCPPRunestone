@@ -93,3 +93,33 @@ it is less safe, since it is harder to keep track of what gets modified
 where. Nevertheless, in C++ programs, almost all structures are passed
 by reference almost all the time. In this book I will follow that
 convention.
+
+.. mchoice:: question_eight_one_onethree
+   :multiple_answers:
+   :answer_a: 6.0, 8.0, 3.0, 4.0
+   :answer_b: 6.0, 8.0, 6.0, 8.0
+   :answer_c: 6.08.03.04.0
+   :answer_d: 6.08.06.08.0
+   :correct: b
+   :feedback_a: The ``&`` indicates pass by reference.
+   :feedback_b: Correct!
+   :feedback_c: The ``&`` indicates pass by reference.
+   :feedback_d: Take a look at exactly what is being outputted.
+
+   What will print?
+
+   .. code-block:: cpp
+
+      struct Point {
+        double x, y;
+      };
+
+      void timesTwo (Point& p) {
+        cout << "(" << p.x * 2 << ", " << p.y * 2 << ")";
+      }
+
+      int main() {
+        Point blank = { 3.0, 4.0 };
+        addTwo (blank);
+        cout << ", " << blank << endl;
+      }

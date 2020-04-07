@@ -29,21 +29,25 @@ For example, below we are finding the number of 'e' characters in the "Shepard" 
   :language: cpp
   :caption: Our own find function
 
+
   #include <iostream>
   using namespace std;
 
-    int find (string s, char c, int i)
-    {
-      while (i<s.length()) {
-        if (s[i] == c) return i;
-        i = i + 1;
+  int find (string s, char c, int i)
+  {
+    int length = s.length();
+    while (i < length) {
+      if (s[i] == c) {
+          return i;
       }
-      return -1;
+      i = i + 1;
     }
+    return -1;
+  }
 
-    int main() {
-      string dog = "German Shepard"
-      int start_shepard = 7;
-      cout << find(dog, 'e', start_shepard) << endl;
-      cout << dog.find('e') << endl;
-   }
+  int main() {
+    string dog = "German Shepard";
+    int start_shepard = 7;
+    cout << find(dog, 'e', start_shepard) << endl;
+    cout << dog.find('e') << endl;
+ }

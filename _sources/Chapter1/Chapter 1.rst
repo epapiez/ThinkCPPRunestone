@@ -17,21 +17,10 @@ accurately. As it turns out, the process of learning to program is an
 excellent opportunity to practice problem-solving skills. That’s why
 this chapter is called “The way of the program.”
 
-Of course, the other goal of this book is to prepare you for the
-Computer Science AP Exam. We may not take the most direct approach to
-that goal, though. For example, there are not many exercises in this
-book that are similar to the AP questions. On the other hand, if you
-understand the concepts in this book, along with the details of
-programming in C++, you will have all the tools you need to do well on
-the exam.
-
 What is a programming language?
 -------------------------------
 
-The programming language you will be learning is C++, because that is
-the language the AP exam is based on, as of 1998. Before that, the exam
-used Pascal. Both C++ and Pascal are **high-level languages**; other
-high-level languages you might have heard of are Java, C and FORTRAN.
+The programming language you will be learning is C++. It is a high-level language.
 
 As you might infer from the name “high-level language,” there are also
 **low-level languages**, sometimes referred to as machine language or
@@ -367,47 +356,42 @@ reasonably well. Even so, this simple program contains several features
 that are hard to explain to beginning programmers. For now, we will
 ignore some of them, like the first two lines.
 
-The third line begins with //, which indicates that it is a **comment**.
+The third line begins with ``//``, which indicates that it is a **comment**.
 A comment is a bit of English text that you can put in the middle of a
 program, usually to explain what the program does. When the compiler
-sees a //, it ignores everything from there until the end of the line.
+sees a ``//``, it ignores everything from there until the end of the line.
 
-In the fourth line, you can ignore the word int for now, but notice the
-word main. main is a special name that indicates the place in the
+In the fourth line, you can ignore the word ``int`` for now, but notice the
+word ``main``.  ``main`` is a special name that indicates the place in the
 program where execution begins. When the program runs, it starts by
-executing the first statement in main and it continues, in order, until
+executing the first statement in ``main`` and it continues, in order, until
 it gets to the last statement, and then it quits.
 
 There is no limit to the number of statements that can be in main, but
 the example contains only one. It is a basic **output** statement,
 meaning that it outputs or displays a message on the screen.
 
-cout is a special object provided by the system to allow you to send
-output to the screen. The symbol << is an **operator** that you apply to
-cout and a string, and that causes the string to be displayed.
+``cout`` is a special object provided by the system to allow you to send
+output to the screen. The symbol ``<<`` is an **operator** that you apply to
+``cout`` and a string, and that causes the string to be displayed.
 
-endl is a special symbol that represents the end of a line. When you
-send an endl to cout, it causes the cursor to move to the next line of
+``endl`` is a special symbol that represents the end of a line. When you
+send an ``endl`` to ``cout``, it causes the cursor to move to the next line of
 the display. The next time you output something, the new text appears on
 the next line.
 
-Like all statements, the output statement ends with a semi-colon (;).
+Like all statements, the output statement ends with a semi-colon (``;``).
 
 There are a few other things you should notice about the syntax of this
-program. First, C++ uses squiggly-braces ({ and }) to group things
+program. First, C++ uses squiggly-braces (``{`` and ``}``) to group things
 together. In this case, the output statement is enclosed in
-squiggly-braces, indicating that it is *inside* the definition of main.
+squiggly-braces, indicating that it is *inside* the definition of ``main``.
 Also, notice that the statement is indented, which helps to show
 visually which lines are inside the definition.
 
-At this point it would be a good idea to sit down in front of a computer
-and compile and run this program. The details of how to do that depend
-on your programming environment, but from now on in this book I will
-assume that you know how to do it.
-
 As I mentioned, the C++ compiler is a real stickler for syntax. If you
 make any errors when you type in the program, chances are that it will
-not compile successfully. For example, if you misspell iostream, you
+not compile successfully. For example, if you misspell ``iostream``, you
 might get an error message like the following:
 
 ::
@@ -419,8 +403,8 @@ dense format that is not easy to interpret. A more friendly compiler
 might say something like:
 
     “On line 1 of the source code file named hello.cpp, you tried to
-    include a header file named oistream.h. I didn’t find anything with
-    that name, but I did find something named iostream. Is that what you
+    include a header file named ``oistream.h``. I didn’t find anything with
+    that name, but I did find something named ``iostream``. Is that what you
     meant, by any chance?”
 
 Unfortunately, few compilers are so accomodating. The compiler is not
@@ -429,7 +413,7 @@ only a hint about what is wrong. It will take some time to gain facility
 at interpreting compiler messages.
 
 Nevertheless, the compiler can be a useful tool for learning the syntax
-rules of a language. Starting with a working program (like hello.cpp),
+rules of a language. Starting with a working program above,
 modify it in various ways and see what happens. If you get an error
 message, try to remember what the message says and what caused it, so if
 you see it again in the future you will know what it means.

@@ -47,11 +47,11 @@ Remember, you can write ``index = index +1;``, or you can write
 
 
 .. clickablearea:: click_seven_four
-    :question: Click on the **incorrect** or **not** suggested increment statements.
+    :question: Click on the incorrect or not suggested increment statements.
     :iscode:
     :feedback: Re-read the text above and try again.
 
-    :click-incorrect:def main() {::endclick:
+    :click-incorrect:def main() {:endclick:
         :click-incorrect:count = count + 1;:endclick:
         :click-incorrect:index++;:endclick:
         :click-correct: count = count++;:endclick:

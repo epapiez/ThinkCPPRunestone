@@ -29,9 +29,9 @@ The condition can contain any of the comparison operators:
 
 Although these operations are probably familiar to you, the syntax C++
 uses is a little different from mathematical symbols like :math:`=`,
-:math:`\neq` and :math:`\le`. A common error is to use a single =
-instead of a double ==. Remember that = is the assignment operator, and
-== is a comparison operator. Also, there is no such thing as =< or =>.
+:math:`\neq` and :math:`\le`. A common error is to use a single ``=``
+instead of a double ``==``. Remember that = is the assignment operator, and
+``==`` is a comparison operator. Also, there is no such thing as ``=<``or ``=>``.
 
 The two sides of a condition operator have to be the same type. You can
 only compare ints to ints and doubles to doubles. Unfortunately, at this

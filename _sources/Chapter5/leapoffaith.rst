@@ -8,14 +8,14 @@ function call, instead of following the flow of execution, you *assume*
 that the function works correctly and returns the appropriate value.
 
 In fact, you are already practicing this leap of faith when you use
-built-in functions. When you call cos or exp, you don’t examine the
+built-in functions. When you call ''cos'' or ''exp'', you don’t examine the
 implementations of those functions. You just assume that they work,
 because the people who wrote the built-in libraries were good
 programmers.
 
 Well, the same is true when you call one of your own functions. For
 example, in Section \ `8 <#bool>`__ we wrote a function called
-isSingleDigit that determines whether a number is between 0 and 9. Once
+''isSingleDigit'' that determines whether a number is between 0 and 9. Once
 we have convinced ourselves that this function is correct—by testing and
 examination of the code—we can use the function without ever looking at
 the code again.

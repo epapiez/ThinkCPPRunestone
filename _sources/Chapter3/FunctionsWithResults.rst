@@ -10,7 +10,7 @@ perform an action but don’t return a value. That raises some questions:
    of a larger expression)?
 
 -  What happens if you use a function without a result as part of an
-   expression, like newLine() + 7?
+   expression, like ``newLine() + 7``?
 
 -  Can we write functions that yield results, or are we stuck with
    things like newLine and printTwice?

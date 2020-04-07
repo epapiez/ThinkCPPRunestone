@@ -59,6 +59,8 @@ you can compile and run it.
    -----
    string x;
 
-   x = "It is cold outside!"
+   x = "It is cold outside!";
+
+   x = "It is cold outside" #paired
 
    cout << x << endl;

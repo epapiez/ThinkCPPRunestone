@@ -19,3 +19,10 @@ the current object. So we could have written:
 This kind of variable access is called “implicit” because the name of
 the object does not appear explicitly. Features like this are one reason
 member functions are often more concise than nonmember functions.
+
+.. fillintheblank:: question11_3_1
+
+    True or False: We need to create a local variable and use dot notation in order to refer to the instance variables of the current object inside of a member function.
+
+    - :([Ff]alse|FALSE): Correct! The member function has implicit variable access, thus, instance variables can be referenced directly inside of the member function.
+      :.*: Incorrect! Remember, the member function has implicit variable access!

@@ -10,7 +10,7 @@ seen some features of it:
 
 #. Programs are made up of a collection of structure definitions and
    function definitions, where most of the functions operate on specific
-   kinds of structures (or objecs).
+   kinds of structures (or objects).
 
 #. Each structure definition corresponds to some object or concept in
    the real world, and the functions that operate on that structure
@@ -57,3 +57,28 @@ done with a nonmember function (sometimes called a **free-standing**
 function). But sometimes there is an advantage to one over the other. If
 you are comfortable converting from one form to another, you will be
 able to choose the best form for whatever you are doing.
+
+.. fillintheblank:: question11_1_1
+
+    True or False: C++ does not support object-oriented programming.
+
+    - :([Ff]alse|FALSE): Correct!
+      :.*: Incorrect!
+
+.. fillintheblank:: question11_1_2
+
+    True or False: Free-standing functions can perform *any* operation that a member function can.
+
+    - :([Tt]rue|TRUE): Correct! But sometimes there is an advantage to one over the other.
+      :.*: Incorrect!
+
+.. mchoice:: question11_1_3
+   :answer_a: before the structure definition
+   :answer_b: inside of the structure definition
+   :answer_c: anywhere in the program
+   :correct: b
+   :feedback_a: Incorrect! You're very close!
+   :feedback_b: Correct!
+   :feedback_c: Incorrect! The purpose of a member function is to establish a relationship between the structure and the function.
+
+   Member functions are declared __________.

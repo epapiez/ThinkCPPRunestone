@@ -40,9 +40,9 @@ One thing that makes life a little difficult is that ``this`` is
 actually a **pointer** to a structure, rather than a structure itself. A
 pointer is similar to a reference, but I don’t want to go into the
 details of using pointers yet. The only pointer operation we need for
-now is the ```` operator, which converts a structure pointer into a
+now is the ``*`` operator, which converts a structure pointer into a
 structure. In the following function, we use it to assign the value of
-``this`` to a local variable named ``time``:
+``this`` to a local variable named ``time``.
 
 ::
 
@@ -87,3 +87,24 @@ definition for the function. This definition is sometimes called the
 the function works. If you omit the definition, or provide a definition
 that has an interface different from what you promised, the compiler
 will complain.
+
+.. fillintheblank:: question11_2_1
+
+    What keyword do we use to refer to the current object?
+
+    - :([Tt]his|THIS): Correct! But be careful: this is actually a pointer to the current object!
+      :.*: Incorrect!
+
+.. mchoice:: question11_2_2
+   :multiple_answers:
+   :answer_a: change the name of the function to Dog::bark
+   :answer_b: remove the Dog parameter
+   :answer_c: operate on the current Dog object by using *this
+   :answer_d: declare the function inside of the Dog structure definition
+   :correct: a,b,c,d
+   :feedback_a: Correct! Dog::bark indicates that there is a function called bark that can be invoked on a Dog structure.
+   :feedback_b: Correct! We no longer need to pass a Dog as an argument, since we are going to be invoking the function on a Dog object.
+   :feedback_c: Correct! To get the current object, we need to dereference the this pointer using *.
+   :feedback_d: Correct! Member functions are declared inside of structure definitions.
+
+   We have a free-standing function called **dog_bark** which takes a **Dog** object as a parameter.  What step(s) do we need to take to convert ``dog_bark(const Dog& dog)`` to a member function of the ``Dog`` class?

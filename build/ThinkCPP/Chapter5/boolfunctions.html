@@ -440,7 +440,33 @@ single-digit number.</p>
 
     <li data-component="draggable" id="dragndrop_five_three_drag2">(x%2 == 0 || x + 1 == 4)</li>
     <li data-component="dropzone" for="dragndrop_five_three_drag2">1</li>
-</ul></div></div>
+</ul></div>
+        <div class="runestone" style="max-width: none;">
+        <pre data-component="parsons" id="question_five_one"      >
+        <span data-question>Q-2: Construct a block of code that prints out "positive" if num is positive, "even" if num is even, and "both" if it is both positive and even.</span>bool positiveFlag = (x > 0);
+
+bool positiveFlag = (x < 0); #distractor
+
+bool evenFlag = (n%2 == 0);
+
+bool evenFlag = (n%2 == 1); #distractor
+
+if (evenFlag && positiveFlag) {
+
+if (evenFlag || positiveFlag) {  #distractor
+
+   cout << "both"; }
+
+else if (evenFlag) {
+
+   cout << "even"; }
+
+else {
+
+   cout << "positive"; }
+        </pre>
+        </div>
+    </div>
 
 
   <div id=scprogresscontainer>

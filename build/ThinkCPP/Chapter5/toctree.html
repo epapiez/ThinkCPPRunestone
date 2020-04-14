@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>5.4. Overloading &#8212; Runestone Interactive Overview</title>
+    <title>5. Fruitful functions &#8212; Runestone Interactive Overview</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
@@ -126,8 +126,8 @@
     <script type="text/javascript" src="../_static/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5.5. Boolean values" href="booleanvalues.html" />
-    <link rel="prev" title="5.3. Composition" href="composition.html" />
+    <link rel="next" title="5.1. Return values" href="returnvalues.html" />
+    <link rel="prev" title="4.10. Glossary" href="../Chapter4/Glossary.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -296,7 +296,7 @@
             <li><a href='https://runestone.academy/runestone/static/instructorguide/index.html'>Instructors Guide</a></li>
             <li class="divider"></li>
             <li><a href='http://runestoneinteractive.org'>About Runestone</a></li>
-            <li><a href='/runestone/default/reportabug?course=ThinkCPP&page=overloading'>Report A Problem</a></li>
+            <li><a href='/runestone/default/reportabug?course=ThinkCPP&page=toctree'>Report A Problem</a></li>
           </ul>
         </li>
         <!-- end help menu dropdown -->
@@ -313,14 +313,14 @@
         
         <!-- 
           
-  <li id="relations-prev" title="Previous Chapter - <span class="section-number">5.3. </span>Composition" data-toggle="tooltip">
-    <a href="composition.html" >
+  <li id="relations-prev" title="Previous Chapter - <span class="section-number">4.10. </span>Glossary" data-toggle="tooltip">
+    <a href="../Chapter4/Glossary.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - <span class="section-number">5.5. </span>Boolean values' data-toggle="tooltip" >              
-    <a href="booleanvalues.html" >
+  <li id="relations-next" title='Next Chapter - <span class="section-number">5.1. </span>Return values' data-toggle="tooltip" >              
+    <a href="returnvalues.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -358,90 +358,26 @@
 
 <div class="container" id="main-content" role="main">
   
-  <div class="section" id="overloading">
-<h1><span class="section-number">5.4. </span>Overloading<a class="headerlink" href="#overloading" title="Permalink to this headline">¶</a></h1>
-<p>In the previous section you might have noticed that ‘’fred’’ and ‘’area’’
-perform similar functions—finding the area of a circle—but take
-different parameters. For ‘’area’’, we have to provide the radius; for ‘’fred’’
-we provide two points.</p>
-<p>If two functions do the same thing, it is natural to give them the same
-name. In other words, it would make more sense if ‘’fred’’ were called ‘’area’’.</p>
-<p>Having more than one function with the same name, which is called
-<strong>overloading</strong>, is legal in C++ <em>as long as each version takes
-different parameters</em>. So we can go ahead and rename ‘’fred’’:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">double</span> <span class="n">area</span> <span class="p">(</span><span class="n">double</span> <span class="n">xc</span><span class="p">,</span> <span class="n">double</span> <span class="n">yc</span><span class="p">,</span> <span class="n">double</span> <span class="n">xp</span><span class="p">,</span> <span class="n">double</span> <span class="n">yp</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="n">area</span> <span class="p">(</span><span class="n">distance</span> <span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="n">xp</span><span class="p">,</span> <span class="n">yp</span><span class="p">));</span>
-<span class="p">}</span>
-</pre></div>
+  <div class="section" id="fruitful-functions">
+<h1><span class="section-number">5. </span>Fruitful functions<a class="headerlink" href="#fruitful-functions" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="returnvalues.html">5.1. Return values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programdevelopment.html">5.2. Program development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="composition.html">5.3. Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overloading.html">5.4. Overloading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="booleanvalues.html">5.5. Boolean values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="booleanvariables.html">5.6. Boolean variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logicaloperators.html">5.7. Logical operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boolfunctions.html">5.8. Bool functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="returningfrommain.html">5.9. Returning from main</a></li>
+<li class="toctree-l1"><a class="reference internal" href="morerecursion.html">5.10. More recursion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="leapoffaith.html">5.11. Leap of faith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onemoreexample.html">5.12. One more example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">5.13. Glossary</a></li>
+</ul>
 </div>
-<p>This looks like a recursive function, but it is not. Actually, this
-version of ‘’area’’ is calling the other version. When you call an
-overloaded function, C++ knows which version you want by looking at the
-arguments that you provide. If you write:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">double</span> <span class="n">x</span> <span class="o">=</span> <span class="n">area</span> <span class="p">(</span><span class="mf">3.0</span><span class="p">);</span>
-</pre></div>
 </div>
-<p>C++ goes looking for a function named ‘’area’’ that takes a double as an
-argument, and so it uses the first version. If you write</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">double</span> <span class="n">x</span> <span class="o">=</span> <span class="n">area</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">);</span>
-</pre></div>
-</div>
-<p>C++ uses the second version of ‘’area’’.</p>
-<p>Many of the built-in C++ commands are overloaded, meaning that there are
-different versions that accept different numbers or types of parameters.</p>
-<p>Although overloading is a useful feature, it should be used with
-caution. You might get yourself nicely confused if you are trying to
-debug one version of a function while accidentally calling a different
-one.</p>
-<p>Actually, that reminds me of one of the cardinal rules of debugging:
-<strong>make sure that the version of the program you are looking at is the
-version of the program that is running!</strong> Some time you may find
-yourself making one change after another in your program, and seeing the
-same thing every time you run it. This is a warning sign that for one
-reason or another you are not running the version of the program you
-think you are. To check, stick in an output statement (it doesn’t matter
-what it says) and make sure the behavior of the program changes
-accordingly.</p>
-<p><strong>Check your understanding!</strong></p>
-
-            <div class="runestone alert alert-warning">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question_five_two">
-            <p>Q-1: Which of the following function declarations would be legal if it was added to the program below?</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">double</span> <span class="nf">price</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">);</span>
-
-<span class="kt">double</span> <span class="nf">price</span> <span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="n">string</span> <span class="n">c</span><span class="p">);</span>
-</pre></div>
-</div>
-
-            <li data-component="answer"  id="test_question_five_two_opt_a">double price(int a, int b);</li><li data-component="feedback">This function has the same parameters as the first function below.</li>
-            
-            <li data-component="answer" data-correct id="test_question_five_two_opt_b">double price(int a, string b, string c);</li><li data-component="feedback">Correct! While this function has the same number of parameters as the second function, it takes different types of parameters.</li>
-            
-            <li data-component="answer"  id="test_question_five_two_opt_c">double price(double x, int y, string z);</li><li data-component="feedback">This function has the same parameters as the second function below.</li>
-            
-
-            </ul>
-            </div>
-            
-            <div class="runestone alert alert-warning">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question_five_two_one">
-            <p>Q-2: What can be the use of the same name for different functions, such as seen below, be called?</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">double</span> <span class="nf">price</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">);</span>
-
-<span class="kt">double</span> <span class="nf">price</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="n">string</span> <span class="n">c</span><span class="p">);</span>
-</pre></div>
-</div>
-
-            <li data-component="answer"  id="test_question_five_two_one_opt_a">recursiveness</li><li data-component="feedback">Try again!</li>
-            
-            <li data-component="answer"  id="test_question_five_two_one_opt_b">debugging</li><li data-component="feedback">Try again!</li>
-            
-            <li data-component="answer" data-correct id="test_question_five_two_one_opt_c">overloading</li><li data-component="feedback">Correct!</li>
-            
-
-            </ul>
-            </div>
-            </div>
 
 
   <div id=scprogresscontainer>
@@ -450,26 +386,26 @@ accordingly.</p>
   
       
 <ul>
-  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - <span class="section-number">5.3. </span>Composition' data-toggle="tooltip">
-    <a href="composition.html" aria-label="<span class="section-number">5.3. </span>Composition">
+  <li id="relations-prev" style="opacity:0.4" onmouseover="mouseOverPrev()" onmouseout="mouseOutPrev()"class="navLink" title='Previous Section - <span class="section-number">4.10. </span>Glossary' data-toggle="tooltip">
+    <a href="../Chapter4/Glossary.html" aria-label="<span class="section-number">4.10. </span>Glossary">
         <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
             <i class='prevNav glyphicon glyphicon-chevron-left'  style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black;"></i>
         </div>
     </a>
   </li>
 </ul>
-  <a class="navLinkBg" id="navLinkBgLeft"  href="composition.html" aria-label="<span class="section-number">5.3. </span>Composition"></a>
+  <a class="navLinkBg" id="navLinkBgLeft"  href="../Chapter4/Glossary.html" aria-label="<span class="section-number">4.10. </span>Glossary"></a>
   
 <ul>
-  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - <span class="section-number">5.5. </span>Boolean values' data-toggle="tooltip" >
-    <a href="booleanvalues.html" aria-label="<span class="section-number">5.5. </span>Boolean values">
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - <span class="section-number">5.1. </span>Return values' data-toggle="tooltip" >
+    <a href="returnvalues.html" aria-label="<span class="section-number">5.1. </span>Return values">
       <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
       </div>
     </a>
   </li>
 </ul>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="booleanvalues.html" aria-label="<span class="section-number">5.5. </span>Boolean values">Next Section - <span class="section-number">5.5. </span>Boolean values</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="returnvalues.html" aria-label="<span class="section-number">5.1. </span>Return values">Next Section - <span class="section-number">5.1. </span>Return values</a>
 
 <script type="text/javascript">
 

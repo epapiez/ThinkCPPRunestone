@@ -126,7 +126,7 @@
     <script type="text/javascript" src="../_static/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="../Chapter6/toctree.html" />
+    <link rel="next" title="5.7. Logical operators" href="logicaloperators.html" />
     <link rel="prev" title="5.5. Boolean values" href="booleanvalues.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -319,8 +319,8 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - &lt;no title&gt;' data-toggle="tooltip" >              
-    <a href="../Chapter6/toctree.html" >
+  <li id="relations-next" title='Next Chapter - <span class="section-number">5.7. </span>Logical operators' data-toggle="tooltip" >              
+    <a href="logicaloperators.html" >
         <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
   </li>
@@ -396,7 +396,50 @@ presence or absence of some condition.</p>
 
     <li data-component="draggable" id="dragndrop_five_one_drag2">x >= 2</li>
     <li data-component="dropzone" for="dragndrop_five_one_drag2">true</li>
-</ul></div></div>
+</ul></div>
+<div class="runestone">
+<ul data-component="dragndrop" id="dragndrop_five_one_">
+    <span data-component="question">Q-2: Match the statement to the word that describes it best.</span>
+	<span data-component=feedback>Try again!</span>
+
+    <li data-component="draggable" id="dragndrop_five_one__drag1">bool fred;</li>
+    <li data-component="dropzone" for="dragndrop_five_one__drag1">variable declaration</li>
+
+    <li data-component="draggable" id="dragndrop_five_one__drag2">fred = true;</li>
+    <li data-component="dropzone" for="dragndrop_five_one__drag2">assignment</li>
+
+    <li data-component="draggable" id="dragndrop_five_one__drag3">bool testResult = false;</li>
+    <li data-component="dropzone" for="dragndrop_five_one__drag3">initialization</li>
+</ul></div>
+            <div class="runestone alert alert-warning">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="test_question_five_three_two_">
+            <p>Q-3: What will print?</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+
+<span class="kt">bool</span> <span class="n">evenFlag</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span>
+<span class="kt">bool</span> <span class="n">positiveFlag</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">evenFlag</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;n was even when I checked it&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">positiveFlag</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;x was positive when I checked it&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="test_question_five_three_two__opt_a">n was even when I checked it x was positive when I checked it</li><li data-component="feedback">A space is not automatically added, it must also be outputted</li>
+            
+            <li data-component="answer"  id="test_question_five_three_two__opt_b">x was positive when I checked it</li><li data-component="feedback">Try again!</li>
+            
+            <li data-component="answer" data-correct id="test_question_five_three_two__opt_c">n was even when I checked itx was positive when I checked it</li><li data-component="feedback">Correct!</li>
+            
+
+            </ul>
+            </div>
+            </div>
 
 
   <div id=scprogresscontainer>
@@ -416,15 +459,15 @@ presence or absence of some condition.</p>
   <a class="navLinkBg" id="navLinkBgLeft"  href="booleanvalues.html" aria-label="<span class="section-number">5.5. </span>Boolean values"></a>
   
 <ul>
-  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - &lt;no title&gt;' data-toggle="tooltip" >
-    <a href="../Chapter6/toctree.html" aria-label="&lt;no title&gt;">
+  <li id="relations-next" style="opacity:0.4" onmouseover="mouseOverNext()" onmouseout="mouseOutNext()" class="navLink" title='Next Section - <span class="section-number">5.7. </span>Logical operators' data-toggle="tooltip" >
+    <a href="logicaloperators.html" aria-label="<span class="section-number">5.7. </span>Logical operators">
       <div style="background-color: white; border-style:solid; border-color:lightgrey; border-width:2px; width:100px; height:50px">
           <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right' style="top:50%; transform:translateY(-50%)translateX(-50%); left: 50%; color:black; "></i>
       </div>
     </a>
   </li>
 </ul>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="../Chapter6/toctree.html" aria-label="&lt;no title&gt;">Next Section - &lt;no title&gt;</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="logicaloperators.html" aria-label="<span class="section-number">5.7. </span>Logical operators">Next Section - <span class="section-number">5.7. </span>Logical operators</a>
 
 <script type="text/javascript">
 

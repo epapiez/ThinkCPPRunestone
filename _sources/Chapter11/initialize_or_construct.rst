@@ -48,3 +48,17 @@ except that the arguments have to be two integers and a ``double``:
 ::
 
      Time currentTime (9, 14, 30.0);
+
+.. mchoice:: question11_8_1
+   :multiple_answers:
+   :answer_a: You can have many constructors with the same name.
+   :answer_b: You can always initialize an object using squiggly-braces.
+   :answer_c: When we initialize a new object, the compiler automatically finds the correct constructor to use.
+   :answer_d: Once you define a constructor for a structure, you MUST use it to initialize any new structures of that type.
+   :correct: b
+   :feedback_a: Incorrect! This statement is true, as long as the constructors take different parameters.
+   :feedback_b: Correct! Once you define a constructor, you can no longer use squiggly-braces to initialize an object.
+   :feedback_c: Incorrect! This statement is true!
+   :feedback_d: Incorrect! This statement is true!
+
+   Which statement is **false** about constructors?

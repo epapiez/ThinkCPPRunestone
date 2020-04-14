@@ -51,7 +51,7 @@ The output of this program is ``9:22:50``.
 
 .. fillintheblank:: fill1512
 
-    Suppose we have previously declared ``Time time = {12, 40, 30.0}``.  What should be printed by ``time.print()`` after calling ``time.increment(105.0)`` and ``time.increment(15.0)``? Type your response in the form **hh:mm:ss**.
+    Suppose we have previously declared ``Time time = {12, 40, 30.0}``.  What should be printed by ``time.print()`` after calling ``time.increment(105.0)``? Type your response in the form **hh:mm:ss**.
     
-    - :(12:42:30): Correct!
+    - :(12:42:15): Correct!
       :.*: Incorrect! Try again!

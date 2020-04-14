@@ -14,7 +14,7 @@ between 0 and ``upperBound-1``.
 
    vector<int> randomVector (int n, int upperBound) {
      vector<int> vec (n);
-     for (int i = 0; i<vec.size(); i++) {
+     for (size_t i = 0; i<vec.size(); i++) {
        vec[i] = random () % upperBound;
      }
      return vec;
@@ -27,7 +27,7 @@ have a function that outputs the contents of a vector.
 ::
 
    void printVector (const vector<int>& vec) {
-     for (int i = 0; i<vec.size(); i++) {
+     for (size_t i = 0; i<vec.size(); i++) {
        cout << vec[i] << " ";
      }
    }
@@ -52,7 +52,7 @@ On my machine the output is
 
    3 6 7 5 3 5 6 2 9 1 2 7 0 9 3 6 0 6 2 6
 
-which is pretty random-looking. Your results may differ.
+which is pretty random-looking. Your results might be different.
 
 If these numbers are really random, we expect each digit to appear the
 same number of times—twice each. In fact, the number 6 appears five
@@ -75,10 +75,14 @@ times each value appears, and then see what happens when we increase
       :.*: Incorrect, Try again!
 
 .. mchoice:: question10_9_2
-   :answer_a: more and more uniform.
-   :answer_b: less and less uniform.
+   :answer_a: more uniform
+   :answer_b: less uniform
+   :answer_c: more normal
+   :answer_d: less normal
    :correct: a
    :feedback_a: Correct!
    :feedback_b: Incorrect! As we store more random numbers in a vector, we see that the frequencies of each number are approximately equal.
+   :feedback_c: Incorrect! The distribution of random numbers is not related to the normal distribution.
+   :feedback_d: Incorrect! The distribution of random numbers is not related to the normal distribution.
 
    As we store more and more random numbers in a vector, we expect its contents to be __________.

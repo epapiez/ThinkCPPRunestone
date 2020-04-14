@@ -27,7 +27,8 @@ my computer) also defined in the header file. Each time you call
 ``random`` you get a different randomly-generated number. To see a
 sample, run this loop:
 
-::
+.. activecode:: ch10_9
+   :language: cpp
 
    #include <iostream>
    #include <cstdlib>

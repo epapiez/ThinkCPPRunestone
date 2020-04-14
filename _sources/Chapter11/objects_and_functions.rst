@@ -58,12 +58,17 @@ function). But sometimes there is an advantage to one over the other. If
 you are comfortable converting from one form to another, you will be
 able to choose the best form for whatever you are doing.
 
-.. fillintheblank:: question11_1_1
 
-    True or False: C++ does not support object-oriented programming.
+.. mchoice:: question11_1_1
+   :answer_a: Programming that utilizes structured control flow, specifically block structures, to improve clarity.
+   :answer_b: Programming that makes use of data structures and functions that interact with them.
+   :answer_c: Programming that expresses the logic of a computation without describing its control flow.
+   :correct: b
+   :feedback_a: Incorrect! This is how we define structured programming.
+   :feedback_b: Correct!
+   :feedback_c: Incorrect! This is how we define declarative programming.
 
-    - :([Ff]alse|FALSE): Correct!
-      :.*: Incorrect!
+   What is object-oriented programming?
 
 .. fillintheblank:: question11_1_2
 

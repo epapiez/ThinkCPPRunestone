@@ -48,14 +48,21 @@ is equivalent to
 
 .. fillintheblank:: question10_4_1
 
-    True or False: ``for`` loops are incremented in the body of the loop?
+    How many times would the following loop execute?  ``for (int i = 1; i < 4; i++)``
 
-    - :([Ff]alse|FALSE): Correct!
-      :.*: Incorrect! For loops are incremented inside of the parentheses!
+    - :3: Correct!
+      :4: Incorrect! The loop does not execute when i = 4.
+      :.*: Incorrect!
 
-.. fillintheblank:: question10_4_2
+.. mchoice:: question10_4_2
+   :answer_a: in the BODIES of both loops
+   :answer_b: in the BODY of a for loop, and in the statement of a while loop
+   :answer_c: in the statement of a for loop, and in the BODY of a while loop
+   :answer_d: in the statements of both loops
+   :correct: c
+   :feedback_a: Incorrect!
+   :feedback_b: Incorrect!
+   :feedback_c: Correct!
+   :feedback_d: Incorrect!
 
-    True or False: the initialization happens before the ``while`` loop?
-
-    - :([Tt]rue|TRUE): Correct!
-      :.*: Incorrect! We must initialize before we can increment!
+   Where are the incrementors in ``for`` loops and ``while``?

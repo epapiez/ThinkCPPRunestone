@@ -73,18 +73,18 @@ rule, and we will deal with exceptions later.
   :language: cpp
   :caption: Understanding parameters.
 
-  #include <iostream>
-  using namespace std;
+    #include <iostream>
+    using namespace std;
 
-  void printTwice (char phil) {
-    cout << phil << phil << endl;
-  }
+    void printTwice (char phil) {
+      cout << phil << phil << endl;
+      }
 
-  int main () {
-    char argument = 'b';
-    printTwice (argument);
-    return 0;
-  }
+    int main () {
+      char argument = 'b';
+      printTwice (argument);
+      return 0;
+      }
 
 .. mchoice:: test_question_three_two
    :practice: T
@@ -96,24 +96,25 @@ rule, and we will deal with exceptions later.
    :feedback_b: Yes, the "endl" creates one new line. The first line will say "o", while the second will print "oo"
    :feedback_c: In C++, you must make sure to say "endl" every time you'd like to create a new line.
 
-
    On how many separate lines will the "o"'s be printed?
 
    .. code-block:: cpp
-    #include <iostream>
-    using namespace std;
+   
+      #include <iostream>
+      using namespace std;
 
-    void printTwice (char phil) {
-      cout << phil << phil << endl;
-    }
+      void printTwice (char phil) {
+        cout << phil << phil << endl;
+      }
 
-    int main () {
-      char argument = 'b';
-      printTwice (argument);
-      return 0;
-    }
+      int main () {
+        char argument = 'b';
+        printTwice (argument);
+        return 0;
+      }
 
-.. dragndrop:: dragndrop_two_one
+
+.. dragndrop:: dragndrop_two_one_
     :feedback: Try again!
     :match_1: int timesTwo(int x, int y);|||timesTwo(4, 7);
     :match_2: int timesTwo(string y, int x);|||timesTwo("hello", 10);

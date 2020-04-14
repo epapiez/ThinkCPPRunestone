@@ -120,3 +120,59 @@ comes out to roughly n.
 
 The process of a function calling itself is called **recursion**, and
 such functions are said to be **recursive**.
+
+.. mchoice:: test_question_four_seven_three
+   :answer_a: !!
+   :answer_b: !!!
+   :answer_c: !!!!
+   :correct: b
+   :feedback_a: Try again!
+   :feedback_b: Correct! First, the program enters the if statement within exclamationPoint because n is greater than 0. Then the function prints a "!" and calls itself again, but with n-1, which is 2. This repeats until n is 0, which is when the program exits the function.
+   :feedback_c: The function keeps executing while n is greater than 0. Therefore, when n is 0, it will not print a "!"
+
+   What will print?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    void exclamationPoint(int n) {
+      if (n > 0) {
+        cout << "!";
+        exclamationPoint (n-1);
+      }
+    }
+
+    int main ()
+    {
+      exclamationPoint(3);
+    }
+
+.. mchoice:: test_question_four_seven_four
+   :answer_a: Nothing prints.
+   :answer_b: !
+   :answer_c: 0
+   :correct: a
+   :feedback_a: Correct! The program never enters the "if" statement within the function because n is never greater than 0.
+   :feedback_b: Try again!
+   :feedback_c: The only output statement in this program prints a "!", therefore "0" would never print.
+
+   What will print?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    void exclamationPoint(int n) {
+      if (n > 0) {
+        cout << "!";
+        exclamationPoint (n-1);
+      }
+    }
+
+    int main ()
+    {
+      exclamationPoint(0);
+    }

@@ -58,18 +58,35 @@ accordingly.
 **Check your understanding!**
 
 .. mchoice:: test_question_five_two
-   :answer_a: double price = (int a, int b)
-   :answer_b: double price = (int a, string b, string c)
-   :answer_c: double price = (double x, int y, string z)
+   :answer_a: double price(int a, int b);
+   :answer_b: double price(int a, string b, string c);
+   :answer_c: double price(double x, int y, string z);
    :correct: b
    :feedback_a: This function has the same parameters as the first function below.
    :feedback_b: Correct! While this function has the same number of parameters as the second function, it takes different types of parameters.
    :feedback_c: This function has the same parameters as the second function below.
 
-   Which of the following functions would be legal if it was added to the program below?
+   Which of the following function declarations would be legal if it was added to the program below?
 
    .. code-block:: cpp
 
-     double price = (int x, int y)
+     double price (int x, int y);
 
-     double price = (double a, int b, string c)
+     double price (double a, int b, string c);
+
+.. mchoice:: test_question_five_two_one
+   :answer_a: recursiveness
+   :answer_b: debugging
+   :answer_c: overloading
+   :correct: c
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Correct!
+
+   What can be the use of the same name for different functions, such as seen below, be called?
+
+   .. code-block:: cpp
+
+     double price(int x, int y);
+
+     double price(double a, int b, string c);

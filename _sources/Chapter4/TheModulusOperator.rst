@@ -44,7 +44,7 @@ x (in base 10). Similarly ``x % 100`` yields the last two digits.
 
    How do you know whether the variable x is odd?
 
-.. dragndrop:: dragndrop_three_one
+.. dragndrop:: dragndrop_four_one_one_
     :feedback: Try again!
     :match_1:  cout<<"Hello"; cout<<"Hello";|||one line
     :match_2: cout<<"Hello" << endl; cout<<"Hello";|||two lines

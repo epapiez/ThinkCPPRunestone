@@ -23,7 +23,9 @@ The instance of main is empty because main does not have any parameters
 or local variables. As an exercise, draw a stack diagram for nLines,
 invoked with the parameter n=4.
 
-shared_birthdays = {}
+::
+
+    shared_birthdays = {}
         shared_birthday_list = []
         for i in self.data_dict['DOB']:
             split_date = monday_and_day.split('/')

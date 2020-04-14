@@ -75,3 +75,53 @@ type they are. You should resist the temptation to write things like:
     printParity(otherNumber);
     return 0;
     }
+
+.. mchoice:: test_question_four_one_
+   :practice: T
+   :answer_a: It is cold!
+   :answer_b: It is warm!
+   :answer_c: Nothing prints
+   :correct: b
+   :feedback_a: That statement would print if degrees was less than 50.
+   :feedback_b: Correct!
+   :feedback_c: One of the statements is satisfied, so something does print.
+
+   What will print?
+
+   .. code-block:: cpp
+
+        void weather(int temp) {
+          if temp < 50 {
+            cout << "It is cold!";
+          }
+          else {
+            cout << "It is warm!";
+          }
+        }
+
+        int main() {
+          int degrees = 52;
+          weather(degrees);
+        }
+
+.. parsonsprob:: question_four_one
+
+   Construct a block of code that correctly goes through alternative execution. If num is greater than 30, print "expensive".
+   -----
+   int cost = 40;
+
+   if (cost > 30) {
+
+   if (cost > 30): #distractor
+
+      cout << "Expensive!";
+
+    } #first
+
+    else {
+
+    else: #distractor
+
+      cout << "Inexpensive!"
+
+    }

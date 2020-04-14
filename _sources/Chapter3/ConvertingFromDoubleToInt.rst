@@ -27,6 +27,35 @@ to an integer always rounds down, even if the fraction part is
 For every type in C++, there is a corresponding function that typecasts
 its argument to the appropriate type.
 
+.. mchoice:: test_question_three_two_
+   :practice: T
+   :answer_a: temp
+   :answer_b: 8
+   :answer_c: 7
+   :answer_d: 8.0
+   :correct: c
+   :feedback_a: This is the name of a variable. Only the value of a variable will print with cout.
+   :feedback_b: Remember that converting to an integer always rounds down.
+   :feedback_c: Correct!
+   :feedback_d: This is not an integer data type.
+
+
+   Consider the following C++ code. Note that line numbers are included on the left.
+
+   .. code-block:: cpp
+      :linenos:
+
+      int main ()
+      {
+        double temp = 7.99999999;
+        int round_temp = int (temp);
+        cout << round_temp;
+      }
+
+
+   What will print?
+
+
 **Convert this double to an int. Then use a print statement to observe the output!***
 
 .. activecode:: threeone

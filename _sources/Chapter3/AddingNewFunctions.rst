@@ -138,3 +138,21 @@ example only demonstrates two:
    :feedback_d: This function header is missing parentheses and parameters. Even if a function does not take in any parameters, empty parentheses should be used.
 
    Which of the following is a correct function header (first line of a function definition)?
+
+.. clickablearea:: click_three_one
+    :question: Click on all function headers statements.
+    :iscode:
+    :feedback: Remember, the operator '=' is used for assignment.
+
+    :click-correct:void printX(){:endclick:
+        :click-incorrect:cout << "X";:endclick:
+    }
+
+    :click-correct:int main(){:endclick:
+        :click-incorrect:x = 4;:endclick:
+        for i in range(5){
+            :click-incorrect:y = i;:endclick:
+            :click-incorrect:if y > 2{:endclick:
+                cout << y;
+            }
+        }

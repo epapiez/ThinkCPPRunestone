@@ -146,3 +146,55 @@ The key aspects of the process are:
    scaffolding or consolidate multiple statements into compound
    expressions, but only if it does not make the program difficult to
    read.
+
+.. mchoice:: test_question_five_two_one_test
+   :answer_a: combining the parameters
+   :answer_b: printing out the parameters
+   :answer_c: returning something
+   :correct: c
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Correct! Return something of the same data type as the return type of the function.
+
+   What is a helpful first placekeeper when outlining a function?
+
+
+.. mchoice:: test_question_five_two_one_
+   :answer_a: Use temporary variables to hold intermediate values so you can output and check them.
+   :answer_b: Start with a working program and make small, incremental changes. That way you know exactly where the error is if you have one.
+   :answer_c: Writing a program from start to finish, and then testing at the end in order to understand all of the errors at once.
+   :answer_d: Once the program is working, you might want to remove some of the or consolidate multiple statements into compound expressions, but only if it does not make the program difficult to read.
+   :correct: c
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Correct! Trying to understand all of the errors in your program at once can make it very difficult to understand.
+   :feedback_d: Try again!
+
+   Which of the following is not a key aspect of the incremental development process?
+
+
+.. mchoice:: test_question_five_two_one_one
+   :answer_a: Scaffolding - the use of more than 5 lines in a function with no indentation
+   :answer_b: Placekeeping - allows the function to compile and return something
+   :answer_c: Scaffolding - code that is helpful for testing values, but is not included in the final product
+   :answer_d: Placekeeping - the use of parameters in a function
+   :correct: c
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Correct! Printing out the values can help you understand whether the function is working or not.
+   :feedback_d: Try again!
+
+   The print statements in the distance function will be removed after testing. What is this called, and what is its purpose?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    double distance (double x1, double y1, double x2, double y2) {
+      double dx = x2 - x1;
+      double dy = y2 - y1;
+      cout << "dx is " << dx << endl;
+      cout << "dy is " << dy << endl;
+      return 0.0;
+    }

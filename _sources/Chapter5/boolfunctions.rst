@@ -77,6 +77,7 @@ The most common use of bool functions is inside conditional statements
         cout << "x is big" << endl;
       }
 
+
 .. dragndrop:: dragndrop_five_three
     :feedback: Try again!
     :match_1:  (x%2 == 1 && x == 7)|||0
@@ -84,3 +85,30 @@ The most common use of bool functions is inside conditional statements
 
 
     Match the conditional statement to its output, assuming it is outputted using cout and x = 3.
+
+
+.. parsonsprob:: question_five_one
+
+   Construct a block of code that prints out "positive" if num is positive, "even" if num is even, and "both" if it is both positive and even.
+   -----
+   bool positiveFlag = (x > 0);
+
+   bool positiveFlag = (x < 0); #distractor
+
+   bool evenFlag = (n%2 == 0);
+
+   bool evenFlag = (n%2 == 1); #distractor
+
+   if (evenFlag && positiveFlag) {
+
+   if (evenFlag || positiveFlag) {  #distractor
+
+      cout << "both"; }
+
+   else if (evenFlag) {
+
+      cout << "even"; }
+
+   else {
+
+      cout << "positive"; }

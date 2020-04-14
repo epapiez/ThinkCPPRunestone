@@ -33,8 +33,6 @@ to another:
 This statement finds the log base :math:`e` of 10 and then raises
 :math:`e` to that power. The result gets assigned to x.
 
-**Check your understanding!**
-
 .. mchoice:: test_question_three_one
    :answer_a: double val = tan(angle + pi/3);
    :answer_b: double num = exp(cos(1.34))

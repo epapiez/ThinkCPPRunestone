@@ -73,12 +73,77 @@ Putting ``return 0;`` in your code ends your program. Let's look back at a progr
         cout << "Two! ";
         return 0;
       }
-      if (x >3) {
+      if (x > 3) {
         cout << "Three!" << endl;
         return 0;
       }
       return 0;
     }
+
+.. mchoice:: test_question_four_seven_one
+   :answer_a: One! Two! Three!
+   :answer_b: Three!
+   :answer_c: One!
+   :correct: c
+   :feedback_a: Correct!
+   :feedback_b: All of the following are "if" statements. There are no "else" statements.
+   :feedback_c: All of the following are "if" statements. There are no "else" statements.
+
+   What will print?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    int main ()
+    {
+      int x = 10;
+      if (x > 8) {
+        cout << "One! ";
+      }
+      if (x > 6) {
+        cout << "Two! ";
+      }
+      if (x > 3) {
+        cout << "Three!" << endl;
+        return 0;
+      }
+      return 0;
+    }
+
+.. mchoice:: test_question_four_seven_two
+   :answer_a: Two! Three!
+   :answer_b: Three!
+   :answer_c: Two!
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: The first pair of "if" and "else" statements do not have an effect on the second "if" statement.
+   :feedback_c: The first pair of "if" and "else" statements do not have an effect on the second "if" statement.
+
+   What will print?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    int main ()
+    {
+      int x = 7;
+      if (x > 8) {
+        cout << "One! ";
+      }
+      else (x > 6) {
+        cout << "Two! ";
+      }
+      if (x > 3) {
+        cout << "Three!" << endl;
+        return 0;
+      }
+      return 0;
+    }
+
 
 **Observe below! Try changing the values in the conditions or the value of x to see what can change!**
 

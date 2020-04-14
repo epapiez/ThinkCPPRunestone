@@ -74,3 +74,35 @@ will see it again, so you better get used to it.
       }
       return 0;
     }
+
+.. mchoice:: test_question_four_five_one
+   :answer_a: Hey!
+   :answer_b: Hi!
+   :answer_c: Hello!
+   :correct: c
+   :feedback_a: Remember that the program would only enter the first "if" if x was equal to 0.
+   :feedback_b: Remember that the program would only enter the nested "if" if x was greater than 0.
+   :feedback_c: Correct!
+
+   What will print?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    int main ()
+    {
+      int x = -4;
+      if (x == 0) {
+        cout << "Hey!" << endl;
+      }
+      else {
+        if (x > 0) {
+          cout << "Hi!" << endl;
+        } else {
+          cout << "Hello!" << endl;
+        }
+      }
+      return 0;
+    }

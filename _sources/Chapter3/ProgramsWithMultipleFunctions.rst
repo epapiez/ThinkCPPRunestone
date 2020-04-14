@@ -27,6 +27,41 @@ and eventually gets back to main so the program can terminate.
 What’s the moral of this sordid tale? When you read a program, don’t
 read from top to bottom. Instead, follow the flow of execution.
 
+.. activecode:: threenineten
+  :language: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    void printTotal (int x) {
+      cout << x << endl;
+    }
+
+    int multiplyTwo (int x) {
+      int total = x * 2;
+      return total;
+    }
+
+    int addTwo (int x) {
+      int total = x + 2;
+      return total;
+    }
+
+    int main () {
+      int num = 2;
+      int new = addTwo(num);
+      int newer = multiplyTwo(new);
+      printTotal(newer);
+      return 0;
+    }
+
+.. dragndrop:: dragndrop_three_one_two
+    :feedback: Try again!
+    :match_1:  addTwo|||executes first
+    :match_2: multiplyTwo|||executes second
+    :match_3: printTotal|||executes third
+
+    Reference the active code above. Match the function name to its order of execution.
 
 .. mchoice:: test_question5_6_1
    :practice: T

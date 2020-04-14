@@ -39,3 +39,63 @@ the variables and parameters inside.
 In the example, main has one local variable, argument, and no
 parameters. printTwice has no local variables and one parameter, named
 phil.
+
+.. mchoice:: test_question_three_three
+   :practice: T
+   :answer_a: 1 local variable, 1 parameter
+   :answer_b: 0 local variables, 1 parameter
+   :answer_c: 2 local variables, 0 parameters
+   :answer_d: 2 local variables, 1 parameter
+   :correct: c
+   :feedback_a: A parameter would be located within the parentheses next to the function's name.
+   :feedback_b: A parameter would be located within the parentheses next to the function's name.
+   :feedback_c: Correct!
+   :feedback_d: A parameter would be located within the parentheses next to the function's name.
+
+   How many local variables and parameters does main have?
+
+   .. code-block:: cpp
+      :linenos:
+
+        void printHelloName (string name) {
+          cout << "Hello " << name << "!";
+          }
+
+        int main ()
+        {
+          string name1 = "Phil";
+          printHelloName(name1);
+          string name2 = "Joe";
+          printHelloName(name2);
+          return 0;
+          }
+
+
+.. mchoice:: test_question_three_four
+   :practice: T
+   :answer_a: 1 local variable, 1 parameter
+   :answer_b: 0 local variables, 1 parameter
+   :answer_c: 2 local variables, 0 parameters
+   :answer_d: 2 local variables, 1 parameter
+   :correct: b
+   :feedback_a: A local variable exists when a variable is declared within a function.
+   :feedback_b: Correct!
+   :feedback_c: A local variable exists when a variable is declared within a function.
+   :feedback_d: A local variable exists when a variable is declared within a function.
+
+   How many local variables and parameters does printHelloName have?
+
+   .. code-block:: cpp
+
+        void printHelloName (string name) {
+          cout << "Hello " << name << "!";
+          }
+
+        int main ()
+        {
+          string name1 = "Phil";
+          printHelloName(name1);
+          string name2 = "Joe";
+          printHelloName(name2);
+          return 0;
+        }

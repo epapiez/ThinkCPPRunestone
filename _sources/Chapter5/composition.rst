@@ -80,3 +80,22 @@ by composing the function calls:
       cout << circle_area << endl;
       return 0;
     }
+
+.. mchoice:: test_question_five_three_one_one
+   :answer_a: print_hello_name
+   :answer_b: love_cupcakes
+   :answer_c: eat_pizza
+   :answer_d: All of the above
+   :correct: c
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Try again!
+   :feedback_d: Correct! While it is not good style to name a function something that doesn't describe its function, it is technically legal and does not have any effect on the function's execution.
+
+   Technically, what can the name of the following function also be?
+
+   .. code-block:: cpp
+
+    void printHelloName (string name) {
+      cout << "Hello " << name << "!" <<  endl;
+    }

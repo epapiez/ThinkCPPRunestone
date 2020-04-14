@@ -107,6 +107,15 @@ with iostream:
 Such header files have an initial ‘c’ to signify that these header files
 have been derived from the **C** language.
 
+.. dragndrop:: dragndrop_three_one_one
+    :feedback: Try again!
+    :match_1:  #include <cmath>|||allows the use of functions like log and sin
+    :match_2: #include <iostream>|||contains information about input and output streams
+    :match_3: using namespace std;|||the standard implementation of cout
+
+    Match the statement to its description.
+
+
 **There is one statement missing in the program below. Add it in so that the
 program complies.**
 

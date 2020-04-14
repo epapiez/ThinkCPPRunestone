@@ -61,3 +61,20 @@ in between sections of your output.**
     cout << "Second Line." << endl;
     return 0;
   }
+
+.. parsonsprob:: question_three_one
+
+   Construct a block of code that correctly defines a function.
+   -----
+   int addTwo(int x) {
+
+   int addTwo(int x); #distractor
+
+   int addTwo(int x) #distractor
+
+      int new = x + 2;
+
+      return new;
+
+      return x; #distractor
+    }

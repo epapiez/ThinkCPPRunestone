@@ -40,3 +40,40 @@ presence or absence of some condition.
     :match_2: x >= 2|||true
 
     Match the conditional statement to the correct boolean, given x = 2.
+
+
+.. dragndrop:: dragndrop_five_one_
+    :feedback: Try again!
+    :match_1: bool fred;|||variable declaration
+    :match_2: fred = true;|||assignment
+    :match_3: bool testResult = false;|||initialization
+
+    Match the statement to the word that describes it best.
+
+
+.. mchoice:: test_question_five_three_two_
+   :answer_a: n was even when I checked it x was positive when I checked it
+   :answer_b: x was positive when I checked it
+   :answer_c: n was even when I checked itx was positive when I checked it
+   :correct: c
+   :feedback_a: A space is not automatically added, it must also be outputted
+   :feedback_b: Try again!
+   :feedback_c: Correct!
+
+   What will print?
+
+   .. code-block:: cpp
+
+     int n = 16;
+     int x = 4;
+
+     bool evenFlag = (n%2 == 0);
+     bool positiveFlag = (x > 0);
+
+     if (evenFlag) {
+       cout << "n was even when I checked it" << endl;
+     }
+
+     if (positiveFlag) {
+       cout << "x was positive when I checked it"
+     }

@@ -22,7 +22,7 @@ same time:
 ::
 
       int x = 1;
-      String empty = "";
+      string empty = "";
       double pi = 3.14159;
 
 In fact, this syntax is quite common. A combined declaration and
@@ -88,3 +88,17 @@ performing floating-point operations.
     :match_3: double pi;|||declaration
 
     Match the statement to the word that best describes it.
+
+.. mchoice:: test_question_three_one_
+   :practice: T
+   :answer_a: combination
+   :answer_b: initialization
+   :answer_c: floating
+   :answer_d: assignment
+   :correct: b
+   :feedback_a: Try again!
+   :feedback_b: Correct!
+   :feedback_c: Try again!
+   :feedback_d: Try again!
+
+   What is it called when a declaration and assignment statement is combined?

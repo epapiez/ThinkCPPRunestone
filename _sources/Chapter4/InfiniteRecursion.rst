@@ -21,7 +21,7 @@ program).
 You should write a small program that recurses forever and run it to see
 what happens. Below is an example. The function adds to the number **n**
 instead of subtracting, which means it is always larger than 0. Therefore,
-the function executes "forever." Unfortunately, if there was a snip of live 
+the function executes "forever." Unfortunately, if there was a snip of live
 code put in below, the ebook's page would extend down forever because a new
 line is being created infinitely.
 

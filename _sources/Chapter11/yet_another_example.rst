@@ -29,3 +29,16 @@ parameter list (which is empty in this case).
 
 The ``print`` function in the previous section should also declare that
 the implicit parameter is ``const``.
+
+.. mchoice:: question11_5
+   :answer_a: Before the parameter list.
+   :answer_b: Inside the parameter list.
+   :answer_c: After the parameter list.
+   :answer_d: Implicit parameters are always const and don't need to be declared.
+   :correct: c
+   :feedback_a: Incorrect! Try again!
+   :feedback_b: Incorrect! This would be correct if we were talking about a free-standing function.
+   :feedback_c: Correct!
+   :feedback_d: Incorrect! Parameters are only const if they are not modified inside the function, implicit parameters are no exception.
+
+   When writing a member function, where should you declare the implicit parameter to be ``const``?

@@ -60,14 +60,7 @@ In each case, the number of appearances is within about 1% of the
 expected value (10,000), so we conclude that the random numbers are
 probably uniform.
 
-.. fillintheblank:: question10_11_1
-
-    True or False: It is legal to declare a variable inside a ``for`` statement.
-
-    - :([Tt]rue|TRUE): Correct!
-      :.*: Incorrect! It is legal to declare and initialize variables inside the for statement.
-
-.. mchoice:: question10_11_2
+.. mchoice:: question10_11_1
    :multiple_answers:
    :answer_a: inside of the for loop.
    :answer_b: outside of the for loop, but inside of the function it's used in.

@@ -34,3 +34,17 @@ To invoke this function:
 
 You can almost read the invocation like English: “If the done-time is
 after the current-time, then...”
+
+.. mchoice:: question11_6_1
+   :multiple_answers:
+   :answer_a: There is only one Time parameter.
+   :answer_b: The function operates on two Time objects.
+   :answer_c: The function is invoked on time2.
+   :answer_d: "hour" and "minute" refer to the hour and minute of the implicit Time object.
+   :correct: b,d
+   :feedback_a: Incorrect! There are actually two Time parameters, one of them is implicit.
+   :feedback_b: Correct!
+   :feedback_c: Incorrect! The function is invoked on the implicit Time object.
+   :feedback_d: Correct!
+
+   Which is/are true about the ``Time::after`` member function?

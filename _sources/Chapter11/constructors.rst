@@ -54,3 +54,30 @@ and it invokes the constructor we just wrote, passing the value of
 ``seconds`` as an argument. The system allocates space for the new
 object and the constructor initializes its instance variables. The
 result is assigned to the variable ``time``.
+
+.. fillintheblank:: question11_7_1
+
+    The member function that initializes objects automatically when they are created is called a(n) __________.
+
+    - :([Cc]onstructor|CONSTRUCTOR): Correct!
+      :.*: Incorrect!
+
+.. mchoice:: question11_7_2
+   :answer_a: They initialize the instance variables of an object.
+   :answer_b: They have the same name as the class.
+   :answer_c: They return an instance of an object.
+   :answer_d: We refer to the new object implicitly, or using keyword this.
+   :correct: c
+   :feedback_a: Incorrect! This statement is true!
+   :feedback_b: Incorrect! This statement is true!
+   :feedback_c: Correct! Constructors do not have a return type.
+   :feedback_d: Incorrect! This statment is true!
+
+   Which statment is **false** about constructors?
+
+.. fillintheblank:: question11_7_3
+
+    Write code to initialize the variable ``lunch`` that has type ``Time`` and a value of 1800 seconds.
+
+    - :(Time lunch\s?\(1800\)): Correct!
+      :.*: Incorrect!

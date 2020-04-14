@@ -17,6 +17,12 @@ correctly for any size vector.
        cout << count[i] << endl;
      }
 
+.. note::
+   On some machines, comparing an ``int`` to the output from ``size()`` will generate 
+   a type error.  This is because the size function returns an unsigned integer type. 
+   To keep the variable type consistent, you should use ``size_t`` rather than ``int``
+   for the type of iterator ``i``.
+
 The last time the body of the loop gets executed, the value of ``i`` is
 ``count.size() - 1``, which is the index of the last element. When ``i``
 is equal to ``count.size()``, the condition fails and the body is not
@@ -30,12 +36,20 @@ this program as an excercise.
 
 .. fillintheblank:: question10_5_1
 
+    Let **nums** be the vector { 0, 1, 2, 3, 4 }. What is the variable type *of* ``nums.size()``?
+
+    - :([Ss]ize_t|SIZE_T): Correct!
+      :([Ii]nt|INT): Incorrect! Remember, the size function returns an unsigned integer type.
+      :.*: Incorrect, Try again!
+
+.. fillintheblank:: question10_5_2
+
     Let **nums** be the vector { 0, 1, 2, 3, 4 }. What is the value *of* ``nums.size()``?
 
     - :5: Correct!
       :.*: Incorrect, Try again!
 
-.. mchoice:: question10_5_2
+.. mchoice:: question10_5_3
    :answer_a: 5
    :answer_b: 4
    :answer_c: 3

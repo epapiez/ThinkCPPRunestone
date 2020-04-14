@@ -22,7 +22,7 @@ member functions are often more concise than nonmember functions.
 
 .. fillintheblank:: question11_3_1
 
-    True or False: We need to create a local variable and use dot notation in order to refer to the instance variables of the current object inside of a member function.
+    When we refer to the instance variables of objects without dot notation, we are using __________ variable acccess.
 
-    - :([Ff]alse|FALSE): Correct! The member function has implicit variable access, thus, instance variables can be referenced directly inside of the member function.
-      :.*: Incorrect! Remember, the member function has implicit variable access!
+    - :([Ii]mplicit|IMPLICIT): Correct! Implicit variable access is one reason why member functions are more concise than free-standing functions!
+      :.*: Incorrect, try again!

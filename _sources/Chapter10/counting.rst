@@ -32,7 +32,7 @@ return value is the number of times the value appears.
 
    int howMany (const vector<int>& vec, int value) {
      int count = 0;
-     for (int i=0; i< vec.size(); i++) {
+     for (size_t i = 0; i < vec.size(); i++) {
        if (vec[i] == value) count++;
      }
      return count;
@@ -46,9 +46,9 @@ return value is the number of times the value appears.
    =====
       int count = 0;
    =====
-      for (int i=0; i &#60; vec.size(); i++) {
+      for (size_t i = 0; i &#60; vec.size(); i++) {
    =====
-      for (int i=0; i &#60; upperbound; i++)                         #paired
+      for (int i = 0; i &#60; upperbound; i++)                         #paired
    =====
          if (vec[i] i &#62;= lowerbound && vec[i] i &#60;= upperbound) {
 	    count++;

@@ -14,7 +14,7 @@ index into the histogram. Here’s what that looks like:
 
      vector<int> histogram (upperBound, 0);
 
-     for (int i = 0; i<numValues; i++) {
+     for (int i = 0; i < numValues; i++) {
        int index = vector[i];
        histogram[index]++;
      }
@@ -38,9 +38,9 @@ that takes a vector and the range of values in the vector (in this case
    =====
       vector&#60;int&#62; histogram (range);                         #paired
    =====
-      for (int i=0; i &#60; vec.size(); i++) {
+      for (int i = 0; i &#60; vec.size(); i++) {
    =====
-      for (int i=0; i &#60; range; i++) {                         #paired
+      for (int i = 0; i &#60; range; i++) {                         #paired
    =====
          int index = vec[i];
    =====

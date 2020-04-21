@@ -55,8 +55,9 @@ In main you can call this function in the usual ways:
 
     int main ()
     {
-    cout << isSingleDigit (2) << endl;
-    bool bigFlag = !isSingleDigit (17);
+      cout << isSingleDigit (2) << endl;
+      bool bigFlag = !isSingleDigit (17);
+      cout << bigFlag;
       return 0;
     }
 

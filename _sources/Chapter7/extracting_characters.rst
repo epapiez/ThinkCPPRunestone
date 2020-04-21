@@ -85,3 +85,18 @@ the square brackets:
         :click-incorrect:cout << fruit << endl;:endclick:
         cout <<  :click-correct:fruit[4]:endclick:  << endl;
         }
+
+
+.. parsonsprob:: question_seven_one__
+
+   Construct a block of code that correctly prints the letter "a".
+   -----
+   string x;
+
+   x = "It is warm outside!";
+
+   x = "It is warm outside" #paired
+
+   cout << x[7] << endl;
+
+   cout << x[8] << endl; #distractor

@@ -93,3 +93,17 @@ object with two named instance variables.
 
       Point.x = 3.0; #distractor
    }
+
+.. mchoice:: question_eight_point_two
+   :multiple_answers:
+   :answer_a: outside of any function definition, usually at the beginning of the program
+   :answer_b: after the main function
+   :answer_c: after the include statements
+   :answer_d: both a and c
+   :correct: d
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Try again!
+   :feedback_d: Correct!
+
+   ``struct`` definitions occur...

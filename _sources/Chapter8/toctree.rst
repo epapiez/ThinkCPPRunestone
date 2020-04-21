@@ -12,7 +12,7 @@ Structures
    call_by_value.rst
    call_by_reference.rst
    rectangles.rst
-   structures_as_returns_types.rst 
+   structures_as_returns_types.rst
    passing_other_types_by_reference.rst
    getting_user_input.rst
    glossary.rst

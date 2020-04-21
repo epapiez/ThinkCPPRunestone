@@ -20,9 +20,15 @@ This kind of variable access is called “implicit” because the name of
 the object does not appear explicitly. Features like this are one reason
 member functions are often more concise than nonmember functions.
 
-.. fillintheblank:: question11_3_1
+.. mchoice:: question11_3_1
+   :answer_a: after being granted permission
+   :answer_b: only inside of that specific member function
+   :answer_c: using dot notation
+   :answer_d: directly, without dot notation
+   :correct: d
+   :feedback_a: Incorrect! You don't need "permission" to access member variables inside a member function.
+   :feedback_b: Incorrect! You can access member variables implicitly inside any and all member functions.
+   :feedback_c: Incorrect! You don't need to use dot notation to access variables implicitly.
+   :feedback_d: Correct! Implicit variable access allows us to access variables directly-- without using dot notation.
 
-    When we refer to the instance variables of objects without dot notation, we are using __________ variable acccess.
-
-    - :([Ii]mplicit|IMPLICIT): Correct! Implicit variable access is one reason why member functions are more concise than free-standing functions!
-      :.*: Incorrect, try again!
+   Implicit variable access in member functions allows us to access member variables __________.

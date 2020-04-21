@@ -60,30 +60,38 @@ able to choose the best form for whatever you are doing.
 
 
 .. mchoice:: question11_1_1
-   :answer_a: Programming that utilizes structured control flow, specifically block structures, to improve clarity.
-   :answer_b: Programming that makes use of data structures and functions that interact with them.
-   :answer_c: Programming that expresses the logic of a computation without describing its control flow.
-   :correct: b
-   :feedback_a: Incorrect! This is how we define structured programming.
-   :feedback_b: Correct!
-   :feedback_c: Incorrect! This is how we define declarative programming.
+   :answer_a: object-oriented programming
+   :answer_b: data-oriented programming
+   :answer_c: structured programming
+   :answer_d: structural programming
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: Incorrect! Data-oriented programming focuses on how data is touched and processed.
+   :feedback_c: Incorrect! Structured programming makes use of structured confrol flow using block structures (if/else, for/while).
+   :feedback_d: Incorrect! This is not one of the types of programming.
 
-   What is object-oriented programming?
+   What is do we call programming that makes use of data structures and functions that interact with them?
 
-.. fillintheblank:: question11_1_2
-
-    True or False: Free-standing functions can perform *any* operation that a member function can.
-
-    - :([Tt]rue|TRUE): Correct! But sometimes there is an advantage to one over the other.
-      :.*: Incorrect!
+.. mchoice:: question11_1_2
+   :answer_a: all
+   :answer_b: some
+   :answer_c: none
+   :correct: a
+   :feedback_a: Correct! But sometimes there is an advantage to using one over the other!
+   :feedback_b: Incorrect! The answer might surprise you!
+   :feedback_c: Incorrect! Quite the opposite, actually!
+   
+   Free-standing functions can perform __________ of the operation(s) that a member function can.
 
 .. mchoice:: question11_1_3
    :answer_a: before the structure definition
    :answer_b: inside of the structure definition
-   :answer_c: anywhere in the program
+   :answer_c: after the structure definition
+   :answer_d: anywhere in the program
    :correct: b
    :feedback_a: Incorrect! You're very close!
    :feedback_b: Correct!
-   :feedback_c: Incorrect! The purpose of a member function is to establish a relationship between the structure and the function.
+   :feedback_c: Incorrect! You're very close!
+   :feedback_d: Incorrect! The purpose of a member function is to establish a relationship between the structure and the function.
 
    Member functions are declared __________.

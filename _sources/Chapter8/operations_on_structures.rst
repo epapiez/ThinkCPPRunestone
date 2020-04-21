@@ -86,3 +86,19 @@ The output of this program is ``3, 4``.
 
       blank = { 12.0, 3.2 }; #distractor
    }
+
+.. mchoice:: question_eight_point_four
+   :multiple_answers:
+   :answer_a: %
+   :answer_b: =
+   :answer_c: >
+   :answer_d: ==
+   :answer_e: +
+   :correct: a, c, d, e
+   :feedback_a: Correct!
+   :feedback_b: The assignment operators does work fro structures.
+   :feedback_c: Correct!
+   :feedback_d: Correct!
+   :feedback_e: Correct!
+
+   Which operators do NOT work on structures. Select all that apply.

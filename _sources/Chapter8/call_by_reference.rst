@@ -94,6 +94,56 @@ where. Nevertheless, in C++ programs, almost all structures are passed
 by reference almost all the time. In this book I will follow that
 convention.
 
+.. fillintheblank:: fill_eight_three
+
+    Which symbol should you put in front of the data type of the parameter of a function to make it pass by reference?
+
+    - :&: Correct!
+      :.*: Try again!
+
+.. mchoice:: question_eight_point_seven_two
+   :multiple_answers:
+   :answer_a: Passing structures by reference is more versatile
+   :answer_b: Passing structures by reference is faster, because the system does not have to copy the whole structure
+   :answer_c: In C++ programs, almost all structures are passed by reference almost all the time
+   :answer_d: Passing structures by reference is is less safe, since it is harder to keep track of what gets modified where
+   :correct: d
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Try again!
+   :feedback_d: Correct!
+
+   Which is NOT a benefit to using pass by reference instead of pass by value?
+
+.. mchoice:: question_eight_point_seven_one
+   :multiple_answers:
+   :answer_a: 2 4
+   :answer_b: 2 4 2
+   :answer_c: 4 4 2
+   :answer_d: 2 4 4
+   :correct: d
+   :feedback_a: Take a look at exactly what is being outputted.
+   :feedback_b: Remember the rules of pass by reference.
+   :feedback_c: Take a look at exactly what is being outputted.
+   :feedback_d: Correct!
+
+   What will print?
+
+   .. code-block:: cpp
+
+      int addTwo(int& x) {
+        cout << x << " ";
+        x = x + 2;
+        cout << x << " ";
+        return x;
+      }
+
+      int main() {
+        int num = 2;
+        addTwo(num);
+        cout << num << endl;
+      }
+
 .. mchoice:: question_eight_one_onethree
    :multiple_answers:
    :answer_a: 6.0, 8.0, 3.0, 4.0

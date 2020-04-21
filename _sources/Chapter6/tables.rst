@@ -141,3 +141,17 @@ Log tables may not be useful any more, but for computer scientists,
 knowing the powers of two is! As an exercise, modify this program so
 that it outputs the powers of two up to 65536 (that’s :math:`2^{16}`).
 Print it out and memorize it.
+
+.. fillintheblank:: fill_six_one
+
+    What is the equivalent of endl, and typically used at the end of a string?
+
+    - :(?:(?:\\n)|(?:(?:n|N)ewline\s(?:c|C)haracter)): Is the correct answer!
+      :.*: Try again!
+
+.. fillintheblank:: fill_six_two
+
+    How would you write a tab character?
+
+    - :\t: Is the correct answer!
+      :.*: Try again!

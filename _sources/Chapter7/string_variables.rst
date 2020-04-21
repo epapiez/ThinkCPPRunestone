@@ -64,3 +64,31 @@ you can compile and run it.
    x = "It is cold outside" #paired
 
    cout << x << endl;
+
+
+.. mchoice:: test_question_seven_one__
+   :practice: T
+   :answer_a: string x = "Hello";
+   :answer_b: x = "Hello";
+   :answer_c: string x;
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: This is an assignment.
+   :feedback_c: This is a declaration.
+
+
+   How would you initialize a string?
+
+
+.. clickablearea:: click_seven_one__
+    :question: Click on each spot where a string assignment occurs.
+    :iscode:
+    :feedback: Remember, square brackets [] are used to access a character in a string.
+
+    :click-incorrect:def main() {:endclick:
+        :click-incorrect:string fruit;:endclick:
+        :click-correct:fruit = "apple";:endclick:
+        :click-correct:fruit = "pear";:endclick:
+        :click-incorrect:string flavor;:endclick:
+        :click-correct:flavor = "vanilla";:endclick:
+      }

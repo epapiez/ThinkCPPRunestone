@@ -26,3 +26,12 @@ argument:
 
 call:
     Cause a function to be executed.
+
+.. dragndrop:: chapter_three_glossary_one
+    :feedback: Try again!
+    :match_1: floating-point|||A type of variable (or value) that can contain fractions as well as integers.
+    :match_2: initialization|||A statement that declares a new variable and assigns a value to it at the same time.
+    :match_3: function|||A named sequence of statements that performs some useful function.
+    :match_4: parameter|||A piece of information you provide in order to call a function.
+    :match_5: argument|||A value that you provide when you call a function.
+    :match_6: call|||Causes a function to be executed.

@@ -120,3 +120,41 @@ the function many times with rewriting it each time.
    :feedback_d: This statement is called an assignment statement.  It assigns the value on the right (9), to the name on the left (x).
 
    What is a function in C++?
+
+
+.. parsonsprob:: question_six_two
+
+   Create a function called absoluteValue, which returns the absolute value of a parameter num. Assume you do not have access to #include <cmath>.
+   -----
+   int absoluteValue (int num) {
+
+   void absoluteValue (int num) { #distractor
+
+   int absoluteValue (int num) #distractor
+
+   void absoluteValue (int num) #distractor
+
+     if (num > 0) {
+
+      return num; }
+
+     else{
+
+       int absNum = -(num);
+
+       return absNum;} }
+
+
+.. mchoice:: test_question_six_seven
+   :practice: T
+   :answer_a: Once you write and debug a function, you can reuse it.
+   :answer_b: Makes your program easier to read and debug.
+   :answer_c: Functions facilitate both recursion and iteration.
+   :answer_d: None of the above.
+   :correct: d
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Try again!
+   :feedback_d: Correct!
+
+   What is of these is NOT a reason that functions are useful?

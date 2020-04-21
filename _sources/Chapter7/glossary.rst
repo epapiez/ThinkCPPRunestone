@@ -30,6 +30,20 @@ decrement:
 concatenate:
    To join two operands end-to-end.
 
+
+.. dragndrop:: chapter_seven_glossary
+    :feedback: Try again!
+    :match_1:  object|||A collection of related data that comes with a set of functions that operate on it.
+    :match_2: index|||A variable or value used to select one of the members of an ordered set, like a character from a string.
+    :match_3: traverse|||To iterate through all the elements of a set performing a similar operation on each.
+    :match_4: counter|||A variable used to count something.
+    :match_5: increment|||Increase the value of a variable by one.
+    :match_6: decrement|||Decrease the value of a variable by one.
+    :match_7: concatenate|||To join two operands end-to-end.
+
+
+    Match the definition to the term.
+
 .. [1]
    You might be wondering what I mean by **class**.It will be a few more
    chapters before I can give a complete definition, but for now a class

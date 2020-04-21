@@ -37,10 +37,9 @@ following:
      double convertToSeconds () const;
    };
 
-Notice that in the structure definition I don’t really have to include
-the prefix ``Time::`` at the beginning of every function name. The
-compiler knows that we are declaring functions that are members of the
-``Time`` structure.
+Notice that in the structure definition I don’t include the prefix ``Time::``
+at the beginning of every function name. The compiler knows that we are declaring 
+functions that are members of the ``Time`` structure.
 
 ``Time.cpp`` contains the definitions of the member functions (I have
 elided the function bodies to save space):
@@ -72,6 +71,12 @@ On the other hand, it is necessary to include the header file using an
 ``include`` statement. That way, while the compiler is reading the
 function definitions, it knows enough about the structure to check the
 code and catch errors.
+
+.. note::
+   Notice that outside of the structure definition, I **do** need to include the
+   prefix ``Time::`` at the beginning of each function name!  This is because I
+   am providing the implementation for member functions of the ``Time`` structure
+   outside of the structure definition. 
 
 Finally, ``main.cpp`` contains the function ``main`` along with any
 functions we want that are not members of the ``Time`` structure (in
@@ -143,3 +148,42 @@ sometimes called the “Standard Library” that gets linked to your program
 automatically. The nice thing is that you don’t have to recompile the
 library every time you compile a program. For the most part the library
 doesn’t change, so there is no reason to recompile it.
+
+.. mchoice:: question11_10_1
+   :answer_a: the file that contains structure/function definitions
+   :answer_b: the file that contains structure/function implementation
+   :answer_c: the file that contains int main()
+   :answer_d: the first file that you write for any given project
+   :correct: a
+   :feedback_a: Correct! 
+   :feedback_b: Incorrect! This is called the implementation file.
+   :feedback_c: Incorrect! Header files are compiled separately and later linked to int main().
+   :feedback_d: Incorrect! You are not required to write your programs in any specific order.
+
+   What is a header file?
+
+.. mchoice:: question11_10_2
+   :answer_a: #include <header.h>
+   :answer_b: #include <"header.h">
+   :answer_c: #include header.h
+   :answer_d: #include "header.h"
+   :correct: d
+   :feedback_a: Incorrect! This is how we include standard library headers.
+   :feedback_b: Incorrect! You should get rid of those brackets!
+   :feedback_c: Incorrect! You're missing quotes!
+   :feedback_d: Correct!
+
+   If I have defined a structure in ``header.h``, how would I include it in the implementation file?
+
+.. mchoice:: question11_10_3
+   :answer_a: Files can be compiled separately and linked to a single program later.
+   :answer_b: Separate compilation can be time-consuming, since you're working with more files.
+   :answer_c: It minimizes interactions between components.
+   :answer_d: It's easier to include your implementation in other program, besides your main.
+   :correct: b
+   :feedback_a: Incorrect! This is actually true!
+   :feedback_b: Correct! Separate compilation actually saves time, since you only need to compile a few files at a time!
+   :feedback_c: Incorrect! This is actually true!
+   :feedback_d: Incorrect! This is actually true!
+
+   Which is **false** about breaking a program into three pieces?

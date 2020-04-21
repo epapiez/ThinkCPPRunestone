@@ -72,8 +72,14 @@ the new function inside the structure definition:
      int hour, minute;
      double second;
 
-     void Time::print ();
+     void print ();
    };
+
+.. note::
+   You should only use the scope resolution operator ``::`` if you define a
+   member function outside of its structure definition.  If you define a function
+   *inside* of the structure definition, you define it as you would any other 
+   function.
 
 A **function declaration** looks just like the first line of the
 function definition, except that it has a semi-colon at the end. The
@@ -88,6 +94,31 @@ the function works. If you omit the definition, or provide a definition
 that has an interface different from what you promised, the compiler
 will complain.
 
+Feel free to mess around with input for currentTime in the active code below!
+
+.. activecode:: 11_2
+   :language: cpp
+
+   #include <iostream>
+   using namespace std;
+
+   struct Time {
+     int hour, minute;
+     double second;
+
+     void print ();
+   };
+
+   int main() {
+     Time currentTime = { 9, 14, 30.0 };
+     currentTime.print ();
+   }
+
+   ====
+   void Time::print () {
+     cout << hour << ":" << minute << ":" << second << endl;
+   }
+
 .. fillintheblank:: question11_2_1
 
     What keyword do we use to refer to the current object?
@@ -101,8 +132,8 @@ will complain.
    :answer_b: remove the Dog parameter
    :answer_c: operate on the current Dog object by using *this
    :answer_d: declare the function inside of the Dog structure definition
-   :correct: a,b,c,d
-   :feedback_a: Correct! Dog::bark indicates that there is a function called bark that can be invoked on a Dog structure.
+   :correct: b,c,d
+   :feedback_a: Incorrect! You don't need to rename the function unless you define it outside of the structure definition.
    :feedback_b: Correct! We no longer need to pass a Dog as an argument, since we are going to be invoking the function on a Dog object.
    :feedback_c: Correct! To get the current object, we need to dereference the this pointer using *.
    :feedback_d: Correct! Member functions are declared inside of structure definitions.

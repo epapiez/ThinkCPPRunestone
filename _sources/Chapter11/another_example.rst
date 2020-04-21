@@ -35,8 +35,8 @@ structure definition:
      int hour, minute;
      double second;
 
-     void Time::print ();
-     void Time::increment (double secs);
+     print ();
+     increment (double secs);
    };
 
 And again, to call it, we have to invoke it on a ``Time`` object:
@@ -49,9 +49,47 @@ And again, to call it, we have to invoke it on a ``Time`` object:
 
 The output of this program is ``9:22:50``.
 
+Let's try changing the input!
+
+.. activecode:: 11_4
+   :language: cpp
+
+   #include <iostream>
+   using namespace std;
+
+   struct Time {
+     int hour, minute;
+     double second;
+     void print ();
+     void increment (double secs);
+   };
+
+   int main() {
+     Time currentTime = { 9, 14, 30.0 };
+     currentTime.increment (500.0);
+     currentTime.print ();
+   }
+
+   ====
+   void Time::print () {
+     cout << hour << ":" << minute << ":" << second << endl;
+   }
+
+   void Time::increment (double secs) {
+     second += secs;
+     while (second >= 60.0) {
+       second -= 60.0;
+       minute += 1;
+     }
+     while (minute >= 60) {
+       minute -= 60.0;
+       hour += 1;
+     }
+   }
+
 .. fillintheblank:: fill1512
 
-    Suppose we have previously declared ``Time time = {12, 40, 30.0}``.  What should be printed by ``time.print()`` after calling ``time.increment(105.0)``? Type your response in the form **hh:mm:ss**.
+    Suppose we have previously declared ``Time currentTime = {9, 14, 30.0}``.  What should be printed by ``time.print()`` after calling ``time.increment(645.0)``? Type your response in the form **hh:mm:ss**.
     
-    - :(12:42:15): Correct!
-      :.*: Incorrect! Try again!
+    - :(9:25:15): Correct!
+      :.*: Incorrect! Try plugging the given input into the active code above!

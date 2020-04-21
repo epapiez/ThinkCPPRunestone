@@ -89,3 +89,17 @@ The first line outputs ``3, 4``; the second line calculates the value
         double distance = blank.x * blank.x + blank.y * blank.y;
         cout << distance << endl;
       }
+
+.. mchoice:: question_eight_point_three
+   :multiple_answers:
+   :answer_a: int y = circle.x();
+   :answer_b: int circle = x.y;
+   :answer_c: int y = circle.x;
+   :answer_d: int x = circle.y;
+   :correct: d
+   :feedback_a: No parentheses are needed.
+   :feedback_b: You should be assigning to the local variable x.
+   :feedback_c: You should be assigning to the local variable x.
+   :feedback_d: Correct!
+
+   You want to go to the object named ``circle`` and get the value of ``y``, then assign it to the local variable ``x``. How would you do that?

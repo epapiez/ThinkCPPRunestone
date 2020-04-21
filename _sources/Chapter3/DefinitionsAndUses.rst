@@ -51,7 +51,7 @@ in between sections of your output.**
   using namespace std;
 
   void newBorder () {
-    cout << "=================================" << endl;
+    cout << "..................." << endl;
   }
 
   int main ()

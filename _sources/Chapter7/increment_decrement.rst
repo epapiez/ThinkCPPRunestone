@@ -58,3 +58,44 @@ Remember, you can write ``index = index +1;``, or you can write
         :click-correct: cout << x++ << endl;:endclick:
         :click-incorrect: count--; :endclick:
         }
+
+
+.. mchoice:: test_question_seven_two___
+   :practice: T
+   :answer_a: 5 4 3 2 1
+   :answer_b: -5 -4 -3 -2 -1
+   :answer_c: -4 -3 -2 -1 0
+   :correct: c
+   :feedback_a: Notice that x is negative.
+   :feedback_b: Notice that the value of x is incremented before it is printed.
+   :feedback_c: Correct! The value of x is incremented before it is printed so the first value printed is -4.
+
+
+   What does the following code print?
+
+   .. code-block:: cpp
+      :linenos:
+
+      int x = -5;
+      while (x < 0){
+        x++;
+        cout << x << " ";
+      }
+
+.. parsonsprob:: question_seven_four_
+
+   Print every number from 1-10 in this format: "Number 1". Each number should be on its own line.
+   -----
+   int x = 0;
+
+   x = 0; #distractor
+
+   while (x < 10) {
+
+       cout << "Number " << x << endl;
+
+       cout << "Number " << x; #distractor
+
+       ++x; #distractor
+
+       x++;}

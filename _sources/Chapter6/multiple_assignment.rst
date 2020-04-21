@@ -85,3 +85,30 @@ and debug.
     :match_4: a=4|||Setting the value of a to 4
 
     Match the expression to the statement that best describes it.
+
+.. mchoice:: test_question_six_one_
+   :answer_a: 10!1
+   :answer_b: 10 ! 1
+   :answer_c: 10 ! 10
+   :answer_d: 1!1
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: Remember, in C++ spaces must be printed.
+   :feedback_c: Carefully look at the values being assigned.
+   :feedback_d: Carefully look at the values being assigned.
+
+   What will print?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    int main ()
+    {
+     int x = 10;
+     cout << x << "!";
+     x = 1;
+     cout << x << "!";
+     return 0;
+    }

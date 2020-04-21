@@ -147,7 +147,7 @@ The key aspects of the process are:
    expressions, but only if it does not make the program difficult to
    read.
 
-.. mchoice:: test_question_five_two_one_test
+.. mchoice:: test_question_five_two_one_test__
    :answer_a: combining the parameters
    :answer_b: printing out the parameters
    :answer_c: returning something

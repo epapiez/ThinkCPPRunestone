@@ -124,3 +124,54 @@ bothers you, you can also use tab characters, like below.
       i = i + 1;
     }
   }
+
+
+.. mchoice:: test_question_six_five
+   :answer_a: Replacing integers with parameters.
+   :answer_b: Using a parameter that exists in several different functions.
+   :answer_c: Taking a very specific task and making it more applicable to other situations.
+   :answer_d: Creating two functions with the same purpose but different names.
+   :correct: c
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Correct!
+   :feedback_d: Try again!
+
+   What is the purpose of generalization?
+
+
+.. parsonsprob:: question_six_one
+
+   Create a function that represents encapsulation and generalization. The function should take in an integer, n, and print out its multiples.
+   -----
+   void printMultiples (int n) {
+
+   void printMultiples (int n) #distractor
+
+   printMultiples (int n) { #distractor
+
+   void printMultiples (string n) { #distractor
+
+     int i = 1;
+
+     int i = 1 #distractor
+
+     while (i <= 6) {
+
+       cout << n*i << "   ";
+
+       i = i + 1; }
+
+     cout << endl; }
+
+
+.. mchoice:: test_question_six_six
+   :answer_a: The while loop, which allows the code to execute until the statement within the parenthesis is no longer true.
+   :answer_b: The first line, which declares the name, parameter, and return type.
+   :answer_c: The last line, which prints out a newline.
+   :correct: b
+   :feedback_a: Try again!
+   :feedback_b: Correct!
+   :feedback_c: Try again!
+
+   What is the example of encapsulation in the you solved code above?

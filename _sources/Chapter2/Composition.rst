@@ -58,6 +58,7 @@ assignment statement:
       int minute = 3;
       int percentage;
       percentage = (minute * 100) / 60;
+      cout << percentage;
       return 0;
     }
 

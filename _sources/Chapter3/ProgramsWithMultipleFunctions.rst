@@ -49,8 +49,8 @@ read from top to bottom. Instead, follow the flow of execution.
 
     int main () {
       int num = 2;
-      int new = addTwo(num);
-      int newer = multiplyTwo(new);
+      int new1 = addTwo(num);
+      int newer = multiplyTwo(new1);
       printTotal(newer);
       return 0;
     }

@@ -97,3 +97,23 @@ arguments have to be variables.
         int total = a * b;
         return total;
       }
+
+.. parsonsprob:: question_eight_point_ten_one
+
+   Create a function called addNum that takes two parameters, an integer x and an integer y. The function should add y to x, then print x. The variable x should be modified, while the variable y should not.
+   -----
+   void addNum(int& x, int y) {
+
+   void addNum(int x&, int y) { #distractor
+
+   void addNum(int x, int y) { #distractor
+
+   void addNum(int& x, int& y) { #distractor
+
+      x = x + y;
+
+      y = x + y;
+
+      cout << x;}
+
+      return x; #distractor

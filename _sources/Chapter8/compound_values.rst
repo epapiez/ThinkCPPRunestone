@@ -16,3 +16,32 @@ provides two mechanisms for doing that: **structures** and **classes**.
 We will start out with structures and get to classes in
 Chapter `[class] <#class>`__ (there is not much difference between
 them).
+
+.. fillintheblank:: fill_eight_one
+
+    Strings are made up of smaller pieces (the characters). This makes strings an example of a _____ type.
+
+    - :(?:c|C)ompound: Correct!
+      :.*: Try again!
+
+
+.. fillintheblank:: fill_eight_two
+
+    One of the mechanisms for creating your own compound values is structures. What is the other?
+
+    - :(?:c|C)lasses: Correct!
+      :.*: Try again!
+
+.. mchoice:: question_eight_intro
+   :multiple_answers:
+   :answer_a: integer
+   :answer_b: string
+   :answer_c: floating-point number
+   :answer_d: boolean value
+   :correct: b
+   :feedback_a: Try again!
+   :feedback_b: Correct!
+   :feedback_c: Try again!
+   :feedback_d: Try again!
+
+   Which is different from the others because it is does not represent a single, value-in integer?

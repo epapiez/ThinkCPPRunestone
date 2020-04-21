@@ -17,7 +17,7 @@ function.
 
 Observe the output of the code below. The function ``addTwo`` changes the instance variables, but not on ``blank`` itself.
 
-.. activecode:: eightone_two_one
+.. activecode:: eightone_two_one_____
   :language: cpp
 
     #include <iostream>
@@ -37,8 +37,37 @@ Observe the output of the code below. The function ``addTwo`` changes the instan
       cout << blank << endl;
     }
 
+.. mchoice:: question_eight_point_six_two
+   :multiple_answers:
+   :answer_a: 2 4
+   :answer_b: 2 4 2
+   :answer_c: 4 4 2
+   :answer_d: 2 4 4
+   :correct: b
+   :feedback_a: Take a look at exactly what is being outputted.
+   :feedback_b: Correct!
+   :feedback_c: Take a look at exactly what is being outputted.
+   :feedback_d: Remember the rules of pass by value.
 
-.. mchoice:: question_eight_one_onethree
+   What will print?
+
+   .. code-block:: cpp
+
+      int addTwo(int x) {
+        cout << x << " ";
+        x = x + 2;
+        cout << x << " ";
+        return x;
+      }
+
+      int main() {
+        int num = 2;
+        addTwo(num);
+        cout << num << endl;
+      }
+
+
+.. mchoice:: question_eight_point_six_one
    :multiple_answers:
    :answer_a: 6.0, 8.0, 3.0, 4.0
    :answer_b: 6.0, 8.0, 6.0, 8.0

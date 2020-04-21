@@ -30,6 +30,41 @@ parameter list (which is empty in this case).
 The ``print`` function in the previous section should also declare that
 the implicit parameter is ``const``.
 
+Feel free to try out the ``convertToSeconds()`` function below!
+
+.. activecode:: 11_5
+   :language: cpp
+
+   #include <iostream>
+   using namespace std;
+
+   struct Time {
+     int hour, minute;
+     double second;
+     double convertToSeconds () const;
+     void print ();
+   };
+
+   int main() {
+     Time currentTime = { 9, 14, 30.0 };
+     double secs = currentTime.convertToSeconds();
+
+     cout << "The current time is "; currentTime.print(); cout << "." << endl;
+     cout << "This time in seconds is " << secs << "." << endl;
+   }
+
+   ====
+
+   void Time::print () {
+     cout << hour << ":" << minute << ":" << second;
+   }
+
+   double Time::convertToSeconds () const {
+     int minutes = hour * 60 + minute;
+     double seconds = minutes * 60 + second;
+     return seconds;
+   }
+
 .. mchoice:: question11_5
    :answer_a: Before the parameter list.
    :answer_b: Inside the parameter list.

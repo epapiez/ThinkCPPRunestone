@@ -49,16 +49,58 @@ except that the arguments have to be two integers and a ``double``:
 
      Time currentTime (9, 14, 30.0);
 
+In the active code below, you can experiment passing values into the two 
+different constructors that we have defined on this page and the previous
+page.
+
+.. activecode:: 11_8
+   :language: cpp
+
+   #include <iostream>
+   using namespace std;
+
+   struct Time {
+     int hour, minute;
+     double second;
+     Time (double secs);
+     Time (int h, int m, double s);
+     void print ();
+   };
+
+   int main() {
+     Time marathon (9000);
+     cout << "My marathon time is "; marathon.print(); cout << "." << endl;
+     Time race (7, 30, 0.0);
+     cout << "My next race is at "; race.print(); cout << "." << endl;
+   }
+
+   ====
+
+   Time::Time (double secs) {
+     hour = int (secs / 3600.0);
+     secs -= hour * 3600.0;
+     minute = int (secs / 60.0);
+     secs -= minute * 60.0;
+     second = secs;
+   }
+
+   Time::Time (int h, int m, double s) {
+     hour = h; minute = m; second = s;
+   }
+
+   void Time::print () {
+     cout << hour << ":" << minute << ":" << second;
+   }
+
 .. mchoice:: question11_8_1
-   :multiple_answers:
-   :answer_a: You can have many constructors with the same name.
+   :answer_a: When we initialize a new object, the compiler automatically finds the correct constructor to use.
    :answer_b: You can always initialize an object using squiggly-braces.
-   :answer_c: When we initialize a new object, the compiler automatically finds the correct constructor to use.
+   :answer_c: You can have many constructors with the same name.
    :answer_d: Once you define a constructor for a structure, you MUST use it to initialize any new structures of that type.
    :correct: b
-   :feedback_a: Incorrect! This statement is true, as long as the constructors take different parameters.
+   :feedback_a: Incorrect! This statement is true!
    :feedback_b: Correct! Once you define a constructor, you can no longer use squiggly-braces to initialize an object.
-   :feedback_c: Incorrect! This statement is true!
+   :feedback_c: Incorrect! This statement is true, as long as the constructors take different parameters.
    :feedback_d: Incorrect! This statement is true!
 
    Which statement is **false** about constructors?

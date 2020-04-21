@@ -66,7 +66,7 @@ result is assigned to the variable ``time``.
    :answer_a: They initialize the instance variables of an object.
    :answer_b: They have the same name as the class.
    :answer_c: They return an instance of an object.
-   :answer_d: We refer to the new object implicitly, or using keyword this.
+   :answer_d: We refer to the objects they initialize implicitly, or using keyword this.
    :correct: c
    :feedback_a: Incorrect! This statement is true!
    :feedback_b: Incorrect! This statement is true!

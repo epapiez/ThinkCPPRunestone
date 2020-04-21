@@ -40,3 +40,59 @@ The output of this program is:
    2   4   6   8   10   12
 
 So far, so good. The next step is to **encapsulate** and **generalize**.
+
+.. mchoice:: test_question_six_three
+   :answer_a: counter
+   :answer_b: loop variable
+   :answer_c: Both a and b
+   :answer_d: None of the above
+   :correct: c
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Correct!
+   :feedback_d: Try again!
+
+   What is a good name for the variable x, found in the code block below?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+       int x = 1;
+       while (x <= 6) {
+         cout << 2*x << "   ";
+         x = x + 1;
+       }
+       cout << endl;
+       return 0;
+    }
+
+.. mchoice:: test_question_six_four
+   :answer_a: Change the first output statement to say cout << 3*x << endl;
+   :answer_b: Change the first output statement to say cout << 3*x << \n;
+   :answer_c: Change the second output statement to say cout << endl << endl;
+   :answer_d: This code already prints each multiple on its own line.
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: A newline character must be used in conjunction with a string. In this case, we are outputting an integer. To use a newline character in this scenario you must use quotes around it. (ex. "\n")
+   :feedback_c: This would simply print out two new lines after all of the multiples have already printed on one line.
+   :feedback_d: This code prints all multiples out on one line.
+
+   Currently, the code below prints all of the multiples of 3 on one line. How can you change the output so that each multiple prints on its own line?
+
+   .. code-block:: cpp
+
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+       int x = 1;
+       while (x <= 6) {
+         cout << 3*x << "  ";
+         x = x + 1;
+       }
+       cout << endl;
+       return 0;
+    }

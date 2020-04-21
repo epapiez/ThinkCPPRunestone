@@ -107,3 +107,89 @@ and ask the user to try again.
 To convert a string to an integer you can use the ``atoi`` function
 defined in the header file ``cstdlib``. We will get to that in
 Section `[parsing] <#parsing>`__.
+
+.. mchoice:: test_question_eight_point_eleven_one
+   :practice: T
+   :answer_a: getline only takes the first word of input while getline reads the entire line until the user hits Return or Enter.
+   :answer_b: cin only takes the first word of input while cin reads the entire line until the user hits Return or Enter.
+   :answer_c: cin only takes the first two words of input while getline reads the entire line until there is a space.
+   :correct: b
+   :feedback_a: Try again.
+   :feedback_b: Correct!
+   :feedback_c: Try again.
+
+
+   What is the difference between ``cin`` and ``getline``?
+
+
+.. mchoice:: test_question_eight_point_eleven_two
+   :practice: T
+   :answer_a: John
+   :answer_b: J
+   :answer_c: John Doe
+   :correct: b
+   :feedback_a: Try again! Pay attention to the data type of name.
+   :feedback_b: Correct!
+   :feedback_c: Try again!
+
+
+   The user types in ``John Doe``. What prints?
+
+   .. code-block:: cpp
+
+      int main(){
+        char name;
+
+        cout << "What is your name? ";
+        cin >> name;
+        cout << name << endl;
+
+      }
+
+.. mchoice:: test_question_eight_point_eleven_three
+   :practice: T
+   :answer_a: John
+   :answer_b: J
+   :answer_c: John Doe
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: Try again!
+   :feedback_c: Try again!
+
+
+   The user types in ``John Doe``. What prints?
+
+   .. code-block:: cpp
+
+      int main(){
+        string name;
+
+        cout << "What is your name? ";
+        cin >> name;
+        cout << name << endl;
+
+      }
+
+.. mchoice:: test_question_eight_point_eleven_four
+   :practice: T
+   :answer_a: John
+   :answer_b: J
+   :answer_c: John Doe
+   :correct: c
+   :feedback_a: Try again!
+   :feedback_b: Try again!
+   :feedback_c: Correct!
+
+
+   The user types in ``John Doe``. What prints?
+
+   .. code-block:: cpp
+
+      int main(){
+        string name;
+
+        cout << "What is your name? ";
+        getline (cin, name);
+        cout << name << endl;
+
+      }

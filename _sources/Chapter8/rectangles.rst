@@ -71,3 +71,55 @@ time:
 The innermost squiggly braces are the coordinates of the corner point;
 together they make up the first of the three values that go into the new
 ``Rectangle``. This statement is an example of **nested structure**.
+
+.. activecode:: eightpointeight
+  :language: cpp
+
+    struct Point {
+      double x, y;
+    };
+
+    struct Rectangle {
+      Point corner;
+      double width, height;
+    };
+
+    int main() {
+      Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };
+      box.width += 50.0;
+      cout << box.height << endl;
+      cout << box.width << endl;
+    }
+
+.. mchoice:: question_eight_point_eight_one
+   :multiple_answers:
+   :answer_a: double x = corner.box.x;
+   :answer_b: double x = box.corner.x;
+   :answer_c: double x = corner.x;
+   :answer_d: double x = box.x;
+   :correct: b
+   :feedback_a: Try again.
+   :feedback_b: Correct!
+   :feedback_c: Try again.
+   :feedback_d: Try again.
+
+   How can you combine these two statements into one?
+
+   .. code-block:: cpp
+
+      Point temp = box.corner;
+      double x = temp.x;
+
+
+.. clickablearea:: click_eight_point_eight
+    :question: Click on the legal ways to create a Point and Rectangle structure, assuming that the Point and Rectangle structures are declared above the main function in the same way as in the active code above.
+    :iscode:
+    :feedback: Re-read the text above and try again.
+
+    :click-incorrect:def main() {:endclick:
+        :click-incorrect:Point corner = { 0.0, 0.0 );:endclick:
+        :click-incorrect:Rectangle box = { ( 0.0, 0.0 ), 100.0, 200.0 }:endclick:
+        :click-correct: Rectangle box = { { 0.0, 0.0 }, 100.0, 200.0 };:endclick:
+        :click-correct: Point corner = { 0.0, 0.0 };:endclick:
+        :click-correct: Rectangle box = { corner, 100.0, 200.0 };:endclick:
+        }

@@ -153,5 +153,5 @@ Print it out and memorize it.
 
     How would you write a tab character?
 
-    - :\t: Is the correct answer!
+    - :(?:\\t): Correct!
       :.*: Try again!

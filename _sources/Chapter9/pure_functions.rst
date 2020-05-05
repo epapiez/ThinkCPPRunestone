@@ -23,13 +23,25 @@ second:
 
 
    bool after (Time& time1, Time& time2) {
-     if (time1.hour > time2.hour) return true;
-     if (time1.hour < time2.hour) return false;
 
-     if (time1.minute > time2.minute) return true;
-     if (time1.minute < time2.minute) return false;
+     if (time1.hour > time2.hour) {
+      return true;
+      }
+     if (time1.hour < time2.hour){
+      return false;
+      }
 
-     if (time1.second > time2.second) return true;
+     if (time1.minute > time2.minute) {
+      return true;
+      }
+     if (time1.minute < time2.minute) {
+      return false;
+      }
+
+     if (time1.second > time2.second) {
+     return true;
+     }
+
      return false;
    }
 
@@ -38,7 +50,8 @@ second:
    {
     Time time = { 11, 59, 3.14159 };
     Time time2 = { 1, 50, 3.14159 };
-    bool after(time, time2);
+    bool value = after(time, time2);
+    cout << value;
     return 0;
    }
 
@@ -80,6 +93,10 @@ it takes for your breadmaker to make bread, then you could use
      double second;
    };
 
+   void printTime (Time& t) {
+     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+   }
+
    Time addTime (Time& t1, Time& t2) {
      Time sum;
      sum.hour = t1.hour + t2.hour;
@@ -116,6 +133,10 @@ Here’s a second, corrected version of this function.
      int hour, minute;
      double second;
    };
+
+   void printTime (Time& t) {
+     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+   }
 
    Time addTime (Time& t1, Time& t2) {
      Time sum;

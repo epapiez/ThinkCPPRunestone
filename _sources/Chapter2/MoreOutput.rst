@@ -44,8 +44,8 @@ all on one line. You can do this by leaving out the first endl:
       return 0;
     }
 
-In this case the output appears on a single line as Goodbye, cruel
-world!. Notice that there is a space between the word “Goodbye,” and the
+In this case the output appears on a single line as ``Goodbye, cruel
+world!``. Notice that there is a space between the word “Goodbye,” and the
 second quotation mark. This space appears in the output, so it affects
 the behavior of the program.
 

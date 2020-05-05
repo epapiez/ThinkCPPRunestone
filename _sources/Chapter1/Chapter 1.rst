@@ -46,13 +46,10 @@ There are two ways to translate a program; **interpreting** or
 program and does what it says. In effect, it translates the program
 line-by-line, alternately reading lines and carrying out commands.
 
-.. raw:: latex
-
-   \vspace{0.1in}
-
-.. raw:: latex
-
-   \vspace{0.1in}
+.. figure:: Images/chapter1image1.png
+   :scale: 50%
+   :align: center
+   :alt: image
 
 A compiler is a program that reads a high-level program and translates
 it all at once, before executing any of the commands. Often you compile
@@ -73,7 +70,10 @@ leave the text editor and run the compiler. The compiler would read your
 source code, translate it, and create a new file named program.o to
 contain the object code, or program.exe to contain the executable.
 
-
+.. figure:: Images/chapter1image2.png
+   :scale: 50%
+   :align: center
+   :alt: image
 
 The next step is to run the program, which requires some kind of
 executor. The role of the executor is to load the program (copy it from
@@ -168,7 +168,7 @@ faster.
 Run-time errors
 ~~~~~~~~~~~~~~~
 
-The second type of error is a run-time error, so-called because the
+The second type of error is a **run-time error**, so-called because the
 error does not appear until you run the program.
 
 For the simple sorts of programs we will be writing for the next few
@@ -300,17 +300,17 @@ hard time adjusting to formal languages. In some ways the difference
 between formal and natural language is like the difference between
 poetry and prose, but more so:
 
-Poetry:
+poetry:
     Words are used for their sounds as well as for their meaning, and
     the whole poem together creates an effect or emotional response.
     Ambiguity is not only common but often deliberate.
 
-Prose:
+prose:
     The literal meaning of words is more important and the structure
     contributes more meaning. Prose is more amenable to analysis than
     poetry, but still often ambiguous.
 
-Programs:
+programs:
     The meaning of a computer program is unambiguous and literal, and
     can be understood entirely by analysis of the tokens and structure.
 
@@ -346,7 +346,7 @@ In C++, this program looks like this:
 
     int main ()
     {
-      cout << "Hello, world." << endl;
+      cout << "Hello, World." << endl;
       return 0;
     }
 

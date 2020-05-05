@@ -47,7 +47,7 @@ The first line outputs ``3, 4``; the second line calculates the value
     }
 
 .. mchoice:: question_eight_one_one
-   :multiple_answers:
+   :practice: T
    :answer_a: ``string`` is the instance variable, ``cube`` is the object
    :answer_b: ``x`` is the instance variable, ``thing`` is the object
    :answer_c: ``thing`` is the instance variable, ``cube`` is the object
@@ -62,7 +62,7 @@ The first line outputs ``3, 4``; the second line calculates the value
 
 
 .. mchoice:: question_eight_one_onetwo
-   :multiple_answers:
+   :practice: T
    :answer_a: 2.0 7.0 53
    :answer_b: 2.07.053
    :answer_c: 7.0, 2.0 53
@@ -91,7 +91,7 @@ The first line outputs ``3, 4``; the second line calculates the value
       }
 
 .. mchoice:: question_eight_point_three
-   :multiple_answers:
+   :practice: T
    :answer_a: int y = circle.x();
    :answer_b: int circle = x.y;
    :answer_c: int y = circle.x;

@@ -47,12 +47,19 @@ invoking a function on an object, as in ``fruit.length()``. Of course,
 one difference is that function names are always followed by an argument
 list, even if it is empty.
 
+The result of these assignments is shown in the following state diagram:
+
+.. figure:: Images/8.2stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
+
 As usual, the name of the variable ``blank`` appears outside the box and
 its value appears inside the box. In this case, that value is a compound
 object with two named instance variables.
 
 .. mchoice:: question_eight_one
-   :multiple_answers:
+   :practice: T
    :answer_a: blank.x = 3.0;
    :answer_b: Point.x = 3.0;
    :answer_c: nice.x = 3.0;
@@ -87,15 +94,15 @@ object with two named instance variables.
 
    int main() {
 
-      Point new;
+      Point blue;
 
-      new.x = 3.0;
+      blue.x = 3.0;
 
       Point.x = 3.0; #distractor
    }
 
 .. mchoice:: question_eight_point_two
-   :multiple_answers:
+   :practice: T
    :answer_a: outside of any function definition, usually at the beginning of the program
    :answer_b: after the main function
    :answer_c: after the include statements

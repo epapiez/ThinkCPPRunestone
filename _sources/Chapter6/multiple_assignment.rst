@@ -46,6 +46,11 @@ This kind of **multiple assignment** is the reason I described variables
 as a *container* for values. When you assign a value to a variable, you
 change the contents of the container, as shown in the figure:
 
+.. figure:: Images/6.1image.png
+   :scale: 50%
+   :align: center
+   :alt: image
+
 When there are multiple assignments to a variable, it is especially
 important to distinguish between an assignment statement and a statement
 of equality. Because C++ uses the ``=`` symbol for assignment, it is
@@ -87,10 +92,10 @@ and debug.
     Match the expression to the statement that best describes it.
 
 .. mchoice:: test_question_six_one_
-   :answer_a: 10!1
-   :answer_b: 10 ! 1
-   :answer_c: 10 ! 10
-   :answer_d: 1!1
+   :answer_a: 10!1!
+   :answer_b: 10 ! 1 !
+   :answer_c: 10 ! 10 !
+   :answer_d: 1!1!
    :correct: a
    :feedback_a: Correct!
    :feedback_b: Remember, in C++ spaces must be printed.

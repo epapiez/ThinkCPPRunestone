@@ -21,6 +21,11 @@ The stack diagram for this program shows clearly that the two variables
 named ``i`` are not in the same storage location. They can have
 different values, and changing one does not affect the other.
 
+.. figure:: Images/6.9stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
+
 Notice that the value of the parameter ``n`` in ``printMultiples`` has
 to be the same as the value of ``i`` in ``printMultTable``. On the other
 hand, the value of ``i`` in ``printMultiple`` goes from 1 up to ``n``.

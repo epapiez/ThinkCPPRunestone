@@ -72,9 +72,9 @@ in between sections of your output.**
 
    int addTwo(int x) #distractor
 
-      int new = x + 2;
+    int new = x + 2;
 
-      return new;
+    return new;
 
-      return x; #distractor
+    return x; #distractor
     }

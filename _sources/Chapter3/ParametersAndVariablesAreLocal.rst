@@ -29,6 +29,12 @@ diagram**. Like state diagrams, stack diagrams show the value of each
 variable, but the variables are contained in larger boxes that indicate
 which function they belong to.
 
+For example, the state diagram for ``printTwice`` looks like this:
+
+.. figure:: Images/3.9stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
 
 Whenever a function is called, it creates a new **instance** of that
 function. Each instance of a function contains the parameters and local

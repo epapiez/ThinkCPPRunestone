@@ -72,6 +72,10 @@ are convinced, we can use these functions to rewrite ``addTime``:
      double second;
    };
 
+   void printTime (Time& t) {
+     cout << t.hour << ":" << t.minute << ":" << t.second << endl;
+   }
+
    double convertToSeconds (const Time& t) {
      int minutes = t.hour * 60 + t.minute;
      double seconds = minutes * 60 + t.second;
@@ -96,7 +100,7 @@ are convinced, we can use these functions to rewrite ``addTime``:
    int main() {
      Time currentTime = { 9, 14, 30.0 };
      Time otherTime = { 10, 32, 15.2 };
-     doneTime = addTime(currentTime, otherTime);
+     Time doneTime = addTime(currentTime, otherTime);
      printTime (doneTime);
     }
 

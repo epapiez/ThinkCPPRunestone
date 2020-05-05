@@ -84,7 +84,7 @@ Putting ``return 0;`` in your code ends your program. Let's look back at a progr
    :answer_a: One! Two! Three!
    :answer_b: Three!
    :answer_c: One!
-   :correct: c
+   :correct: a
    :feedback_a: Correct!
    :feedback_b: All of the following are "if" statements. There are no "else" statements.
    :feedback_c: All of the following are "if" statements. There are no "else" statements.

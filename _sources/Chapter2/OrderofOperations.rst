@@ -42,7 +42,7 @@ started:
 
 .. dragndrop:: dragndrop_two_six
     :feedback: Try again!
-    :match_1:  (6*4)+1|||11
+    :match_1:  (6*4)+1|||25
     :match_2: 6*(4+1)|||30
     :match_3: (6/4)+1|||2
     :match_4: 6/(4+1)|||1

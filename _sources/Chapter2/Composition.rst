@@ -66,6 +66,13 @@ This ability may not seem so impressive now, but we will see other
 examples where composition makes it possible to express complex
 computations neatly and concisely.
 
+WARNING: There are limits on where you can use certain expressions; most
+notably, the left-hand side of an assignment statement has to be a
+*variable* name, not an expression. That’s because the left side
+indicates the storage location where the result will go. Expressions do
+not represent storage locations, only values. So the following is
+illegal: ``minute+1 = hour;``.
+
 **Check your understanding!**
 
 .. mchoice:: test_question_two_three
@@ -73,8 +80,8 @@ computations neatly and concisely.
    :answer_a: Change the fourth line within main to **pets = dogs + cats;**
    :answer_b: Change the third line within main to **int pets = dogs;**
    :answer_c: Change the fourth line within main to **pets == dogs + cats;**
-   :correct: c
-   :feedback_a: Variable q was assigned as 9, which is an int.
+   :correct: a
+   :feedback_a: Correct!
    :feedback_b: The variables were assigned as two different types, so they wouldn't both need to be changed.
    :feedback_c: Yes, variable d is a char because it was assigned as a single character with single quotes around it.
 
@@ -95,10 +102,3 @@ computations neatly and concisely.
         cout << "I have " << pets << " pets!";
         return 0;
         }
-
-WARNING: There are limits on where you can use certain expressions; most
-notably, the left-hand side of an assignment statement has to be a
-*variable* name, not an expression. That’s because the left side
-indicates the storage location where the result will go. Expressions do
-not represent storage locations, only values. So the following is
-illegal: ``minute+1 = hour;``.

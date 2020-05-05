@@ -100,3 +100,24 @@ a milkshake, and a hamburger) using one of the operators.**
     :match_4: (x+x+x+x+x)*20|||1000
 
     Match the statement to the result, given x = 10.
+
+.. mchoice:: test_question_two_two_new
+   :practice: T
+   :answer_a: 0
+   :answer_b: 1
+   :answer_c: .66
+   :correct: a
+   :feedback_a: Correct! In integer division, the decimal part is simply discarded, which is why the result would be 0.
+   :feedback_b: The decimal part is discarded. This means we do not round up, only down.
+   :feedback_c: In integer division, an integer must be the result.
+
+
+   What is the output?
+
+   .. code-block:: cpp
+
+    int main ()
+    {
+      int sum = 2 / 3;
+      cout << sum;
+    }

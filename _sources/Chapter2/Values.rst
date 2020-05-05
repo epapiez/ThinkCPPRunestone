@@ -40,11 +40,11 @@ soon.
    :answer_c: 3
    :correct: b
    :feedback_a: There is only one "endl", implying that only one new line is created.
-   :feedback_b: Yes, the "endl" creates one new line. The first line will say "o", while the second will print "oo"
+   :feedback_b: Yes, the "endl" creates one new line. The first line will say 7, while the second will print 77.
    :feedback_c: In C++, you must make sure to say "endl" every time you'd like to create a new line.
 
 
-   On how many separate lines will the "o"'s be printed?
+   On how many separate lines will the 7's be printed?
 
    .. code-block:: cpp
 
@@ -53,9 +53,9 @@ soon.
 
     int main ()
     {
-      cout << "o" << endl;
-      cout << "o";
-      cout << "o";
+      cout << 7 << endl;
+      cout << 7;
+      cout << 7;
     }
 
 .. dragndrop:: dragndrop_two_two

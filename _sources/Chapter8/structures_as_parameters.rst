@@ -45,7 +45,7 @@ parameters instead of four ``double``\ s.
    }
 
 .. mchoice:: question_eight_point_five
-   :multiple_answers:
+   :practice: T
    :answer_a: (-2.0, -7.0)
    :answer_b: (2.0, 7.0)
    :answer_c: (-7.0, -2.0)
@@ -78,21 +78,21 @@ parameters instead of four ``double``\ s.
    Construct a function that takes in three Point structures and prints the average of the x coordinates and the average of the y coordinates as a coordinate. Find the x average before the y average.
    -----
    struct Point {
-
-      double x, y;
-
+   =====
+    double x, y;
+   =====
    };
-
+   =====
    void printAveragePoint(Point p1, Point p2, Point p3) {
-
-      double avgX = (p1.x + p2.x + p3.x)/3;
-
-      double avgY = (p1.y + p2.y + p3.y)/3;
-
-      double avgY = (y.p1 + y.p2 + y.p3)/3; #distractor
-
-      cout << "(" << avgX << "," << avgY << ")";
-
-      cout << "(" << "avgX" << "," << "avgY" << ")"; #distractor
-
+   =====
+    double avgX = (p1.x + p2.x + p3.x)/3;
+   =====
+    double avgY = (p1.y + p2.y + p3.y)/3;
+   =====
+    double avgY = (y.p1 + y.p2 + y.p3)/3; #distractor
+   =====
+    cout << "(" << avgX << "," << avgY << ")";
+   =====
+    cout << "(" << "avgX" << "," << "avgY" << ")"; #distractor
+   =====
     }

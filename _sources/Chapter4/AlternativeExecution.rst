@@ -114,14 +114,14 @@ type they are. You should resist the temptation to write things like:
 
    if (cost > 30): #distractor
 
-      cout << "Expensive!";
+   cout << "Expensive!";
 
-    } #first
+   } //first bracket
 
-    else {
+   else {
 
-    else: #distractor
+   else: #distractor
 
-      cout << "Inexpensive!"
+   cout << "Inexpensive!"
 
-    }
+   }

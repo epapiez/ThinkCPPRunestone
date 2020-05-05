@@ -9,11 +9,17 @@ strings are equal:
   :language: cpp
   :caption: Strings are comparable
 
+  #include <iostream>
+  using namespace std;
+
+  int main() {
+
      word = "banana";
 
      if (word == "banana") {
        cout << "Yes, we have no bananas!" << endl;
      }
+  }
 
 The other comparison operations are useful for putting words in
 alphabetical order.
@@ -21,6 +27,11 @@ alphabetical order.
 .. activecode:: sevensixteen
   :language: cpp
   :caption: Strings are comparable
+
+    #include <iostream>
+    using namespace std;
+
+    int main() {
 
      string word = "Zebra";
 
@@ -31,6 +42,7 @@ alphabetical order.
      } else {
        cout << "Yes, we have no bananas!" << endl;
      }
+    }
 
 You should be aware, though, that the ``string`` class does not handle
 upper and lower case letters the same way that people do. All the upper

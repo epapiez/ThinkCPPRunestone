@@ -8,9 +8,15 @@ You can change the letters in an ``string`` one at a time using the
   :language: cpp
   :caption: String are mutable
 
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+
      string greeting = "Hello, world!";
      greeting[0] = 'J';
      cout << greeting << endl;
+     }
 
 produces the output ``Jello, world!``.
 

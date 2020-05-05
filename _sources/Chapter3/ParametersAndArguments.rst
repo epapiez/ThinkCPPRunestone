@@ -88,18 +88,18 @@ rule, and we will deal with exceptions later.
 
 .. mchoice:: test_question_three_two
    :practice: T
-   :answer_a: 1
-   :answer_b: 2
-   :answer_c: 3
-   :correct: b
-   :feedback_a: There is only one "endl", implying that only one new line is created.
-   :feedback_b: Yes, the "endl" creates one new line. The first line will say "o", while the second will print "oo"
-   :feedback_c: In C++, you must make sure to say "endl" every time you'd like to create a new line.
+   :answer_a: philphil
+   :answer_b: b b
+   :answer_c: bb
+   :correct: c
+   :feedback_a: "phil" is just the name of the variable/parameter, not its value.
+   :feedback_b: This is close, but in order for there to be a space, a space must be explicitly printed/outputted.
+   :feedback_c: Correct!
 
-   On how many separate lines will the "o"'s be printed?
+   What will print?
 
    .. code-block:: cpp
-   
+
       #include <iostream>
       using namespace std;
 

@@ -25,7 +25,10 @@ shows what state each of the variables is in (you can think of it as the
 variable’s “state of mind”). This diagram shows the effect of the three
 assignment statements:
 
-
+.. figure:: Images/2.4statediagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
 
 
 I sometimes use different shapes to indicate different variable types.
@@ -52,7 +55,7 @@ assignment is illegal:
 
 ::
 
-      minute = "59";         // WRONG!
+      int minute = "59";         // WRONG!
 
 **Check your understanding!**
 

@@ -78,6 +78,12 @@ The output of this program is as expected:
    (3, 4)
    (4, 3)
 
+Here's how we would draw a stack diagram for this program:
+
+.. figure:: Images/8.7stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
 
 The parameter ``p`` is a reference to the structure named ``blank``. The
 usual representation for a reference is a dot with an arrow that points
@@ -102,7 +108,7 @@ convention.
       :.*: Try again!
 
 .. mchoice:: question_eight_point_seven_two
-   :multiple_answers:
+   :practice: T
    :answer_a: Passing structures by reference is more versatile
    :answer_b: Passing structures by reference is faster, because the system does not have to copy the whole structure
    :answer_c: In C++ programs, almost all structures are passed by reference almost all the time
@@ -116,7 +122,7 @@ convention.
    Which is NOT a benefit to using pass by reference instead of pass by value?
 
 .. mchoice:: question_eight_point_seven_one
-   :multiple_answers:
+   :practice: T
    :answer_a: 2 4
    :answer_b: 2 4 2
    :answer_c: 4 4 2
@@ -145,7 +151,7 @@ convention.
       }
 
 .. mchoice:: question_eight_one_onethree
-   :multiple_answers:
+   :practice: T
    :answer_a: 6.0, 8.0, 3.0, 4.0
    :answer_b: 6.0, 8.0, 6.0, 8.0
    :answer_c: 6.08.03.04.0
@@ -170,6 +176,6 @@ convention.
 
       int main() {
         Point blank = { 3.0, 4.0 };
-        addTwo (blank);
+        timesTwo (blank);
         cout << ", " << blank << endl;
       }

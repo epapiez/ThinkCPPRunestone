@@ -63,7 +63,7 @@ it is being passed by reference), and assign the return value to a
 The output of this program is ``(50, 100)``.
 
 .. mchoice:: question_eight_one_onefour
-   :multiple_answers:
+   :practice: T
    :answer_a: addTwo, printPoint, findCenter
    :answer_b: printPoint, findCenter
    :answer_c: addTwo, findCenter

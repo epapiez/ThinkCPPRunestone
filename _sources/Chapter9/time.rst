@@ -29,6 +29,13 @@ Here’s what the structure definition looks like. We can create a ``Time`` obje
         cout << time.hour << ":" << time.minute << ":" << time.second;
      }
 
+The state diagram for this object looks like this:
+
+.. figure:: Images/9.1stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
+
 The word “instance” is sometimes used when we talk about objects,
 because every object is an instance (or example) of some type. The
 reason that instance variables are so-named is that every instance of a

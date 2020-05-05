@@ -110,13 +110,10 @@ The return value (2) gets multiplied by n, which is 3, and the result,
 Here is what the stack diagram looks like for this sequence of function
 calls:
 
-.. raw:: latex
-
-   \vspace{0.1in}
-
-.. raw:: latex
-
-   \vspace{0.1in}
+.. figure:: Images/5.10stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
 
 The return values are shown being passed back up the stack.
 

@@ -33,7 +33,7 @@ them).
       :.*: Try again!
 
 .. mchoice:: question_eight_intro
-   :multiple_answers:
+   :practice: T
    :answer_a: integer
    :answer_b: string
    :answer_c: floating-point number

@@ -45,11 +45,11 @@ Try it in your development environment and see how it looks.
 
       sentence[3] = "i"; #distractor
 
-      sentence[11] = "c";
+      sentence[11] = "h";
 
-      sentence [12] = "c"; #distractor
+      sentence [12] = "h"; #distractor
 
-      sentence[11] = "c" #distractor
+      sentence[11] = "h" #distractor
 
       cout << sentence << endl;
 

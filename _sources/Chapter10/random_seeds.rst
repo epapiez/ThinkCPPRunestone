@@ -26,9 +26,9 @@ milliseconds since the last second tick, and use that number as a seed.
 The details of how to do that depend on your development environment.
 
 .. mchoice:: question10_14_1
-   :answer_a: random()
-   :answer_b: srand(int)
-   :answer_c: srand(gettimeofday())
+   :answer_a: Calling the random() function with no arguments.
+   :answer_b: Calling srand() on a integer seed.
+   :answer_c: Running the gettimeofday() function, and calling srand() on the result.
    :correct: c
    :feedback_a: Incorrect! This always generates the same set of values, using the default seed in C++.
    :feedback_b: Incorrect! This always generates the same set of values, using the specified seed.

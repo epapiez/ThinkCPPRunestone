@@ -34,6 +34,21 @@ in some variable by calling the ``size()`` function before the loop
 begins, and use this variable to check for the last element. You can try
 this program as an excercise.
 
+.. activecode:: ch10_5
+   :language: cpp
+   
+   #include <iostream>
+   #include <vector>
+   using namespace std;
+
+   int main() {
+      vector<int> count = {1,2,3,4};
+      size_t i;
+      for (i = 0; i < count.size(); i++) {
+         cout << count[i] << endl;
+      }
+   }
+
 .. fillintheblank:: question10_5_1
 
     Let **nums** be the vector { 0, 1, 2, 3, 4 }. What is the variable type *of* ``nums.size()``?

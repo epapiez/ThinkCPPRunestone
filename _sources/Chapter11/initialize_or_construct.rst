@@ -104,3 +104,16 @@ page.
    :feedback_d: Incorrect! This statement is true!
 
    Which statement is **false** about constructors?
+
+.. mchoice:: question11_8_2
+   :answer_a: friend constructors
+   :answer_b: overriding
+   :answer_c: overloading
+   :answer_d: friend class
+   :correct: c
+   :feedback_a: Incorrect! "Friend" constructors are constructors that are private except to the friend class.
+   :feedback_b: Incorrect! Overriding is the ability of an inherited class to rewrite the methods of the base class at runtime, not what we're looking for here.
+   :feedback_c: Correct!
+   :feedback_d: Incorrect! A friend class is a class that can access private members of another class, not what we're looking for here.
+
+   What is the term for having multiple constructors with the same "name" that take different parameters?

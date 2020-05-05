@@ -57,12 +57,12 @@ Let's take a look at how we can modify vectors by accessing elements!
 
    int main() {
       vector<int> count = {1,2,3,4};
-      cout << "count = "; print_vec(count);
+      cout << "Before we make any changes, count = "; print_vec(count);
       count[0] = 7;
       count[1] = count[0] * 2;
       count[2]++;
       count[3] -= 60;
-      cout << "count = "; print_vec(count);
+      cout << "After we made the above changes, count = "; print_vec(count);
    }
 
    ====

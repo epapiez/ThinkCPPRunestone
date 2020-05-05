@@ -27,7 +27,7 @@ my computer) also defined in the header file. Each time you call
 ``random`` you get a different randomly-generated number. To see a
 sample, run this loop:
 
-.. activecode:: ch10_9
+.. activecode:: ch10_7
    :language: cpp
 
    #include <iostream>
@@ -68,6 +68,23 @@ the only possible values for ``y`` are between 0 and ``upperBound - 1``,
 including both end points. Keep in mind, though, that ``y`` will never
 be equal to ``upperBound``.
 
+.. activecode:: ch10_7_1
+   :language: cpp
+   
+   #include <iostream>
+   #include <cstdlib>
+   using namespace std;
+
+   int main () {
+      int upperBound = 8;
+      cout << "Let's generate some random numbers between 1 and 7!" << endl;
+      for (int i = 0; i < 10; i++) {
+         int x = random ();
+         int y = x % upperBound;
+         cout << y << " ";
+      }
+   }
+
 It is also frequently useful to generate random floating-point values. A
 common way to do that is by dividing by ``RAND_MAX``. For example:
 
@@ -80,6 +97,22 @@ This code sets ``y`` to a random value between 0.0 and 1.0, including
 both end points. As an exercise, you might want to think about how to
 generate a random floating-point value in a given range; for example,
 between 100.0 and 200.0.
+
+.. activecode:: ch10_7_2
+   :language: cpp
+   
+   #include <iostream>
+   #include <cstdlib>
+   using namespace std;
+
+   int main () {
+      cout << "Let's generate some random numbers between 0 and 1!" << endl;
+      for (int i = 0; i < 10; i++) {
+         int x = random ();
+         double y = double(x) / RAND_MAX;
+         cout << y << " ";
+      }
+   }
 
 .. fillintheblank:: question10_7_1
 

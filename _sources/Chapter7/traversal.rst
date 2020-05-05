@@ -48,21 +48,21 @@ and that outputs the letters backwards, all on one line.
 
    As an exercise, write a function that takes an ``string`` as an argument and that outputs the letters backwards, all on one line.
    -----
-   void reverseWord(string word) {
-
-     int x;
-
-     for(x=input.length();x>=0;x--) {
-
-     for(x=input.length();x>0;x--) {  #distractor
-
-     for(x=input.length();x>0;x++) {  #distractor
-
-     for(x=input.length();x>=0;x++) {  #distractor
-
-      cout<<input[x];}
-
-      cout <<input[-x];} #distractor
+   void reverseWord(string input) {
+   =====
+   int x;
+   =====
+   for(x=input.length() - 1;x>=0;x--) {
+   =====
+   for(x=input.length() - 1;x>0;x--) {  #distractor
+   =====
+   for(x=input.length();x>0;x++) {  #distractor
+   =====
+   for(x=input.length();x>=0;x++) {  #distractor
+   =====
+   cout<<input[x];}
+   =====
+   cout <<input[-x];} #distractor
 
 
 Feel free to use the space below to test out your function.

@@ -51,9 +51,9 @@ printTime (hour, minute).
 .. mchoice:: test_question_three_five
    :practice: T
    :answer_a: int addNumbers (int num, string int) {
-   :answer_b: int addNumbers (int num, new) {
-   :answer_c: int addNumbers (int num, int new) {
-   :answer_d: integer addNumbers (int num, int new) {
+   :answer_b: int addNumbers (int num, newNum) {
+   :answer_c: int addNumbers (int num, int newNum) {
+   :answer_d: integer addNumbers (int num, int newNum) {
    :correct: c
    :feedback_a: A parameter cannot be a reserved keyword.
    :feedback_b: Each parameter needs a data type.

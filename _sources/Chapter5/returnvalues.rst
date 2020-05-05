@@ -210,7 +210,7 @@ double—correctly.
 
     int main ()
     {
-      int i = 9;
+      int i = 2;
       cout << timesTwo(i);
       return 0;
     }

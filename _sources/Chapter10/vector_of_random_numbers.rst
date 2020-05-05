@@ -54,6 +54,39 @@ On my machine the output is
 
 which is pretty random-looking. Your results might be different.
 
+.. activecode:: 10_9
+   :language: cpp
+
+   #include <iostream>
+   #include <vector>
+   using namespace std;
+
+   vector<int> randomVector (int n, int upperBound);
+   void printVector (const vector<int>& vec);
+
+   int main() {
+      int numValues = 20;
+      int upperBound = 10;
+      vector<int> vector = randomVector (numValues, upperBound);
+      printVector (vector);
+   }
+
+   ====
+
+   vector<int> randomVector (int n, int upperBound) {
+      vector<int> vec (n);
+      for (size_t i = 0; i<vec.size(); i++) {
+         vec[i] = random () % upperBound;
+      }
+      return vec;
+   }
+   
+   void printVector (const vector<int>& vec) {
+      for (size_t i = 0; i<vec.size(); i++) {
+         cout << vec[i] << " ";
+      }
+   }
+
 If these numbers are really random, we expect each digit to appear the
 same number of times—twice each. In fact, the number 6 appears five
 times, and the numbers 4 and 8 never appear at all.

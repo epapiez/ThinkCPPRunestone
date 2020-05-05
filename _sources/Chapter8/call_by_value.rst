@@ -4,7 +4,12 @@ Call by value
 When you pass a structure as an argument, remember that the argument and
 the parameter are not the same variable. Instead, there are two
 variables (one in the caller and one in the callee) that have the same
-value, at least initially.
+value, at least initially. For example, when we call ``printPoint``, the stack diagram looks like this:
+
+.. figure:: Images/8.6stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
 
 If ``printPoint`` happened to change one of the instance variables of
 ``p``, it would have no effect on ``blank``. Of course, there is no
@@ -34,11 +39,11 @@ Observe the output of the code below. The function ``addTwo`` changes the instan
     int main() {
       Point blank = { 3.0, 4.0 };
       addTwo (blank);
-      cout << blank << endl;
+      cout << "(" << blank.x << "," << blank.y << ")" << endl;
     }
 
 .. mchoice:: question_eight_point_six_two
-   :multiple_answers:
+   :practice: T
    :answer_a: 2 4
    :answer_b: 2 4 2
    :answer_c: 4 4 2
@@ -68,7 +73,7 @@ Observe the output of the code below. The function ``addTwo`` changes the instan
 
 
 .. mchoice:: question_eight_point_six_one
-   :multiple_answers:
+   :practice: T
    :answer_a: 6.0, 8.0, 3.0, 4.0
    :answer_b: 6.0, 8.0, 6.0, 8.0
    :answer_c: 6.08.03.04.0
@@ -93,6 +98,6 @@ Observe the output of the code below. The function ``addTwo`` changes the instan
 
       int main() {
         Point blank = { 3.0, 4.0 };
-        addTwo (blank);
+        timesTwo (blank);
         cout << ", " << blank << endl;
       }

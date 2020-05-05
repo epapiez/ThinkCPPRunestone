@@ -35,6 +35,11 @@ thing is quite common. Of course, this means that in order to create a
 This code creates a new ``Rectangle`` structure and initializes the
 instance variables. The figure shows the effect of this assignment.
 
+.. figure:: Images/8.8stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
+
 We can access the ``width`` and ``height`` in the usual way:
 
 ::
@@ -75,6 +80,9 @@ together they make up the first of the three values that go into the new
 .. activecode:: eightpointeight
   :language: cpp
 
+    #include <iostream>
+    using namespace std;
+
     struct Point {
       double x, y;
     };
@@ -92,7 +100,7 @@ together they make up the first of the three values that go into the new
     }
 
 .. mchoice:: question_eight_point_eight_one
-   :multiple_answers:
+   :practice: T
    :answer_a: double x = corner.box.x;
    :answer_b: double x = box.corner.x;
    :answer_c: double x = corner.x;

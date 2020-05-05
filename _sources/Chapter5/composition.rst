@@ -86,7 +86,7 @@ by composing the function calls:
    :answer_b: love_cupcakes
    :answer_c: eat_pizza
    :answer_d: All of the above
-   :correct: c
+   :correct: d
    :feedback_a: Try again!
    :feedback_b: Try again!
    :feedback_c: Try again!

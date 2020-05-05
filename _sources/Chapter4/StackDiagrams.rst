@@ -10,7 +10,10 @@ instance that contains the function’s local variables and parameters.
 
 This figure shows a stack diagram for countdown, called with ``n = 3``:
 
-
+.. figure:: Images/4.9stackdiagram.png
+   :scale: 50%
+   :align: center
+   :alt: image
 
 
 

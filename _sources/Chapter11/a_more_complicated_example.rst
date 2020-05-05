@@ -86,3 +86,16 @@ Let's try another practical example using the ``after()`` function!  Feel free t
    :feedback_d: Correct!
 
    Which is/are true about the ``Time::after`` member function?
+
+.. mchoice:: question11_6_2
+   :answer_a: One
+   :answer_b: Two
+   :answer_c: Three
+   :answer_d: Four
+   :correct: c
+   :feedback_a: Incorrect! There is One implicit structure.
+   :feedback_b: Incorrect!
+   :feedback_c: Correct!  There is One implicit structure, and three structures that need to be accessed with dot notation.
+   :feedback_d: Incorrect! We shouldn't need to use dot notation for all of them!
+
+   In a function that operates on **four** structures, how many of them are accessed with dot notation?

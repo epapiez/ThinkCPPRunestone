@@ -87,9 +87,16 @@ Let's try changing the input!
      }
    }
 
-.. fillintheblank:: fill1512
+.. fillintheblank:: question11_4_1
 
     Suppose we have previously declared ``Time currentTime = {9, 14, 30.0}``.  What should be printed by ``time.print()`` after calling ``time.increment(645.0)``? Type your response in the form **hh:mm:ss**.
     
     - :(9:25:15): Correct!
       :.*: Incorrect! Try plugging the given input into the active code above!
+
+.. fillintheblank:: question11_4_2
+
+    When we call a member function, we __________ the function on the data structure.
+    
+    - :([Ii]nvoke)|(INVOKE): Correct!
+      :.*: Incorrect! Try reading the past few pages again!

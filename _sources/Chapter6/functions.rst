@@ -134,15 +134,15 @@ the function many times with rewriting it each time.
 
    void absoluteValue (int num) #distractor
 
-     if (num > 0) {
+    if (num > 0) {
 
-      return num; }
+    return num; }
 
-     else{
+    else{
 
-       int absNum = -(num);
+    int absNum = -(num);
 
-       return absNum;} }
+    return absNum;} }
 
 
 .. mchoice:: test_question_six_seven

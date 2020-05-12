@@ -32,3 +32,16 @@ member functions are often more concise than nonmember functions.
    :feedback_d: Correct! Implicit variable access allows us to access variables directly-- without using dot notation.
 
    Implicit variable access in member functions allows us to access member variables __________.
+
+.. mchoice:: question11_3_2
+   :answer_a: Every time you are working with data structures!
+   :answer_b: When you implement member functions inside of the structure definition.
+   :answer_c: When you implement member functions outside of the structure definition.
+   :answer_d: Never! It is bad practice!
+   :correct: c
+   :feedback_a: Incorrect! The scope resolution operator is not always necessary!
+   :feedback_b: Incorrect! When you write member functions inside of the structure definition, you do not need to specify the scope.
+   :feedback_c: Correct!  When you write member functions outside of the structure definition, you need to specify the scope, hence the :: operator!
+   :feedback_d: Incorrect! The scope resolution operator is good practice when used correctly!
+
+   When should you use the scope resolution operator ``::``?

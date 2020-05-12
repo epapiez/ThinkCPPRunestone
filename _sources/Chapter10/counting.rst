@@ -38,6 +38,51 @@ return value is the number of times the value appears.
      return count;
    }
 
+.. activecode:: 10_10
+   :language: cpp
+
+   #include <iostream>
+   #include <vector>
+   using namespace std;
+
+   vector<int> randomVector (int n, int upperBound);
+   void printVector (const vector<int>& vec);
+   int howMany (const vector<int>& vec, int value);
+
+   int main() {
+      int numValues = 20;
+      int upperBound = 10;
+      int target = 6;
+      vector<int> vector = randomVector (numValues, upperBound);
+      printVector (vector);
+      cout << endl;
+      cout << "The number " << target << " appears " << howMany(vector,target) << " times in our vector!";
+   }
+
+   ====
+
+   int howMany (const vector<int>& vec, int value) {
+      int count = 0;
+      for (size_t i = 0; i < vec.size(); i++) {
+         if (vec[i] == value) count++;
+      }
+      return count;
+   }
+
+   vector<int> randomVector (int n, int upperBound) {
+      vector<int> vec (n);
+      for (size_t i = 0; i<vec.size(); i++) {
+         vec[i] = random () % upperBound;
+      }
+      return vec;
+   }
+   
+   void printVector (const vector<int>& vec) {
+      for (size_t i = 0; i<vec.size(); i++) {
+         cout << vec[i] << " ";
+      }
+   }
+
 .. parsonsprob:: question10_10_1
 
    Construct a block of code that counts how many numbers are between **lowerbound** and **upperbound** inclusive.

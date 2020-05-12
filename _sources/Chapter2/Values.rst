@@ -31,7 +31,12 @@ first is a string, the second is a character and the third is an
 integer. The reason this distinction is important should become clear
 soon.
 
-**Check your understanding!**
+.. fillintheblank:: fill_2.2
+
+    A ________ value is a letter or digit or punctuation mark enclosed in single quotes, like ’a’ or ’5’.
+
+    - :(?:c|C)(?:h|H)(?:a|A)(?:r|R)(?:a|A)?(?:c|C)?(?:t|T)?(?:e|E)?(?:r|R)?: Correct!
+      :.*: Try again!
 
 .. mchoice:: test_question_two_one
    :practice: T

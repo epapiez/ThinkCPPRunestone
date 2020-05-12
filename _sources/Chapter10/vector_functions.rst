@@ -42,3 +42,35 @@ then vector function ``push_back()`` for that purpose.
    :feedback_d: Incorrect! We are adding the element 3 to the end of the vector, not 3 elements!
 
    Let **nums** be the vector { 0, 1, 2, 3, 4 }. If we run the command ``nums.push_back(3)``, what will be returned by ``nums.size()``?
+
+.. parsonsprob:: question10_6_2
+
+   Construct the ``make_even()`` function that loops through **vec**, adds 1 to any elements
+   that are odd, and returns the new vector.
+   -----
+   vector&#60;int&#62; make_even(vector&#60;int&#62; vec) {
+   =====
+   void make_even(vector&#60;int&#62; vec) {                         #paired
+   =====
+      for (size_t i = 0; i &#60; vec.size(); i++) {
+   =====
+      for (int i = 0; i &#60; vec.size(); i++) {                         #paired
+   =====
+         if (vec[i] % 2 == 1) {
+   =====
+         if (i % 2 == 1) {                         #paired
+   =====
+            vec[i] += 1;
+         }
+   =====
+            i += 1;                         #paired
+         }
+   =====
+         else {                         #distractor
+            vec[i] -= 1;
+         }
+   =====
+      return vec;
+   =====
+      }
+   }

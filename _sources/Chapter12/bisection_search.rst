@@ -113,7 +113,7 @@ reach the base case. I tried out the following code:
 
 ::
 
-     cout << findBisect (deck, deck[23], 0, 51));
+     cout << findBisect (deck[23], deck, 0, 51);
 
 And got the following output:
 
@@ -144,6 +144,131 @@ of testing can prove that a program is correct. On the other hand, by
 looking at a few cases and examining the code, you might be able to
 convince yourself.
 
+.. activecode:: 12_9
+   :language: cpp
+
+   The code below searches finds the same card from the same deck we used on the previous page.
+   This time, it uses bisection search to locate the card.
+
+   ~~~~
+
+   #include <iostream>
+   #include <string>
+   #include <vector>
+   using namespace std;
+
+   struct Card {
+      int suit, rank;
+
+      Card ();
+      Card (int s, int r);
+      void print () const;
+      bool isGreater (const Card& c2) const;
+   };
+
+   vector<Card> buildDeck();
+
+   bool equals (const Card& c1, const Card& c2){
+     return (c1.rank == c2.rank && c1.suit == c2.suit);
+   }
+
+   void printDeck(const vector<Card>& deck);
+   int find (const Card& card, const vector<Card>& deck);
+   int findBisect (const Card& card, const vector<Card>& deck, int low, int high);
+
+   int main() {
+      vector<Card> deck = buildDeck();
+      Card card (3, 6);
+      cout << findBisect(card, deck, 0, 51);
+   }
+
+   ====
+
+   Card::Card () {
+      suit = 0;  rank = 0;
+   }
+
+   Card::Card (int s, int r) {
+      suit = s;  rank = r;
+   }
+
+   void Card::print () const {
+      vector<string> suits (4);
+      suits[0] = "Clubs";
+      suits[1] = "Diamonds";
+      suits[2] = "Hearts";
+      suits[3] = "Spades";
+
+      vector<string> ranks (14);
+      ranks[1] = "Ace";
+      ranks[2] = "2";
+      ranks[3] = "3";
+      ranks[4] = "4";
+      ranks[5] = "5";
+      ranks[6] = "6";
+      ranks[7] = "7";
+      ranks[8] = "8";
+      ranks[9] = "9";
+      ranks[10] = "10";
+      ranks[11] = "Jack";
+      ranks[12] = "Queen";
+      ranks[13] = "King";
+
+      cout << ranks[rank] << " of " << suits[suit] << endl;
+    }
+
+   vector<Card> buildDeck() {
+      vector<Card> deck (52);
+      int i = 0;
+      for (int suit = 0; suit <= 3; suit++) {
+         for (int rank = 1; rank <= 13; rank++) {
+            deck[i].suit = suit;
+            deck[i].rank = rank;
+            i++;
+         }
+      }
+      return deck;
+   }
+
+    void printDeck (const vector<Card>& deck) {
+      for (size_t i = 0; i < deck.size(); i++) {
+        deck[i].print ();
+      }
+    }
+
+   int find (const Card& card, const vector<Card>& deck) {
+      for (size_t i = 0; i < deck.size(); i++) {
+       if (equals (deck[i], card)) return i;
+      }
+      return -1;
+   }
+
+   int findBisect (const Card& card, const vector<Card>& deck, int low, int high) {
+
+      cout << low << ", " << high << endl;
+
+      if (high < low) return -1;
+
+      int mid = (high + low) / 2;
+
+      if (equals (deck[mid], card)) return mid;
+
+      if (deck[mid].isGreater (card)) {
+         return findBisect (card, deck, low, mid-1);
+      } else {
+         return findBisect (card, deck, mid+1, high);
+      }
+   }
+   bool Card::isGreater (const Card& c2) const {
+     if (suit > c2.suit) return true;
+     if (suit < c2.suit) return false;
+
+     if (rank > c2.rank) return true;
+     if (rank < c2.rank) return false;
+
+     return false;
+   }
+
 The number of recursive calls is fairly small, typically 6 or 7. That
 means we only had to call ``equals`` and ``isGreater`` 6 or 7 times,
 compared to up to 52 times if we did a linear search. In general,
@@ -154,3 +279,52 @@ Two common errors in recursive programs are forgetting to include a base
 case and writing the recursive call so that the base case is never
 reached. Either error will cause an infinite recursion, in which case
 C++ will (eventually) generate a run-time error.
+
+.. mchoice:: question12_9_1
+   :answer_a: linear search
+   :answer_b: bisection search
+   :answer_c: both methods will work, but linear search is more efficient
+   :answer_d: both methods will work, but bisection search is more efficient
+   :correct: a
+   :feedback_a: Correct! No search is faster than linear search when elements are not sorted.
+   :feedback_b: Incorrect! Bisection sort does not work on unsorted elements.
+   :feedback_c: Incorrect! Bisection sort does not work on unsorted elements.
+   :feedback_d: Incorrect! Bisection sort does not work on unsorted elements.
+
+   You are given a list of spelling words where the words are **not sorted** in any way.
+   What search method should you use?
+
+.. mchoice:: question12_9_2
+   :answer_a: linear search
+   :answer_b: bisection search
+   :answer_c: both methods will work, but linear search is more efficient
+   :answer_d: both methods will work, but bisection search is more efficient
+   :correct: d
+   :feedback_a: Incorrect! You could use linear search, but it is not the only option.
+   :feedback_b: Incorrect! You could use bisection search, but it is not the only option.
+   :feedback_c: Incorrect! Both methods will work, but linear search is not the most efficient method.
+   :feedback_d: Correct! When elements are sorted, bisection search is much quicker.
+
+   You are given the same list of spelling words, but this time the words are **sorted alphabetically**.
+   What search method should you use this time?
+
+.. mchoice:: question12_9_3
+   :multiple_answers:
+   :answer_a: having more than one recursive call
+   :answer_b: not including a base case
+   :answer_c: writing recursive calls such that the base case is never reached
+   :answer_d: having more than one base case
+   :correct: b,c
+   :feedback_a: Incorrect! You are allowed to make multiple recursive calls inside of a function! You might do this if there is more than one condition.
+   :feedback_b: Correct! You always need a base case!
+   :feedback_c: Correct! If you never reach the base case, the program will never stop making recursive calls.
+   :feedback_d: Incorrect! You are allowed to have multiple base cases. This is often necessary!
+
+   When writing a recursive function, which of the following will result in infinite recursion?
+
+.. fillintheblank:: question12_9_4
+
+   How many recursive calls are used to locate the King of Hearts? (Hearts = suit 2, King = rank 13).
+
+   - :2: Correct!
+     :x: Incorrect! Change the input of ``card`` in the ``int main()`` of the active code above, then take a look at the output.

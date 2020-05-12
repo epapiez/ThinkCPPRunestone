@@ -174,7 +174,7 @@ in most card games.
    :answer_a: bool
    :answer_b: string
    :answer_c: int
-   :answer_d: Animals
+   :answer_d: Animal
    :answer_e: Card
    :correct: b,c
    :feedback_a: Incorrect! We cannot say true is greater than false, or vice versa.

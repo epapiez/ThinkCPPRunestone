@@ -44,7 +44,7 @@ that takes a vector and the range of values in the vector (in this case
 
 .. parsonsprob:: question10_13_2
 
-   Construct a function called **histogram** that takes a vector and the range of values in the vector, and that returns a histogram of values in the vector.
+   Construct a function called histogram that takes a vector and the range of values in the vector, and that returns a histogram of values in the vector.
    -----
    vector&#60;int&#62; histogram(const vector&#60;int&#62;& vec, int range) {
    =====

@@ -45,7 +45,7 @@ then vector function ``push_back()`` for that purpose.
 
 .. parsonsprob:: question10_6_2
 
-   Construct the ``make_even()`` function that loops through **vec**, adds 1 to any elements
+   Construct the make_even() function that loops through vec, adds 1 to any elements
    that are odd, and returns the new vector.
    -----
    vector&#60;int&#62; make_even(vector&#60;int&#62; vec) {

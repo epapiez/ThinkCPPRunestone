@@ -99,3 +99,32 @@ Let's try another practical example using the ``after()`` function!  Feel free t
    :feedback_d: Incorrect! We shouldn't need to use dot notation for all of them!
 
    In a function that operates on **four** structures, how many of them are accessed with dot notation?
+
+.. parsonsprob:: question11_6_3
+
+   Create the Dog::is_older() function as it would be defined INSIDE of the Dog structure definition.  This function
+   checks if the current Dog is older than another Dog.  The function is invoked on the current Dog.
+   -----
+   bool Dog::is_older(const Dog& dog, const Dog& dog2) {                         #distractor
+   =====
+   bool is_older(const Dog& dog2) const {
+   =====
+   bool is_older(Dog& dog2) {                         #paired
+   =====
+    if (age > dog2.age) {
+      return true;
+    }
+   =====
+    if (dog.age > dog2.age) {                         #paired
+      return true;
+    }
+   =====
+    else {
+      return false;
+    }
+   =====
+   }
+   =====
+   };                         #paired
+   =====
+    Dog dog = *this;                         #distractor

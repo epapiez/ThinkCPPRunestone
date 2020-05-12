@@ -103,7 +103,7 @@ In the active code blocks below, you can test this out for yourself!
 
 .. parsonsprob:: question10_4_3
 
-   Construct the ``half_life()`` function that prints the first **num** half lives
+   Construct the ``half_life()`` function that prints the first num half lives
    of the initial amount.
    -----
    void half_life(int initial_amount, int num) {

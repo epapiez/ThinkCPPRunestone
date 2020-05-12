@@ -45,3 +45,4 @@ member functions are often more concise than nonmember functions.
    :feedback_d: Incorrect! The scope resolution operator is good practice when used correctly!
 
    When should you use the scope resolution operator ``::``?
+

@@ -98,7 +98,7 @@ return value is the number of times the value appears.
 
 .. parsonsprob:: question10_10_2
 
-   Construct a block of code that counts how many numbers are between **lowerbound** and **upperbound** inclusive.
+   Construct a block of code that counts how many numbers are between lowerbound and upperbound inclusive.
    -----
    int just_right(const vector<int>& vec, int lowerbound, int upperbound) {
    =====

@@ -157,3 +157,39 @@ You can see how the ``equals()`` function works by running the active code below
    :feedback_c: Correct! This is a matter of preference!
 
    Should we write the equals() function as a free-standing function, or as a member function of ``Card``?
+
+.. parsonsprob:: question12_4_3
+
+   In a card game called Euchre, the highest ranked suit is called the trump suit.  The trump suit contains
+   all of the cards of that suit, and the Jack of the other suit of the same color.  For example, if Hearts
+   was trump, the trump suit would contain all Hearts, and the Jack of Diamonds.  Implement the is_trump()
+   function that returns true of a Card is part of the trump suit.  Assume we have a helper function same_color()
+   that returns the other suit of the same color.
+   -----
+   bool Card::is_trump (string trump_suit) {
+   =====
+    if (suit == trump_suit) {
+     return true;
+    }
+   =====
+    if (suit != trump_suit) {                         #paired
+     return false;
+    }
+   =====
+    else if (rank == "Jack" && suit == same_color()) {
+     return true;
+    }
+   =====
+    else if (rank == "Jack") {                         #paired
+     return true;
+    }
+   =====
+    else {
+     return false;
+    }
+   =====
+   }
+   =====
+   };                         #paired
+
+   

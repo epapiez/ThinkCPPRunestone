@@ -71,3 +71,18 @@ probably uniform.
    :feedback_c: Incorrect! The variable goes out of scope as soon as the for loop terminates!
 
    If you declare a variable inside a ``for`` statement, where can it exist?
+
+.. mchoice:: question10_11_2
+   :multiple_answers:
+   :answer_a: the difference between actual and expected number of appearances increases
+   :answer_b: the difference between actual and expected number of appearances decreases
+   :answer_c: the percent by which the number of appearances differs from the expected number increases
+   :answer_d: the percent by which the number of appearances differs from the expected number decreases
+   :correct: a,d
+   :feedback_a: Correct! The numbers go from being off by less than 5 to more than 100.
+   :feedback_b: Incorrect! Take a look at the numbers again!
+   :feedback_c: Incorrect! Take a look at the numbers again!
+   :feedback_d: Incorrect! As we continue to increase the size of numValues, the percent by which the number of appearances differes from the expected value approaches 0.
+
+
+   When we increase the size of numValues, which of the following is true:

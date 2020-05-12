@@ -139,3 +139,45 @@ Feel free to mess around with input for currentTime in the active code below!
    :feedback_d: Correct! Member functions are declared inside of structure definitions.
 
    We have a free-standing function called **dog_bark** which takes a **Dog** object as a parameter.  What step(s) do we need to take to convert ``dog_bark(const Dog& dog)`` to a member function of the ``Dog`` class?
+
+.. parsonsprob:: question11_2_3
+
+   Create the Dog object with member functions bark() and is_teacup_dog().  Write the functions 
+   in the same order they appear inside the structure.
+   -----
+   struct Dog {
+   =====
+    int age, weight;
+    string breed;
+   =====
+    void bark();
+    bool is_teacup_dog();
+   =====
+   };
+   =====
+   }                         #paired
+   =====
+   void Dog::bark() {
+   =====
+   void bark() {                         #paired
+   =====
+    cout << "RUFF!" << endl;
+   }
+   =====
+   bool Dog::is_teacup_dog() {
+   =====
+   bool is_teacup_dog() {                          #paired
+   =====
+    Dog dog = *this;                          #distractor
+   =====
+    if (dog.weight < 4) {
+      return true;
+    }
+    return false;
+   }
+   =====
+    if (dog.weight < 4) {                          #paired
+      return true;
+    }
+    return false;
+   }

@@ -100,3 +100,29 @@ In the active code blocks below, you can test this out for yourself!
    :feedback_d: Incorrect!
 
    Where are the incrementors in ``for`` loops and ``while``?
+
+.. parsonsprob:: question10_4_3
+
+   Construct the ``half_life()`` function that prints the first num half lives
+   of the initial amount.
+   -----
+   void half_life(int initial_amount, int num) {
+   =====
+   int half_life(int initial_amount, int num) {                         #paired
+   =====
+      int new_amount = initial_amount;
+   =====
+      for (int i = 0; i &#60; num; i++) {
+   =====
+      for (int i = 0; i &#60;= num; i++) {                         #paired
+   =====
+         new_amount = new_amount / 2;
+   =====
+         new_amount / 2;                         #paired
+   =====
+         cout << new_amount << endl;
+   =====
+      return new_amount;                         #distractor
+   =====
+      }
+   }

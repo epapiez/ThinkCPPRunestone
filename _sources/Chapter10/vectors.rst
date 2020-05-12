@@ -88,3 +88,16 @@ them to zero.
    :feedback_e: Correct!
 
    Which of the following could be an element of **words**?
+
+.. mchoice:: question10_1_3
+   :answer_a: initializer
+   :answer_b: constructor
+   :answer_c: creator
+   :answer_d: instance function
+   :correct: b
+   :feedback_a: Incorrect! Go back and read to find the answer!
+   :feedback_b: Correct!
+   :feedback_c: Incorrect! Go back and read to find the answer!
+   :feedback_d: Incorrect! Go back and read to find the answer!
+
+   What do you call a function that creates an instance of a new object and initializes its instance variables?

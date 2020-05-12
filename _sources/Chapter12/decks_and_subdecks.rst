@@ -5,7 +5,7 @@ Looking at the interface to ``findBisect``
 
 ::
 
-   int findBisect (const Card& card, const apvector<Card>& deck,
+   int findBisect (const Card& card, const vector<Card>& deck,
            int low, int high) {
 
 it might make sense to treat three of the parameters, ``deck``, ``low``
@@ -44,3 +44,23 @@ as many other fields).
 A more general definition of “abstraction” is “The process of modeling a
 complex system with a simplified description in order to suppress
 unnecessary details while capturing relevant behavior.”
+
+.. mchoice:: question12_10_1
+   :answer_a: It uses binary search to locate the card in the deck.
+   :answer_b: If the program user plays by the rules, we can think of deck, low, and high abstractly as a subdeck.
+   :answer_c: It can only access the part of the deck that is between the bounds high and low.
+   :answer_d: There is no such thing as an empty object.
+   :correct: c
+   :feedback_a: This is true. Binary search is very efficient.
+   :feedback_b: This is true. If the user doesn't follow the rules, we might be in trouble.
+   :feedback_c: This is false! findBisect() can access the entire deck, even when you pass high and low parameters.
+   :feedback_d: This is true.  When you create an object, it is given default values.
+
+   Which is false about the ``findBisect()`` funtion?
+
+.. fillintheblank:: question12_10_2
+
+   When a programmer hides all unnecessary details from the user to reduce complexity and increase efficiency, this is called __________.
+
+   - :[Aa][Bb][Ss][Tt][Rr][Aa][Cc][Tt][Ii][Oo][Nn]: Correct!
+     :x: Incorrect! You may need to go back and read!

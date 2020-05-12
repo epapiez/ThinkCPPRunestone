@@ -31,6 +31,7 @@ assignment statements:
    :alt: image
 
 
+
 I sometimes use different shapes to indicate different variable types.
 These shapes should help remind you that one of the rules in C++ is that
 a variable has to have the same type as the value you assign it. For
@@ -57,7 +58,13 @@ assignment is illegal:
 
       int minute = "59";         // WRONG!
 
-**Check your understanding!**
+
+.. fillintheblank:: fill_2.4
+
+    A figure that shows what state each variable is in is called...
+
+    - :(?:s|S)(?:t|T)(?:a|A)(?:T|t)(?:e|E)\s(?:D|d)(?:i|I)(?:a|A)(?:g|G)(?:r|R)(?:A|a)(?:m|M): Correct!
+      :.*: Try again!
 
 .. mchoice:: test_question_two_two
    :practice: T
@@ -84,5 +91,24 @@ assignment is illegal:
       int q;
       d = 'h';
       q = 9;
-      return 0;
+    }
+
+.. parsonsprob:: question_2.4
+
+   Construct a main function that assigns "Hello" to the variable h, then prints out h's value.
+   -----
+   int main () {
+   =====
+    string h;
+   =====
+    int h; #distractor
+   =====
+    h = "Hello";
+   =====
+    h = Hello; #distractor
+   =====
+    cout << h;
+   =====
+    cout << "h"; #distractor
+   =====
     }

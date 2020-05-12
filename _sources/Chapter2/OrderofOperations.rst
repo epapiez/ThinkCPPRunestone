@@ -37,7 +37,6 @@ started:
       cout << 2 * (3 - 1) << endl;
       cout << 2 / 3 - 1 << endl;
       cout << 2 / (3 -1) << endl;
-      return 0;
     }
 
 .. dragndrop:: dragndrop_two_six
@@ -48,3 +47,10 @@ started:
     :match_4: 6/(4+1)|||1
 
     Match the expression to its correct output. Don't forget to consider integer division!
+
+.. fillintheblank:: fill_2.8
+
+    Any time you want to override the rules of precedence, you can use...
+
+    - :(?:(?:(?:p|P)(?:A|a)(?:r|R)(?:e|E)(?:n|N)(?:t|T)(?:H|h)(?:e|E)(?:s|S)(?:e|E)(?:s|S))|\(\)): Correct!
+      :.*: Try again!

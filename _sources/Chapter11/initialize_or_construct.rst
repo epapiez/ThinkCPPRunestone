@@ -117,3 +117,38 @@ page.
    :feedback_d: Incorrect! A friend class is a class that can access private members of another class, not what we're looking for here.
 
    What is the term for having multiple constructors with the same "name" that take different parameters?
+
+.. parsonsprob:: question11_8_3
+
+   Implement two constructors for the Dog structure.  One should be a default constructor, the other should take
+   arguments.  The weight needs to be converted from pounds to kilograms in the second constructor (for
+   reference, 1 kilogram is approximately 2.2 pounds).
+   -----
+   struct Dog {
+   =====
+    int age, weight;
+    string breed;
+   =====
+    Dog();
+    Dog(int age_in, int weight_in, string breed_in);
+   =====
+   };
+   =====
+   Dog::Dog() {
+   =====
+    breed = "mutt";
+    age = 1;
+    weight = 18;
+   =====
+   }
+   =====
+   Dog::Dog(int age_in, int weight_in, string breed_in) {
+   =====
+    breed = breed_in;
+    age = age_in;
+   =====
+    weight = weight_in / 2.2;
+   }
+   =====
+    weight = weight_in * 2.2;                         #paired
+   }

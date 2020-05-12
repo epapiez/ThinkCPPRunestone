@@ -16,7 +16,6 @@ you want in main. For example, to output more than one line:
     {
       cout << "Hello, world." << endl;     // output one line
       cout << "How are you?" << endl;      // output another
-      return 0;
     }
 
 As you can see, it is legal to put comments at the end of a line, as
@@ -41,7 +40,6 @@ all on one line. You can do this by leaving out the first endl:
     {
       cout << "Goodbye, ";
       cout << "cruel world!" << endl;
-      return 0;
     }
 
 In this case the output appears on a single line as ``Goodbye, cruel
@@ -63,7 +61,6 @@ the behavior of the program. For example, I could have written:
     {
       cout<<"Goodbye, ";
       cout<<"cruel world!"<<endl;
-      return 0;
     }
 
 This program would compile and run just as well as the original. The
@@ -77,7 +74,7 @@ behavior either, so I could have written:
   #include <iostream>
   using namespace std;
 
-    int main(){cout<<"Goodbye, ";cout<<"cruel world!"<<endl;return 0;}
+    int main(){cout<<"Goodbye, ";cout<<"cruel world!"<<endl;}
 
 That would work, too, although you have probably noticed that the
 program is getting harder and harder to read. Newlines and spaces are
@@ -90,3 +87,28 @@ the program and locate syntax errors.
     :match_2: cout<<"Hello" << endl; cout<<"Hello";|||two lines
 
     Match the code snippet to the correct amount of lines that would be printed.
+
+
+.. fillintheblank:: fill_2.1
+
+    The phrases that appear in quotation marks are called...
+
+    - :(?:s|S)(?:t|T)(?:r|R)(?:i|I)(?:n|N)(?:g|G)s?: Correct!
+      :.*: Try again!
+
+
+.. parsonsprob:: question1_100_4
+
+   Construct a main function that prints out "Hello, world!"
+   -----
+   int main () {
+   =====
+    cout << "Hello, world!" << endl;
+   =====
+    cout << Hello, world! << endl; #distractor
+   =====
+    cout >> "Hello, world!" >> endl; #distractor
+   =====
+    cout >> Hello, world! >> endl; #distractor
+   =====
+   }

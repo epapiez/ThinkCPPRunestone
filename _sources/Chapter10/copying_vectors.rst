@@ -67,3 +67,11 @@ would expect.
    :feedback_d: Incorrect! This makes a copy of nums called decimals.
 
    How would you make a copy of ``vector<double> decimals`` called **nums**?
+
+.. fillintheblank:: question10_3_2
+
+   What is the name of the function that takes a vector as an argument, and 
+   creates a new vector of the same size and with the same elements?
+
+   - :[Cc][Oo][Pp][Yy] [Cc][Oo][Nn][Ss][Tt][Rr][Uu][Cc][Tt][Oo][Rr]: Correct!
+     :.*: incorrect! You can find the answer by re-reading the text above.

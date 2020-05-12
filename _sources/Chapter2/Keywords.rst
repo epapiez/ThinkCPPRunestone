@@ -24,6 +24,14 @@ in different colors. For example, keywords might be blue, strings red,
 and other code black. If you type a variable name and it turns blue,
 watch out! You might get some strange behavior from the compiler.
 
+.. fillintheblank:: fill_2.6
+
+    Words that are reserved in C++ because they are used by the compiler to parse the structure of your program.
+
+    - :(?:k|K)(?:e|E)(?:y|Y)(?:w|W)(?:o|O)(?:r|R)(?:d|D)(?:s|S)?: Correct!
+      :.*: Try again!
+
+
 **Fix the code below so that the variable names are not keywords.**
 
 .. activecode:: twoeight
@@ -40,5 +48,4 @@ watch out! You might get some strange behavior from the compiler.
     char last_initial = 'P';
     cout << "My age is " << char << endl;
     cout << "My initials are " << first_initial << " and " << last_initial;
-    return 0;
     }

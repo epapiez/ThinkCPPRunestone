@@ -71,27 +71,6 @@ could use a different type of variable, called floating-point, that is
 capable of storing fractional values. We’ll get to that in the next
 chapter.
 
-**Fix the code below so that it prints out the total cost of the meal (fries,
-a milkshake, and a hamburger) using one of the operators.**
-
-.. activecode:: twoten
-  :language: cpp
-  :caption: Operators check
-
-    #include <iostream>
-    using namespace std;
-
-    int main ()
-    {
-      int fries, milkshake, hamburger;
-      fries = 2;
-      milkshake = 3;
-      hamburger = 6;
-      cout << "The total cost of the meal is ";
-      cout << << " dollars." << endl;
-      return 0;
-    }
-
 .. dragndrop:: dragndrop_two_five
     :feedback: Try again!
     :match_1:  x*10|||100
@@ -120,4 +99,25 @@ a milkshake, and a hamburger) using one of the operators.**
     {
       int sum = 2 / 3;
       cout << sum;
+    }
+
+**Fix the code below so that it prints out the total cost of the meal (fries,
+a milkshake, and a hamburger) using one of the operators.**
+
+.. activecode:: twoten
+  :language: cpp
+  :caption: Operators check
+
+    #include <iostream>
+    using namespace std;
+
+    int main ()
+    {
+      int fries, milkshake, hamburger;
+      fries = 2;
+      milkshake = 3;
+      hamburger = 6;
+      cout << "The total cost of the meal is ";
+      cout << << " dollars." << endl;
+      return 0;
     }

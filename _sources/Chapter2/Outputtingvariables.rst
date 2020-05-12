@@ -72,6 +72,40 @@ output statement, which can make the previous program more concise:
 On one line, this program outputs a string, two integers, a character,
 and the special value endl. Very impressive!
 
+.. mchoice:: test_question_two_two
+   :practice: T
+   :answer_a: 9
+   :answer_b: d
+   :answer_c: h
+   :correct: b
+   :feedback_a: Try again!
+   :feedback_b: Correct!
+   :feedback_c: Try again!
+
+
+   What prints?
+
+   .. code-block:: cpp
+
+    int main ()
+    {
+      int d;
+      int q;
+      d = 'h';
+      q = 9;
+      cout << "d";
+    }
+
+
+.. dragndrop:: dragndrop_two_four
+    :feedback: Try again!
+    :match_1:  x = 12|||int
+    :match_2: y = "Bye!"|||string
+    :match_3: z = '.'|||char
+
+    Match the variable initialization to its correct type.
+
+
 **Fix the following code so that each variable has a type!**
 
 .. activecode:: twoseven
@@ -89,11 +123,3 @@ and the special value endl. Very impressive!
     cout << z << endl;
     return 0;
     }
-
-.. dragndrop:: dragndrop_two_four
-    :feedback: Try again!
-    :match_1:  x = 12|||int
-    :match_2: y = "Bye!"|||string
-    :match_3: z = '.'|||char
-
-    Match the variable initialization to its correct type.

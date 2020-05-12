@@ -20,7 +20,6 @@ turns out we can do both at the same time:
     int main ()
     {
       cout << 17 * 3;
-      return 0;
     }
 
 Actually, I shouldn’t say “at the same time,” since in reality the
@@ -40,7 +39,6 @@ used inside an output statement. We’ve already seen one example:
       int hour = 7;
       int minute = 1;
       cout << hour*60 + minute << endl;
-      return 0;
     }
 
 You can also put arbitrary expressions on the right-hand side of an
@@ -59,7 +57,6 @@ assignment statement:
       int percentage;
       percentage = (minute * 100) / 60;
       cout << percentage;
-      return 0;
     }
 
 This ability may not seem so impressive now, but we will see other
@@ -102,3 +99,10 @@ illegal: ``minute+1 = hour;``.
         cout << "I have " << pets << " pets!";
         return 0;
         }
+
+.. fillintheblank:: fill_2.9_one
+
+    The left-hand side of an assignment statement has to be a ____ name, not an expression.
+
+    - :(?:v|V)(?:A|a)(?:r|R)(?:I|i)(?:a|A)(?:b|B)(?:l|L)(?:e|e): Correct!
+      :.*: Try again!

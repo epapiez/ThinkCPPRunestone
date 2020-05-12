@@ -22,7 +22,7 @@ char variable can contain characters, and it should come as no surprise
 that int variables can store integers.
 
 There are several types in C++ that can store string values, but we are
-going to skip that for now (see Chapter \ `[strings] <#strings>`__).
+going to skip that for now (see Chapter 7).
 
 To create an integer variable, the syntax is
 
@@ -45,6 +45,30 @@ you could probably make a good guess at what values would be stored in
 them. This example also demonstrates the syntax for declaring multiple
 variables with the same type: hour and minute are both integers (int
 type).
+
+.. mchoice:: test_question_2.3
+   :practice: T
+   :answer_a: storage
+   :answer_b: declaration
+   :answer_c: strings
+   :correct: b
+   :feedback_a: Try again!
+   :feedback_b: Correct!
+   :feedback_c: Try again!
+
+   What is the following statement called?
+
+   .. code-block:: cpp
+
+    char x;
+
+
+.. fillintheblank:: fill_2.3
+
+    A statement that creates a new variable is called a...
+
+    - :(?:d|D)(?:e|E)(?:c|C)(?:l|L)(?:a|A)(?:r|R)(?:a|A)(?:T|t)(?:i|I)(?:o|O)(?:n|N): Correct!
+      :.*: Try again!
 
 .. dragndrop:: dragndrop_two_three
     :feedback: Try again!

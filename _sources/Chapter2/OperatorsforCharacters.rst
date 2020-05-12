@@ -16,11 +16,17 @@ also work on characters. For example, observe the following output.
       char letter;
       letter = 'a' + 1;
       cout << letter << endl;
-      return 0;
     }
 
 Although it is syntactically legal to multiply characters, it is almost never
 useful to do it.
+
+.. fillintheblank:: fill_2.9
+
+    What is the value of letter if line 7 is changed to ``letter = 'c' + 3``?
+
+    - :f: Correct!
+      :.*: Try again!
 
 Earlier I said that you can only assign integer values to integer
 variables and character values to character variables, but that is not
@@ -38,8 +44,6 @@ types. For example, the following is legal.
     {
       int number;
       number = 'a';
-      cout << number << endl;
-      return 0;
     }
 
 The result is 97, which is the number that is used internally by C++ to
@@ -59,3 +63,32 @@ bad for beginning programmers, who are often baffled by the complexity
 of the rules and the number of exceptions. In this book I have tried to
 simplify things by emphasizing the rules and omitting many of the
 exceptions.
+
+.. fillintheblank:: fill_2.9_one
+
+    What is the value of letter if line 7 is changed to ``letter = 'c' + 3``?
+
+    - :f: Correct!
+      :.*: Try again!
+
+.. parsonsprob:: question_2.9
+
+   Construct a main function that outputs "c".
+   -----
+   int main () {
+   =====
+    char let;
+   =====
+    int let; #distractor
+   =====
+    let = 'a' + 2;
+   =====
+    let = a + 2; #distractor
+   =====
+    let = 'a' + 3; #distractor
+   =====
+    cout << let;
+   =====
+    cout << "let"; #distractor
+   =====
+    }

@@ -1,4 +1,4 @@
-Parsing input
+﻿Parsing input
 -------------
 
 In Section `[formal] <#formal>`__ I defined “parsing” as the process of
@@ -60,18 +60,18 @@ the second backslash seriously.
 
 Parsing input lines consists of finding the beginning and end of each
 city name and using the ``substr`` function to extract the cities and
-distance. ``substr`` is an ``apstring`` member function; it takes two
+distance. ``substr`` is a ``string`` member function; it takes two
 arguments, the starting index of the substring and the length.
 
 ::
 
-   void processLine (const apstring& line)
+   void processLine (const string& line)
    {
      // the character we are looking for is a quotation mark
      char quote = '\"';
 
      // store the indices of the quotation marks in a vector
-     apvector<int> quoteIndex (4);
+     vector<int> quoteIndex (4);
 
      // find the first quotation mark using the built-in find
      quoteIndex[0] = line.find (quote);
@@ -83,11 +83,11 @@ arguments, the starting index of the substring and the length.
 
      // break the line up into substrings
      int len1 = quoteIndex[1] - quoteIndex[0] - 1;
-     apstring city1 = line.substr (quoteIndex[0]+1, len1);
+     string city1 = line.substr (quoteIndex[0]+1, len1);
      int len2 = quoteIndex[3] - quoteIndex[2] - 1;
-     apstring city2 = line.substr (quoteIndex[2]+1, len2);
+     string city2 = line.substr (quoteIndex[2]+1, len2);
      int len3 = line.length() - quoteIndex[2] - 1;
-     apstring distString = line.substr (quoteIndex[3]+1, len3);
+     string distString = line.substr (quoteIndex[3]+1, len3);
 
      // output the extracted information
      cout << city1 << "\t" << city2 << "\t" << distString << endl;
@@ -95,3 +95,67 @@ arguments, the starting index of the substring and the length.
 
 Of course, just displaying the extracted information is not exactly what
 we want, but it is a good starting place.
+
+.. mchoice:: question15_5_1
+   :answer_a: to scan an entire program for errors
+   :answer_b: to run a program start to finish and record the run time
+   :answer_c: to analyze the structure of a statement in a formal language
+   :answer_d: to search an entire program for a statement
+   :correct: c
+   :feedback_a: Incorrect! This is included in the debugging process.
+   :feedback_b: Incorrect! This is included in the debugging process.
+   :feedback_c: Correct! The compiler has to parse the program before it can translate it into machine language!
+   :feedback_d: Incorrect! You can use control (command) + F to find a particular statement.
+
+   What does **parsing** mean in the programming sense?
+
+.. fillintheblank:: question15_5_2
+
+    The |blank| character indicates that we want to match the next character literally.
+
+    - :(\\)|([Bb][Aa][Cc][Kk][Ss][Ll][Aa][Ss][Hh]): Correct!
+      :.*: Incorrect! Go back and read to find the answer!
+
+.. fillintheblank:: question15_5_3
+
+    The ``substr()`` takes |blank| |blank| and |blank| as its two arguments.
+
+    - :([Ss][Tt][Aa][Rr][Tt][Ii][Nn][Gg]): Correct!
+      :x: Incorrect! Go back and read to find the answer!
+    - :([Ii][Nn][Dd][Ee][Xx]): Correct!
+      :.*: Incorrect! Go back and read to find the answer!
+    - :([Ll][Ee][Nn][Gg][Tt][Hh]): Correct!
+      :.*: Incorrect! Go back and read to find the answer!
+
+.. parsonsprob:: question15_5_4
+
+   Create a block of code that takes a date written in the format "mm/dd/yyyyy" 
+   as an argument, and that separates it into three separate integers: day,
+   month, and year. Find the respective parts in this order: month, first slash,
+   day, second slash, year.
+   -----
+   int main () {
+   =====
+    string month = date.substr(0, 2);
+   =====
+    string month = date.substr(2, 0);                              #paired
+   =====
+    int first_slash = date.find('/');
+   =====
+    string day = date.substr(first_slash + 1, 2);
+   =====
+    string day = date.substr(first_slash, 2);                              #paired
+   =====
+    int second_slash = date.find('/', first_slash + 1);
+   =====
+    int second_slash = date.find('/', first_slash);                              #paired
+   =====
+    int second_slash = date.find('/');                              #paired
+   =====
+    string year = date.substr(second_slash + 1, 4);
+   =====
+    string year = date.substr(second_slash, 4);                              #paired
+   =====
+    string year = date.substr(second_slash + 1, 2);                              #paired
+   =====
+   }

@@ -1,7 +1,7 @@
-``apmatrix``
+﻿``matrix``
 ------------
 
-An ``apmatrix`` is similar to an ``apvector`` except it is
+A ``matrix`` is similar to a ``vector`` except it is
 two-dimensional. Instead of a length, it has two dimensions, called
 ``numrows`` and ``numcols``, for “number of rows” and “number of
 columns.”
@@ -13,20 +13,20 @@ To create a matrix, there are four constructors:
 
 ::
 
-     apmatrix<char> m1;
-     apmatrix<int> m2 (3, 4);
-     apmatrix<double> m3 (rows, cols, 0.0);
-     apmatrix<double> m4 (m3);
+     matrix<char> m1;
+     matrix<int> m2 (3, 4);
+     matrix<double> m3 (rows, cols, 0.0);
+     matrix<double> m4 (m3);
 
 The first is a do-nothing constructor that makes a matrix with both
 dimensions 0. The second takes two integers, which are the initial
 number of rows and columns, in that order. The third is the same as the
 second, except that it takes an additional parameter that is used to
 initialized the elements of the matrix. The fourth is a copy constructor
-that takes another ``apmatrix`` as a parameter.
+that takes another ``matrix`` as a parameter.
 
-Just as with ``apvectors``, we can make ``apmatrix``\ es with any type
-of elements (including ``apvector``\ s, and even ``apmatrix``\ es).
+Just as with ``vectors``, we can make ``matrix``\ es with any type
+of elements (including ``vector``\ s, and even ``matrix``\ es).
 
 To access the elements of a matrix, we use the ``[]`` operator to
 specify the row and column:
@@ -65,3 +65,29 @@ and newlines between the rows:
        }
        cout << endl;
      }
+
+.. mchoice:: question15_8_1
+   :multiple_answers:
+   :answer_a: int
+   :answer_b: string
+   :answer_c: vector<int>
+   :answer_d: vector<vector<int>>
+   :answer_e: matrix
+   :correct: a,b,c,d,e
+   :feedback_a: Correct!
+   :feedback_b: Correct!
+   :feedback_c: Correct!
+   :feedback_d: Correct! This is a technically type of matrix!
+   :feedback_e: Correct! Matrices can be made of matrices.
+
+   Which of the following data types are supported by matrix?
+
+.. fillintheblank:: question15_8_2
+
+    Suppose we have matrix ``mat``.  Then ``mat[9][17]`` would be accessing
+    column |blank| and row |blank| of our matrix.
+
+    - :(18): Correct!
+      :x: Incorrect! Remember to use zero indexing!
+    - :(10): Correct!
+      :.*: Incorrect! Remember to use zero indexing!

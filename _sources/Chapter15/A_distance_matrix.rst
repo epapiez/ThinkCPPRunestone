@@ -1,4 +1,4 @@
-A distance matrix
+﻿A distance matrix
 -----------------
 
 Finally, we are ready to put the data from the file into a matrix.
@@ -8,7 +8,7 @@ We’ll create the matrix in ``main``, with plenty of space to spare:
 
 ::
 
-     apmatrix<int> distances (50, 50, 0);
+     matrix<int> distances (50, 50, 0);
 
 Inside ``processLine``, we add new information to the matrix by getting
 the indices of the two cities from the ``Set`` and using them as matrix

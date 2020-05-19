@@ -19,37 +19,34 @@ removes a piece of data from the input stream.
 Similarly, when the program uses the ``<<`` operator on an ``ostream``,
 it adds a datum to the outgoing stream.
 
-.. fillintheblank:: fill_15.1
+.. fillintheblank:: question15_2_1
 
-    To get input from a file, you have to create an _______ object.
+    You create an |blank| object to write data to a file, and a |blank| object to read data from a file.
+    In order to define objects to input from a file or send output to a file, you must include the ``<`` |blank| ``>`` header file.
 
-    - :(?:i|I)(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M): Is the correct answer!
-      :.*: 25 in octal please
+    - :(?:o|O)(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M): Correct!
+      :x: Incorrect! Try re-reading!
+    - :(?:i|I)(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M): Correct!
+      :.*: Incorrect! Try re-reading!
+    - :(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M): Correct!
+      :.*: Incorrect! Try re-reading!
 
-.. fillintheblank:: fill_15.1_2
+.. mchoice:: question15_2_2
+   :answer_a: an abstract object that works exclusively with cin and cout statements
+   :answer_b: an abstract object on which input and ouput operations are performed
+   :answer_c: an abstract object that works only with file data
+   :answer_d: an abstract object that controls the flow of statements
+   :correct: b
+   :feedback_a: Incorrect! Stream objects do work with cin and cout, but that is not all that they do!
+   :feedback_b: Correct!
+   :feedback_c: Incorrect! Stream objects do work with file data, but they do other things too.
+   :feedback_d: Incorrect! This is not at all what stream objects do, you should try re-reading to get a better understanding!
 
-    To send output to a file, you have to create an _______ object.
+   What is a stream object?
 
-    - :(?:o|O)(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M): Is the correct answer!
-      :.*: 25 in octal please
-
-.. fillintheblank:: fill_15.1_3
-
-    In order to define objects to input from a file or send output to a file, you must include the _____ header file.
-
-    - :(?:f|F)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M): Is the correct answer!
-      :.*: 25 in octal please
-
-.. fillintheblank:: fill_15.1_4
-
-    A _________ is an abstract object that represents the flow of data from a source like the keyboard or a file to a destination like the screen or a file.
-
-    - :(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:a|A)(?:m|M): Is the correct answer!
-      :.*: 25 in octal please
-
-.. dragndrop:: dragndrop_fifteen_one
+.. dragndrop:: question15_1_3
     :feedback: Try again!
-    :match_1: cin|||istream
+    :match_1: cin|||ifstream
     :match_2: cout|||ofstream
 
     Match the stream to its type.

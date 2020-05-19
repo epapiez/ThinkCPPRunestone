@@ -1,4 +1,4 @@
-File input
+﻿File input
 ----------
 
 To get data from a file, we have to create a stream that flows from the
@@ -14,8 +14,7 @@ the file you want to open. The result is an object named ``infile`` that
 supports all the same operations as ``cin``, including ``>>`` and
 ``getline``.
 
-.. activecode:: fifteen_one_one
-  :language: cpp
+::
 
     #include <iostream>
     using namespace std;
@@ -23,8 +22,9 @@ supports all the same operations as ``cin``, including ``>>`` and
     int main ()
     {
      int x;
-     apstring line;
+     string line;
 
+     ifstream infile ("file-name");
      infile >> x;               // get a single integer and store in x
      getline (infile, line);    // get a whole line and store in line
     }
@@ -46,15 +46,14 @@ last attempt failed. Here is a program that reads lines from a file and
 displays them on the screen:
 
 
-.. activecode:: fifteen_one_two
-  :language: cpp
+::
 
     #include <iostream>
     using namespace std;
 
     int main ()
     {
-     apstring fileName = ...;
+     string fileName = ...;
      ifstream infile (fileName.c_str());
 
      if (infile.good() == false) {
@@ -64,14 +63,16 @@ displays them on the screen:
 
      while (true) {
        getline (infile, line);
-       if (infile.eof()) break;
+       if (infile.eof()) {
+         break;
+       }
        cout << line << endl;
      }
-     }
+    }
 
-The function ``c_str`` converts an ``apstring`` to a native C string.
+The function ``c_str`` converts an ``string`` to a native C string.
 Because the ``ifstream`` constructor expects a C string as an argument,
-we have to convert the ``apstring``.
+we have to convert the ``string``.
 
 Immediately after opening the file, we invoke the ``good`` function. The
 return value is ``false`` if the system could not open the file, most
@@ -88,57 +89,59 @@ It is important to exit the loop between the input statement and the
 output statement, so that when ``getline`` fails at the end of the file,
 we do not output the invalid data in ``line``.
 
-.. dragndrop:: dragndrop_fifteen_two
+.. dragndrop:: question15_3_1
     :feedback: Try again!
     :match_1:  The constructor is|||ifstream.
     :match_2: The argument and the name of the file you want to open is|||"file-name".
     :match_3: The result of this code snippet is an object named|||infile.
     :match_4: The result of this code snippet supports the same operators as|||cin.
 
-    Consider this code snippet: ``ifstream infile ("file-name");`` Finish each sentence.
+    Consider this code snippet:
 
-.. fillintheblank:: fill_15.3
+    ::
 
-    The ``ifstream`` member function called ____ makes sure the file was opened successfully.
+       ifstream infile ("file-name");
+
+    Finish each sentence.
+
+.. fillintheblank:: question15_3_2
+
+    The ``ifstream`` member function called |blank| makes sure the file was opened successfully, and
+    member function |blank| detects the end of the file.
 
     - :(?:g|G)(?:o|O)(?:o|O)(?:d|D): Correct!
-      :.*: Try again!
-
-.. fillintheblank:: fill_15.3_two
-
-    The ``ifstream`` member function called ____ detects the end of the file.
-
+      :x: Try again!
     - :(?:e|E)(?:o|O)(?:f|F): Correct!
       :.*: Try again!
 
-.. mchoice:: test_question_fifteen_one
-   :practice: T
-   :answer_a: ...the ifstream constructor expects a C string as an argument.
-   :answer_b: ...you need to make sure you have permission to read the file.
-   :answer_c: ...it will check whether you have an infinite loop or not.
+.. mchoice:: question15_3_3
+   :answer_a: the ifstream constructor expects a C string as an argument.
+   :answer_b: you need to make sure you have permission to read to/from the file.
+   :answer_c: it will check whether you have an infinite loop or not.
+   :answer_d: strings are not supported by C++.
    :correct: a
    :feedback_a: Correct!
-   :feedback_b: Try again!
-   :feedback_c: Try again!
+   :feedback_b: Incorrect! Try reading again!
+   :feedback_c: Incorrect! Try reading again!
+   :feedback_d: Incorrect! apstrings are allowed in C++.
+
+   We need to use the function ``c_str()`` to convert a string to a native C string because...
 
 
-   We need to use the function c_str to convert an apstring to a native C string because...
+.. fillintheblank:: question15_3_4
 
-
-.. fillintheblank:: fill_15.3_three
-
-    The ____ statement allows us to exit the loop as soon as we detect the end of the file.
+    The __________ statement allows us to exit the loop as soon as we detect the end of the file.
 
     - :(?:b|B)(?:r|R)(?:e|E)(?:a|A)(?:k|K): Correct!
       :.*: Try again!
 
-.. parsonsprob:: question_15.3
+.. parsonsprob:: question15_3_5
 
-   Create a code block that reads lines from a file and prints them out. First, make sure that the file is able to be opened.
+   Create a code block that reads lines from "filename" and prints them out. First, make sure that the file is able to be opened.
    -----
    int main () {
    =====
-    aprstring name_of_file = ...;
+    string name_of_file = "filename";
    =====
     ifstream in_file (name_of_file.c_str());
    =====
@@ -157,4 +160,4 @@ we do not output the invalid data in ``line``.
    =====
       cout << line << endl;
     }
-    }
+   }

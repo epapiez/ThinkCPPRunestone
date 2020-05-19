@@ -1,4 +1,4 @@
-File Input/Output and ``apmatrix``\ es
+File Input/Output and ``matrix``\ es
 :::::::::::::::::::::::::::::::::::::::
 
 .. toctree::

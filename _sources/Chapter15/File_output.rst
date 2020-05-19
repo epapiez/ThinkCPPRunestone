@@ -5,14 +5,12 @@ Sending output to a file is similar. For example, we could modify the
 previous program to copy lines from one file to another.
 
 
-.. activecode:: fifteen_two_three
-  :language: cpp
+::
 
     #include <iostream>
     using namespace std;
 
-    int main ()
-    {
+    int main () {
      ifstream infile ("input-file");
      ofstream outfile ("output-file");
 
@@ -26,9 +24,9 @@ previous program to copy lines from one file to another.
        if (infile.eof()) break;
        outfile << line << endl;
      }
-     }
+    }
 
-.. parsonsprob:: question_15.3
+.. parsonsprob:: question15_4_1
 
    Create a code block that sends output to a file. First, make sure that both the input file and the output file are able to be opened.
    -----
@@ -52,11 +50,10 @@ previous program to copy lines from one file to another.
    =====
       outfile << line << endl;
     }
-    }
+   }
 
 
-.. mchoice:: test_question_fifteen_four
-   :practice: T
+.. mchoice:: question15_4_2
    :answer_a: Create two "for" loops instead of an if-statement so that the statement loops through both conditions once.
    :answer_b: Create a "while" loop instead of an if-statement so that the statement loops through both conditions separately until the body of the loop is reached.
    :answer_c: Create two "if" statements, one that check whether in_file.good() is false, and another that checks whether out_file.good() is false, instead of putting them together in one "if" statement.
@@ -65,12 +62,11 @@ previous program to copy lines from one file to another.
    :feedback_b: Try again!
    :feedback_c: Correct!
 
+   The code from the previous problem checks whether the files open or not. It doesn't specify which one, if any, doesn't open. How could you specify which file does not open?
 
-   The above code snippet seen in the question only checks whether the files open or not, but doesn't specify which one doesn't open. How could you specify which file does not open?
+.. fillintheblank:: question15_4_3
 
-.. fillintheblank:: fill_15.4
-
-    Finish the statement: _________ outfile ("output-file");
+    Finish the statement: |blank| ``outfile ("output-file");``.
 
     - :(?:o|O)(?:f|f)(?:s|S)(?:t|T)(?:r|R)(?:e|E)(?:A|a)(?:m|M): Correct!
       :.*: Try again!

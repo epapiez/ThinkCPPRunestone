@@ -57,13 +57,13 @@ integers:
 
      Card card (1, 11);
 
-The active code below uses the enumerated types created above to construct ``Card`` objects.  
-Feel free to modify the values that the cards are being initialized to in the constructor:  this will 
-change the output from the ``Card::print()`` function. Notice how this is much clearer than using integers.
-
 .. activecode:: thirteenone 
    :language: cpp
-
+   
+   The active code below uses the enumerated types created above to construct ``Card`` objects.  
+   Feel free to modify the values that the cards are being initialized to in the constructor:  this will 
+   change the output from the ``print`` function. Notice how this is much clearer than using integers.
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
@@ -170,4 +170,11 @@ operator for enumerated types—but that is beyond the scope of this book.
     Let's create the card ``Card card (SPADES, ACE)``. What gets printed after we run ``card.print()``?
 
     - :Ace of Spades: Correct!
+      :.*: Incorrect! Try again.
+
+.. fillintheblank:: question13_1_3
+
+    Based on the ``Rank`` enumerated type, what integer value does ``QUEEN`` have?
+
+    - :12|twelve|Twelve: Correct!
       :.*: Incorrect! Try again.

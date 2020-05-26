@@ -47,3 +47,46 @@ Also, it is common to refer to all user-defined types in C++ as
    :feedback_b: Incorrect! Try again.
 
    By default, the data members of a ``class`` are private. 
+
+.. mchoice:: question14_2_2
+   :practice: T
+   :answer_a: Remove the ``private:`` label.
+   :answer_b: Change ``struct`` to ``class`` and remove the ``public:`` label.
+   :answer_c: Remove the ``public:`` label.
+   :answer_d: Change ``struct`` to ``class``.
+   :correct: b
+   :feedback_a: Incorrect! ``Deck`` is still a ``struct``.
+   :feedback_b: Incorrect! We don't want to make the constructors and all member functions private.
+   :feedback_c: Incorrect! We don't want to make the constructors and all member functions private.
+   :feedback_d: Correct! ``Deck`` is now a ``class`` and it's okay that we kept the ``private:`` label.
+
+   How can we change ``Deck``, which is currently a ``struct``, into a ``class``? 
+
+   .. code-block:: cpp
+
+      struct Deck {
+      private:
+        vector<Card> cards;
+      
+      public:
+        Deck ();
+        Deck (int n);
+
+        void print () const;
+        void swapCards (int index1, int index2);
+        int findLowestCard (int index);
+        void shuffleDeck ();
+        void sortDeck ();
+        Deck subdeck (int low, int high) const;
+        Deck mergeSort () const;
+        Deck mergeSort (Deck deck) const;
+      };
+
+.. mchoice:: question14_2_3
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Correct! However, they cannot be accessed outside of the class. 
+   :feedback_b: Incorrect! We can access private data members as long as we are in the class.
+
+   Private data members can be accessed within the class.

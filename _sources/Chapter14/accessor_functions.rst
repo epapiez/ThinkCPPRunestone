@@ -40,12 +40,12 @@ and then write ``getMag`` and ``getTheta``. One unusual thing about
 these accessor functions is that they are not ``const``, because
 invoking them might modify the instance variables.
 
-Take a look at the active code below, which uses the ``getReal``
-accessor function. 
-
 .. activecode:: fourteenfour
    :language: cpp
 
+   Take a look at the active code below, which uses the ``getReal``
+   accessor function. 
+   ~~~~
    #include <iostream>
    #include <cmath>
    using namespace std;
@@ -74,21 +74,26 @@ accessor function.
        if (cartesian == false) calculateCartesian ();
        return real;
      }
+     double getImag ()
+     {
+       if (cartesian == false) calculateCartesian ();
+       return imag;
+     }
    };
 
    int main() {
-     Complex c1 (5, 3.5);
-     cout << c1.getReal() << endl;
+     Complex c1 (5.0, 3.5);
+     cout << c1.getReal() << ", " << c1.getImag() << endl;
    }
-
-Write your implementation of ``calculatePolar`` in the commented area of the active 
-code below. Once you're done with that, write the ``getMag`` and ``getTheta`` 
-accessor functions. Read the comments in ``main`` to see how we'll test if your
-functions works. If you get stuck, you can reveal the extra problem at the end for help. 
 
 .. activecode:: fourteenfive
    :language: cpp
 
+   Write your implementation of ``calculatePolar`` in the commented area of the active 
+   code below. Once you're done with that, write the ``getMag`` and ``getTheta`` 
+   accessor functions. Read the comments in ``main`` to see how we'll test if your
+   functions works. If you get stuck, you can reveal the extra problem at the end for help. 
+   ~~~~
    #include <iostream>
    #include <cmath>
    using namespace std;
@@ -104,6 +109,10 @@ functions works. If you get stuck, you can reveal the extra problem at the end f
      Complex (double r, double i);
      void calculateCartesian ();
      double getReal ();
+     double getImag ();
+     void calculatePolar ();
+     double getMag ();
+     double getTheta ();
    };
 
    void Complex::calculatePolar () {
@@ -114,33 +123,117 @@ functions works. If you get stuck, you can reveal the extra problem at the end f
 
    double Complex::getMag () {
      // ``getMag`` should return the magnitude.
-     // Write your implementation here.
+     // Delete the return 0 and write your implementation here.
+     return 0;
    }
 
-   void Complex::getTheta () {
+   double Complex::getTheta () {
      // ``getMag`` should return the theta.
-     // Write your implementation here.
+     // Delete the return 0 and write your implementation here.
+     return 0;
    }
 
    int main() {
-     Complex c1 (5, 3.5);
-     cout << c1.getReal() << endl;
+     Complex c1 (0.0, 1.0);
+     // Magnitude should be 1, theta should be pi/2, or about 1.5708
+     cout << c1.getMag() << ", " << c1.getTheta() << endl;
    }
    ====
-   Complex () { cartesian = false;  polar = false; }
+   Complex::Complex () { cartesian = false;  polar = false; }
 
-   Complex (double r, double i) {
+   Complex::Complex (double r, double i) {
      real = r;  imag = i;
      cartesian = true;  polar = false;
    }
 
-   void calculateCartesian () {
+   void Complex::calculateCartesian () {
      real = mag * cos (theta);
      imag = mag * sin (theta);
      cartesian = true;
    }
 
-   double getReal () {
+   double Complex::getReal () {
      if (cartesian == false) calculateCartesian ();
      return real;
    }
+
+   double Complex::getImag () {
+     if (cartesian == false) calculateCartesian ();
+     return imag;
+   }
+
+.. reveal:: 14_4_1
+   :showtitle: Reveal Problem
+   :hidetitle: Hide Problem
+
+   .. parsonsprob:: question14_4_1
+      :numbered: left
+      :adaptive:
+
+      Let's write the code for the ``calculatePolar`` function. 
+      Follow the format of the function ``calculateCartesian``.
+      -----
+      void Complex::calculatePolar () {
+      =====
+      void Complex::calculateCartesian () {                         #paired
+      =====
+         mag = sqrt(pow(real, 2) + pow(imag, 2));
+      =====
+         mag = pow(real, 2) + pow(imag, 2);                         #paired
+      =====
+         theta = atan(imag / real);
+      =====
+         polar = true;
+      }
+      =====
+         cartesian = true;
+      }
+
+.. reveal:: 14_4_2
+   :showtitle: Reveal Problem
+   :hidetitle: Hide Problem
+
+   .. parsonsprob:: question14_4_2
+      :numbered: left
+      :adaptive:
+
+      Let's write the code for the ``getMag`` function,
+      which should return the magnitude of a ``Complex`` object.
+      -----
+      double Complex::getMag () {
+      =====
+      void Complex::getMag () {                         #paired
+      =====
+         if (polar == false) {
+      =====
+            calculatePolar ();
+         }
+      =====
+         return mag;
+      }
+
+.. reveal:: 14_4_3
+   :showtitle: Reveal Problem
+   :hidetitle: Hide Problem
+
+   .. parsonsprob:: question14_4_3
+      :numbered: left
+      :adaptive:
+
+      Let's write the code for the ``getTheta`` function,
+      which should return the magnitude of a ``Complex`` object.
+      -----
+      double Complex::getTheta () {
+      =====
+      double Complex::getMag () {                         #paired
+      =====
+         if (polar == false) {
+      =====
+            calculatePolar ();
+         }
+      =====
+            calculateCartesian ();                         #paired
+         }
+      =====
+         return theta;
+      }

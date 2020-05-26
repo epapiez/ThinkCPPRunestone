@@ -35,13 +35,13 @@ unnecessary, or expect capabilities that are lacking, because we
 unthinkingly extend a metaphor past its breaking point. Beware of
 misleading analogies.
 
-The active code below deals a deck of cards among three players for a game
-of Go Fish. Feel free to experiment with the code and deal decks for other 
-games like War, Poker, and Egyptian Ratscrew.
-
-.. activecode:: thirteeneight 
+.. activecode:: thirteennine 
    :language: cpp
 
+   The active code below deals a deck of cards among three players for a game
+   of Go Fish. Feel free to experiment with the code and deal decks for other 
+   games like War, Poker, and Egyptian Ratscrew.
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>

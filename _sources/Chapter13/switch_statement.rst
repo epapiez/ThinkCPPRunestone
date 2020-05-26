@@ -41,14 +41,14 @@ print the error message. Occasionally this feature is useful, but most
 of the time it is a source of errors when people forget the ``break``
 statements.
 
-Take a look at the active code below that allows you to choose your starter Pokemon.
-If you change the value of ``type``, it will change the Pokemon you choose. Notice how 
-if you don't assign ``type`` to a valid type, it outputs the default message. Try taking out
-the ``break`` statements in each case. What happens if you run the code with ``type`` as 'g' afterwards?
-
 .. activecode:: thirteentwo
    :language: cpp
 
+   Take a look at the active code below that allows you to choose your starter Pokemon.
+   If you change the value of ``type``, it will change the Pokemon you choose. Notice how 
+   if you don't assign ``type`` to a valid type, it outputs the default message. Try taking out
+   the ``break`` statements in each case. What happens if you run the code with ``type`` as 'g' afterwards?
+   ~~~~
    #include <iostream>
    #include <string>
    using namespace std;
@@ -114,3 +114,39 @@ In general it is good style to include a ``default`` case in every
    :feedback_d: Incorrect! We can use enumerated types with switch statements.
 
    Which one of the following types do NOT work with ``switch`` statement?
+
+.. mchoice:: question13_2_3
+   :practice: T
+   :answer_a: 4
+   :answer_b: 9
+   :answer_c: 49
+   :answer_d: Invalid num! Please try again.
+   :answer_e: Code will not run.
+   :correct: c
+   :feedback_a: Incorrect! Try running it with the active code.
+   :feedback_b: Incorrect! Try running it with the active code.
+   :feedback_c: Correct!
+   :feedback_d: Incorrect! Try running it with the active code.
+   :feedback_e: Incorrect! Try running it with the active code.
+
+   What is the correct output of the code below?
+
+   .. code-block:: cpp
+
+      int main() {
+        int num = 2;
+
+        switch (num) {
+        case 1:
+          cout << 1;
+          break;
+        case 2:
+          cout << 4;
+        case 3:
+          cout << 9;
+          break;
+        default:
+          cout << "Invalid num! Please try again.";
+          break;
+        }
+      }

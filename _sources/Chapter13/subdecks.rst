@@ -33,14 +33,14 @@ As an exercise, write a version of ``findBisect`` that takes a subdeck
 as an argument, rather than a deck and an index range. Which version is
 more error-prone? Which version do you think is more efficient?
 
-Try writing the ``findBisect`` function in the commented section
-of the active code below. If done correctly, the program should output that
-the Seven of Clubs is at index 6 and the King of Diamonds is at index -1. 
-If you get stuck, you can reveal the extra problem at the end for help. 
-
-.. activecode:: thirteenseven 
+.. activecode:: thirteeneight 
    :language: cpp
 
+   Try writing the ``findBisect`` function in the commented section
+   of the active code below. If done correctly, the program should output that
+   the Seven of Clubs is at index 6 and the King of Diamonds is at index -1. 
+   If you get stuck, you can reveal the extra problem at the end for help. 
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
@@ -219,6 +219,8 @@ If you get stuck, you can reveal the extra problem at the end for help.
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_8_1
+      :numbered: left
+      :adaptive:
 
       Let's write the code for this version of the ``findBisect`` function. 
       ``findBisect`` should take a subdeck and a card as parameters and
@@ -247,4 +249,33 @@ If you get stuck, you can reveal the extra problem at the end for help.
          else {
            return findBisect (subdeck.subdeck(mid + 1, subdeck.size()), card);
          }
+      }
+
+.. mchoice:: question13_8_2
+   :practice: T
+   :answer_a: 4
+   :answer_b: 9
+   :answer_c: 49
+   :answer_d: Invalid num! Please try again.
+   :answer_e: Code will not run.
+   :correct: c
+   :feedback_a: Incorrect! Try running it with the active code.
+   :feedback_b: Incorrect! Try running it with the active code.
+   :feedback_c: Correct!
+   :feedback_d: Incorrect! Try running it with the active code.
+   :feedback_e: Incorrect! Try running it with the active code.
+
+   What is the correct output of the code below?
+
+   .. code-block:: cpp
+
+      int main() {
+        Deck deck;
+        Deck sub = deck.subdeck(0, 12);
+        clubs.print();
+        Card card1 (CLUBS, SEVEN);
+        Card card2 (DIAMONDS, KING);
+        cout << endl;
+        cout << "The Seven of Clubs is at index " << findBisect (clubs, card1) << endl;
+        cout << "The King of Diamonds is at index " << findBisect (clubs, card2) << endl;
       }

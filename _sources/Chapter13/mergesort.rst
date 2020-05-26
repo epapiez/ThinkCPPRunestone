@@ -119,14 +119,14 @@ Well, actually you have to give some thought to getting the base case
 right and making sure that you reach it eventually, but other than that,
 writing the recursive version should be no problem. Good luck!
 
-Write your implementation of ``merge`` in the commented area of the active 
-code below. Read the comments in ``main`` to see how we'll test if your
-``merge`` function works. If you get stuck, you can reveal the extra problem
-at the end for help. 
-
-.. activecode:: thirteennine 
+.. activecode:: thirteenten 
    :language: cpp
 
+   Write your implementation of ``merge`` in the commented area of the active 
+   code below. Read the comments in ``main`` to see how we'll test if your
+   ``merge`` function works. If you get stuck, you can reveal the extra problem
+   at the end for help. 
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
@@ -333,6 +333,8 @@ at the end for help.
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_10_1
+      :numbered: left
+      :adaptive:
 
       First, let's write the code for the ``merge`` function. ``merge`` should 
       take two decks as parameters and return a deck with the deck merged.
@@ -390,14 +392,14 @@ at the end for help.
          return result;
       }
 
-Now that we've written ``merge``, it's time to write the ``mergeSort`` function. Try writing
-the non-recursive version of ``mergeSort`` first before writing the recursive version. Follow the
-comments in ``main`` to test your functions. If done correctly, the program should output a sorted
-deck of cards. If you get stuck, you can reveal the extra problems at the end for help.
-
-.. activecode:: thirteenten 
+.. activecode:: thirteeneleven 
    :language: cpp
 
+   Now that we've written ``merge``, it's time to write the ``mergeSort`` function. Try writing
+   the non-recursive version of ``mergeSort`` first before writing the recursive version. Follow the
+   comments in ``main`` to test your functions. If done correctly, the program should output a sorted
+   deck of cards. If you get stuck, you can reveal the extra problems at the end for help.
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
@@ -636,6 +638,8 @@ deck of cards. If you get stuck, you can reveal the extra problems at the end fo
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_10_2
+      :numbered: left
+      :adaptive:
 
       Let's write the code for the ``mergeSort`` function. ``mergeSort`` 
       should be a ``Deck`` member function that returns a sorted deck.
@@ -660,6 +664,8 @@ deck of cards. If you get stuck, you can reveal the extra problems at the end fo
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_10_3
+      :numbered: left
+      :adaptive:
 
       Let's take it one step further and rewrite ``mergeSort`` as a
       recursive function.

@@ -58,15 +58,15 @@ reader.
 
    Which library do we need to include to create random numbers?
 
-Try writing the ``randomInt`` and ``swapCards`` functions in the commented sections
-of the active code below. Once you're done with ``randomInt`` and ``swapCards``,
-try using them to implement the ``Deck`` member function ``shuffleDeck``. If done correctly,
-the program should output a shuffled deck of cards. If you stuck, you can reveal the 
-extra problems at the end for help. 
-
-.. activecode:: thirteenfive 
+.. activecode:: thirteensix 
    :language: cpp
 
+   Try writing the ``randomInt`` and ``swapCards`` functions in the commented sections
+   of the active code below. Once you're done with ``randomInt`` and ``swapCards``,
+   try using them to implement the ``Deck`` member function ``shuffleDeck``. If done correctly,
+   the program should output a shuffled deck of cards. If you stuck, you can reveal the 
+   extra problems at the end for help. 
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
@@ -178,6 +178,8 @@ extra problems at the end for help.
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_6_2
+      :numbered: left
+      :adaptive:
 
       Let's write the code for the ``randomInt`` function. ``randomInt`` should take two parameters
       low and high and return a random integer between them, inclusive.
@@ -205,6 +207,8 @@ extra problems at the end for help.
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_6_3
+      :numbered: left
+      :adaptive:
 
       Let's write the code for the ``swapCards`` function. We'll write ``swapCards``
       as a ``Deck`` member function that takes two indices as parameters.
@@ -227,6 +231,8 @@ extra problems at the end for help.
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_6_4
+      :numbered: left
+      :adaptive:
 
       Let's write the code for the ``shuffleDeck`` function. We'll use ``randomInt``
       and ``swapCards`` in our implementation of ``shuffleDeck``.

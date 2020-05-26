@@ -44,26 +44,32 @@ point.
 
 The following figure shows the two coordinate systems graphically.
 
+.. figure:: Images/14.3polar_and_cartesian.png
+   :scale: 80%
+   :align: center
+   :alt: image
+
 Complex numbers in polar coordinates are written :math:`r e^{i \theta}`,
 where :math:`r` is the magnitude (radius), and :math:`\theta` is the
 angle in radians.
 
-Fortunately, it is easy to convert from one form to another. To go from
-Cartesian to polar,
+.. note::
+   Fortunately, it is easy to convert from one form to another. To go from
+   Cartesian to polar,
 
-.. math::
+   .. math::
 
-   \begin{aligned}
-   r       & = &  \sqrt{x^2 + y^2} \\
-   \theta  & = &  \arctan (y / x)\end{aligned}
+     \begin{aligned}
+     r       & = &  \sqrt{x^2 + y^2} \\
+     \theta  & = &  \arctan (y / x)\end{aligned}
 
-To go from polar to Cartesian,
+   To go from polar to Cartesian,
 
-.. math::
+   .. math::
 
-   \begin{aligned}
-   x       & = &  r \cos \theta \\
-   y       & = &  r \sin \theta\end{aligned}
+     \begin{aligned}
+     x       & = &  r \cos \theta \\
+     y       & = &  r \sin \theta\end{aligned}
 
 So which representation should we use? Well, the whole reason there are
 multiple representations is that some operations are easier to perform
@@ -115,14 +121,14 @@ be easy for them to make errors by reading uninitialized values. In the
 next few sections, we will develop accessor functions that will make
 those kinds of mistakes impossible.
 
-Take a look at the active code below, which demonstrates the separation of
-interface and implementation using classes. In this code, we create a ``Triangle`` 
-object which is represented by three sides. In ``main``, we print out the perimeter of 
-the triangle, which should be 12.
-
 .. activecode:: fourteentwo 
    :language: cpp
 
+   Take a look at the active code below, which demonstrates the separation of
+   interface and implementation using classes. In this code, we create a ``Triangle`` 
+   object which is represented by three sides. In ``main``, we print out the perimeter of 
+   the triangle, which should be 12.
+   ~~~~
    #include <iostream>
    using namespace std;
 
@@ -146,15 +152,15 @@ the triangle, which should be 12.
      cout << t1.perimeter();
    }
 
-Now take a look at this second piece of active code. What if we decide we want
-to represent a ``Triangle`` in a different way? Because the way we represent a 
-``Triangle`` is private, we can easily change the implementation while keeping 
-the interface the same. Now, ``Triangle`` is represented by two sides and the 
-angle between them. Notice how our ``main`` function is the exact same as before.
-
 .. activecode:: fourteenthree 
    :language: cpp
 
+   Now take a look at this second piece of active code. What if we decide we want
+   to represent a ``Triangle`` in a different way? Because the way we represent a 
+   ``Triangle`` is private, we can easily change the implementation while keeping 
+   the interface the same. Now, ``Triangle`` is represented by two sides and the 
+   angle between them. Notice how our ``main`` function is the exact same as before.
+   ~~~~
    #include <iostream>
    #include <cmath>
    using namespace std;
@@ -184,6 +190,8 @@ angle between them. Notice how our ``main`` function is the exact same as before
    }
 
 .. parsonsprob:: question14_3_1
+   :numbered: left
+   :adaptive:
 
    Let's write a constructor that uses parameters to 
    initialize the magnitude and theta, but does not calculate
@@ -202,3 +210,12 @@ angle between them. Notice how our ``main`` function is the exact same as before
      cartesian = true;   polar = false;                         #paired
    =====
    }
+
+.. mchoice:: question14_3_2
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Correct! Client programs wouldn't have access to these values in the first place. 
+   :feedback_b: Incorrect! Keeping instance variables private prevents client programs from accessing them.
+
+   Keeping instance variables private helps prevent client programs from making errors by reading uninitialized values.

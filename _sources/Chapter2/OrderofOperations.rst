@@ -22,24 +22,24 @@ started:
    parentheses to make an expression easier to read, as in ``(minute \*
    100) / 60``, even though it doesn’t change the result.
 
-**Observe the output of the code below to see how parentheses can change a value.**
-
 .. activecode:: twoeleven
-  :language: cpp
-  :caption: Order of operations
+   :language: cpp
+   :caption: Order of operations
+  
+   Observe the output of the code below to see how parentheses can change a value.
 
-    #include <iostream>
-    using namespace std;
+   ~~~~
+   #include <iostream>
+   using namespace std;
 
-    int main ()
-    {
+   int main () {
       cout << (2 * 3) - 1 << endl;
       cout << 2 * (3 - 1) << endl;
       cout << 2 / 3 - 1 << endl;
       cout << 2 / (3 -1) << endl;
-    }
+   }
 
-.. dragndrop:: dragndrop_two_six
+.. dragndrop:: question2_8_1
     :feedback: Try again!
     :match_1:  (6*4)+1|||25
     :match_2: 6*(4+1)|||30
@@ -48,9 +48,9 @@ started:
 
     Match the expression to its correct output. Don't forget to consider integer division!
 
-.. fillintheblank:: fill_2.8
+.. fillintheblank:: question2_8_2
 
     Any time you want to override the rules of precedence, you can use...
 
-    - :(?:(?:(?:p|P)(?:A|a)(?:r|R)(?:e|E)(?:n|N)(?:t|T)(?:H|h)(?:e|E)(?:s|S)(?:e|E)(?:s|S))|\(\)): Correct!
+    - :[Pp][Aa][Rr][Ee][Nn][Tt][Hh][Ee][Ss][Ee][Ss]: Correct!
       :.*: Try again!

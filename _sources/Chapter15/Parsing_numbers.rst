@@ -113,6 +113,8 @@ to parse phone numbers!
    Which of the following strings will return "2020" when passed into ``convertToInt()``?
 
 .. parsonsprob:: question15_6_3
+   :adaptive:
+   :numbered: left
 
    Create the replace_with() function that takes a string "str", a character to get rid of "olc_char", 
    and a character to replace it with "new_char".  It should return a new string that has replaces any 

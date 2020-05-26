@@ -34,9 +34,14 @@ assignment statements:
 
 I sometimes use different shapes to indicate different variable types.
 These shapes should help remind you that one of the rules in C++ is that
-a variable has to have the same type as the value you assign it. For
-example, you cannot store a string in an int variable. The following
-statement generates a compiler error.
+a variable has to have the same type as the value you assign it.
+
+.. Warning::
+   The variable type that you declare must match the type of the value assigned to it.
+   A type mismatch will generate a compile error.
+
+For example, you cannot store a string in an int variable. The following
+statement generates a compile error.
 
 ::
 
@@ -59,23 +64,23 @@ assignment is illegal:
       int minute = "59";         // WRONG!
 
 
-.. fillintheblank:: fill_2.4
+.. fillintheblank:: question2_4_1
 
-    A figure that shows what state each variable is in is called...
+    A(n) |blank| statement gives a value to a variable.
 
-    - :(?:s|S)(?:t|T)(?:a|A)(?:T|t)(?:e|E)\s(?:D|d)(?:i|I)(?:a|A)(?:g|G)(?:r|R)(?:A|a)(?:m|M): Correct!
+    - :[Aa][Ss][Ss][Ii][Gg][Nn][Mm][Ee][Nn][Tt]: Correct!
       :.*: Try again!
 
-.. mchoice:: test_question_two_two
-   :practice: T
+.. mchoice:: question2_4_2
    :answer_a: Change the type of variable q from int to char.
-   :answer_b: Change the type of both variables (d and q) from int to char.
-   :answer_c: Change the type of variable d from int to char.
-   :correct: c
-   :feedback_a: Variable q was assigned as 9, which is an int.
-   :feedback_b: The variables were assigned as two different types, so they wouldn't both need to be changed.
-   :feedback_c: Yes, variable d is a char because it was assigned as a single character with single quotes around it.
-
+   :answer_b: Change the type of both variables (p and q) from int to char.
+   :answer_c: Change the type of variable p from int to char.
+   :answer_d: Nothing needs to change! The code will work just fine!
+   :correct: b
+   :feedback_a: Yes, but take a look at variable p.
+   :feedback_b: Both variables are a character surrounded by single quotes, so they should be type char.
+   :feedback_c: Yes, but take a look at variable q.
+   :feedback_d: No! There will be a compile error.
 
    What must be changed in order for this code block to work?
 
@@ -87,14 +92,15 @@ assignment is illegal:
 
     int main ()
     {
-      int d;
+      int p;
       int q;
-      d = 'h';
-      q = 9;
+      p = 'h';
+      q = '9';
     }
 
-.. parsonsprob:: question_2.4
-
+.. parsonsprob:: question2_4_3
+   :adaptive:
+   
    Construct a main function that assigns "Hello" to the variable h, then prints out h's value.
    -----
    int main () {
@@ -109,6 +115,8 @@ assignment is illegal:
    =====
     cout << h;
    =====
+    cout << "Hello"; #distractor
+   =====
     cout << "h"; #distractor
    =====
-    }
+   }

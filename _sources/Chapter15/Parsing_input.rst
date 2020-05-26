@@ -128,6 +128,8 @@ we want, but it is a good starting place.
       :.*: Incorrect! Go back and read to find the answer!
 
 .. parsonsprob:: question15_5_4
+   :adaptive:
+   :numbered: left
 
    Create a block of code that takes a date written in the format "mm/dd/yyyyy" 
    as an argument, and that separates it into three separate integers: day,

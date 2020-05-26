@@ -21,31 +21,49 @@ Rather than memorize the list, I would suggest that you take advantage
 of a feature provided in many development environments: code
 highlighting. As you type, different parts of your program should appear
 in different colors. For example, keywords might be blue, strings red,
-and other code black. If you type a variable name and it turns blue,
-watch out! You might get some strange behavior from the compiler.
+and other code black. 
 
-.. fillintheblank:: fill_2.6
+.. Warning::
+   If you type a variable name and it turns blue, watch out! You might get 
+   some strange behavior from the compiler.
 
-    Words that are reserved in C++ because they are used by the compiler to parse the structure of your program.
+.. fillintheblank:: question2_6_1
 
-    - :(?:k|K)(?:e|E)(?:y|Y)(?:w|W)(?:o|O)(?:r|R)(?:d|D)(?:s|S)?: Correct!
+    Words that are reserved in C++ because they are used by the compiler to parse the structure of your program
+    are called |blank|.
+
+    - :[Kk][Ee][Yy][Ww][Oo][Rr][Dd][Ss]: Correct!
       :.*: Try again!
 
+.. mchoice:: question2_6_2
+   :answer_a: integer
+   :answer_b: cout
+   :answer_c: variable
+   :answer_d: string
+   :answer_e: char
+   :correct: b,d,e
+   :feedback_a: integer is not a keyword, but int is.
+   :feedback_b: cout cannot be used as a variable name!
+   :feedback_c: variable is fair game to use to name a variable.
+   :feedback_d: string cannot be used as a variable name.
+   :feedback_e: char is a keyword and cannot be used as a variable name.
 
-**Fix the code below so that the variable names are not keywords.**
+   Which of the following are keywords or will otherwise generate some error from the compiler if used as a variable name?
 
 .. activecode:: twoeight
-  :language: cpp
-  :caption: Code highlighting
+   :language: cpp
+   :caption: Code highlighting
 
+   Fix the code below so that the variable names are not keywords.
+
+   ~~~~
    #include <iostream>
    using namespace std;
 
-    int main()
-    {
-    int char = 20;
-    char first_initial = 'E';
-    char last_initial = 'P';
-    cout << "My age is " << char << endl;
-    cout << "My initials are " << first_initial << " and " << last_initial;
-    }
+   int main() {
+      int char = 20;
+      char first_initial = 'E';
+      char last_initial = 'P';
+      cout << "My age is " << char << endl;
+      cout << "My initials are " << first_initial << " and " << last_initial;
+   }

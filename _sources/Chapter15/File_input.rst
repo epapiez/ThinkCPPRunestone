@@ -136,6 +136,8 @@ we do not output the invalid data in ``line``.
       :.*: Try again!
 
 .. parsonsprob:: question15_3_5
+   :adaptive:
+   :numbered: left
 
    Create a code block that reads lines from "filename" and prints them out. First, make sure that the file is able to be opened.
    -----

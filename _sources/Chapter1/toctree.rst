@@ -4,4 +4,10 @@ The way of the program
 .. toctree::
    :maxdepth: 3
 
-   Chapter1.rst
+   the_way.rst
+   programming_language.rst
+   program.rst
+   debugging.rst
+   formal_natural.rst
+   first_program.rst
+   glossary.rst

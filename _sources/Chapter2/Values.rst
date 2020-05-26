@@ -25,27 +25,30 @@ way:
 
 This example outputs a single close squiggly-brace on a line by itself.
 
+.. note::
+   In C++, integer values are declared as type ``int`` and character values 
+   are declared as type ``char``.
+
 It is easy to confuse different types of values, like "5", ’5’ and 5,
 but if you pay attention to the punctuation, it should be clear that the
 first is a string, the second is a character and the third is an
 integer. The reason this distinction is important should become clear
 soon.
 
-.. fillintheblank:: fill_2.2
+.. fillintheblank:: question2_2_1
 
-    A ________ value is a letter or digit or punctuation mark enclosed in single quotes, like ’a’ or ’5’.
+    A |blank| value is a single letter, number, or punctuation enclosed in single quotes.
 
-    - :(?:c|C)(?:h|H)(?:a|A)(?:r|R)(?:a|A)?(?:c|C)?(?:t|T)?(?:e|E)?(?:r|R)?: Correct!
+    - :([Cc][Hh][Aa][Rr]|[Cc][Hh][Aa][Rr][Aa][Cc][Tt][Ee][Rr]): Correct!
       :.*: Try again!
 
-.. mchoice:: test_question_two_one
-   :practice: T
+.. mchoice:: question2_2_2
    :answer_a: 1
    :answer_b: 2
    :answer_c: 3
    :correct: b
    :feedback_a: There is only one "endl", implying that only one new line is created.
-   :feedback_b: Yes, the "endl" creates one new line. The first line will say 7, while the second will print 77.
+   :feedback_b: "endl" creates one new line. The first line will say 7, while the second will print 77.
    :feedback_c: In C++, you must make sure to say "endl" every time you'd like to create a new line.
 
 
@@ -63,7 +66,7 @@ soon.
       cout << 7;
     }
 
-.. dragndrop:: dragndrop_two_two
+.. dragndrop:: question2_2_3
     :feedback: Try again!
     :match_1:  1|||integer
     :match_2: "1"|||string

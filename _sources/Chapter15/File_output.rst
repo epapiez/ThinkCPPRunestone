@@ -27,6 +27,8 @@ previous program to copy lines from one file to another.
     }
 
 .. parsonsprob:: question15_4_1
+   :adaptive:
+   :numbered: left
 
    Create a code block that sends output to a file. First, make sure that both the input file and the output file are able to be opened.
    -----

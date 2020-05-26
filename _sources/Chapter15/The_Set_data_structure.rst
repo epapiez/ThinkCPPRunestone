@@ -204,8 +204,9 @@ parameter.
 
    int main() {
      Set cities(2);
-     int index1 = cities.add("Detroit");
-     int index2 = cities.add("Ann Arbor");
+     cities.add("Detroit");
+     cities.add("Ann Arbor");
+     cout << cities.getElement(0);
    }
 
    ====

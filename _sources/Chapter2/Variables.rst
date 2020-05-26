@@ -7,9 +7,8 @@ stores a value.
 
 Just as there are different types of values (integer, character, etc.),
 there are different types of variables. When you create a new variable,
-you have to declare what type it is. For example, the character type in
-C++ is called char. The following statement creates a new variable named
-fred that has type char.
+you have to declare what type it is. The following statement creates a 
+new variable named fred that has type char.
 
 ::
 
@@ -46,34 +45,30 @@ them. This example also demonstrates the syntax for declaring multiple
 variables with the same type: hour and minute are both integers (int
 type).
 
-.. mchoice:: test_question_2.3
-   :practice: T
-   :answer_a: storage
-   :answer_b: declaration
-   :answer_c: strings
-   :correct: b
-   :feedback_a: Try again!
-   :feedback_b: Correct!
-   :feedback_c: Try again!
+.. fillintheblank:: question2_3_1
 
-   What is the following statement called?
-
+   Take a look at the code block below:
+   
    .. code-block:: cpp
 
-    char x;
+      char tom;
 
+   It's an example of a(n) |blank| statement.
 
-.. fillintheblank:: fill_2.3
+   - :[Dd][Ee][Cc][Ll][Aa][Rr][Aa][Tt][Ii][Oo][Nn]: Correct!
+     :.*: Try again!
 
-    A statement that creates a new variable is called a...
-
-    - :(?:d|D)(?:e|E)(?:c|C)(?:l|L)(?:a|A)(?:r|R)(?:a|A)(?:T|t)(?:i|I)(?:o|O)(?:n|N): Correct!
-      :.*: Try again!
-
-.. dragndrop:: dragndrop_two_three
+.. dragndrop:: question2_3_2
     :feedback: Try again!
-    :match_1:  char tree;|||'x'
-    :match_2: string blue;|||"Coding is fun!"
-    :match_3: int joe;|||17
+    :match_1:  char joe;|||'x'
+    :match_2: string ten;|||"Joe"
+    :match_3: int x;|||10
 
     Match the variable to the kind of value it can store.
+
+.. fillintheblank:: question2_3_3
+
+   A(n) |blank| is a name given to a location in memory used to keep track of a value.
+
+   - :[Vv][Aa][Rr][Ii][Aa][Bb][Ll][Ee]: Correct!
+     :.*: Try again!

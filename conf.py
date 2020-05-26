@@ -18,7 +18,7 @@ import sys, os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('../modules'))
 
-from runestone import runestone_static_dirs, runestone_extensions
+from runestone import runestone_static_dirs, runestone_extensions, setup
 import pkg_resources
 
 # -- General configuration -----------------------------------------------------
@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Runestone Interactive Overview'
+project = 'Think Like a Computer Scientist - C++'
 copyright = '2017 ewelinapapiez'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -210,10 +210,10 @@ html_theme_path = [pkg_resources.resource_filename('runestone', 'common/project_
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Runestone Interactive Overview'
+html_title = 'How to Think Like a Computer Scientist - C++'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title ='Runestone Interactive Overview'
+html_short_title ='ThinkC++'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.

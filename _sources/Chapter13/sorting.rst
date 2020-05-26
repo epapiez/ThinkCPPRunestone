@@ -31,16 +31,16 @@ bottom-up design I discussed in Section `[counting] <#counting>`__.
 
 Once again, I am going to leave the implementation up to the reader.
 
-Try writing the ``findLowestCard`` function in the commented section
-of the active code below. Once you're done with ``findLowestCard``,
-try using it along with ``swapCards`` to implement the ``Deck`` member 
-function ``sortDeck``. If done correctly, the program should output a 
-sorted deck of cards. If you get stuck, you can reveal the extra problem 
-at the end for help. 
-
-.. activecode:: thirteensix 
+.. activecode:: thirteenseven 
    :language: cpp
 
+   Try writing the ``findLowestCard`` function in the commented section
+   of the active code below. Once you're done with ``findLowestCard``,
+   try using it along with ``swapCards`` to implement the ``Deck`` member 
+   function ``sortDeck``. If done correctly, the program should output a 
+   sorted deck of cards. If you get stuck, you can reveal the extra problems 
+   at the end for help. 
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
@@ -182,6 +182,8 @@ at the end for help.
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_7_1
+      :numbered: left
+      :adaptive:
    
       Let's write the code for the ``findLowestCard`` function. ``findLowestCard``
       should take an index as a parameter and return an int.
@@ -215,6 +217,8 @@ at the end for help.
    :hidetitle: Hide Problem
 
    .. parsonsprob:: question13_7_2
+      :numbered: left
+      :adaptive:
    
       Let's write the code for the ``sortDeck`` function. We'll use ``findLowestCard``
       and ``swapCards`` in our implementation of ``sortDeck``.

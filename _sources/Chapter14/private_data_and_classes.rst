@@ -22,7 +22,7 @@ programmer who writes the ``Card`` member functions needs to know which
 implementation to use, but someone using the ``Card`` structure should
 not have to know anything about its internal structure.
 
-As another example, we have been using ``apstring`` and ``apvector``
+As another example, we have been using ``string`` and ``vector``
 objects without ever discussing their implementations. There are many
 possibilities, but as “clients” of these libraries, we don’t need to
 know.
@@ -66,11 +66,11 @@ Another advantage of using accessor functions is that we can change the
 internal representations of cards without having to change any client
 programs.
 
-Run the active code below. Uncomment the commented out code to see what happens!
-
-.. activecode:: fourteenfour 
+.. activecode:: fourteenone 
    :language: cpp
 
+   Run the active code below. Uncomment the commented out code to see what happens!
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
@@ -141,9 +141,33 @@ Run the active code below. Uncomment the commented out code to see what happens!
       cout << ranks[rank] << " of " << suits[suit] << endl;
    }
 
-.. fillintheblank:: question14_1_1
+.. mchoice:: question14_1_1
+   :answer_a: True
+   :answer_b: False
+   :correct: a
+   :feedback_a: Incorrect! Data encapsulation should hide implementation details.
+   :feedback_b: Correct! Data encapsulation prevents unrestricted access to internal representations.
+
+   Data encapsulation is based on the idea that each structure definition should provide a set of functions that 
+   apply to the structure, and allow unrestricted access to the internal representation.
+
+.. fillintheblank:: question14_1_2
 
     What type of data member cannot be directly accessed outside of the structure?
 
     - :(Pp)rivate||((Pp)rivate (Dd)ata (Mm)ember): Correct!
       :.*: Incorrect! Try again.
+
+.. mchoice:: question14_1_3
+   :multiple_answers:
+   :answer_a: getSuit
+   :answer_b: setRank
+   :answer_c: print
+   :answer_d: getRank
+   :correct: a,b,d
+   :feedback_a: Correct!
+   :feedback_b: Correct! "Setter" functions are also known as "mutator" functions.
+   :feedback_c: Incorrect!
+   :feedback_d: Correct!
+
+   Which of the following are examples of accessor functions?

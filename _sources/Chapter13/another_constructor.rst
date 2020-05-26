@@ -10,7 +10,7 @@ be more natural to write a second ``Deck`` constructor.
 
    Deck::Deck ()
    {
-     apvector<Card> temp (52);
+     vector<Card> temp (52);
      cards = temp;
 
      int i = 0;
@@ -27,11 +27,11 @@ Notice how similar this function is to ``buildDeck``, except that we had
 to change the syntax to make it a constructor. Now we can create a
 standard 52-card deck with the simple declaration ``Deck deck;``
 
-The active code below prints out the cards in a deck using the loop from the previous section.
-
 .. activecode:: thirteenthree 
    :language: cpp
 
+   The active code below prints out the cards in a deck using the loop from the previous section.
+   ~~~~
    #include <iostream>
    #include <string>
    #include <vector>
@@ -120,3 +120,39 @@ The active code below prints out the cards in a deck using the loop from the pre
 
    Based on your observations from the active code above, the cards in ``deck`` are initialized to the correct
    suits and ranks of a standard deck of 52 cards.
+
+.. parsonsprob:: question13_4_2
+      :numbered: left
+      :adaptive:
+
+      Let's write a constructor for a deck of cards that uses 40 cards.
+      This deck uses all 4 suits and ranks Ace through 10, omitting all
+      face cards.
+      -----
+      Deck::Deck () {
+      =====
+         vector<Card> temp (40);
+      =====
+         vector<Card> temp (52);                         #paired
+      =====
+         cards = temp;
+         int i = 0;
+      =====
+         for (Suit suit = CLUBS; suit <= SPADES; suit = Suit(suit+1)) {
+      =====
+         for (Suit suit = CLUBS; suit < SPADES; suit = Suit(suit+1)) {                         #paired
+      =====
+            for (Rank rank = ACE; rank <= TEN; rank = Rank(rank+1)) {
+      =====
+            for (Rank rank = ACE; rank <= KING; rank = Rank(rank+1)) {                         #paired
+      =====
+              cards[i].suit = suit;
+              cards[i].rank = rank;
+      =====
+              cards[i].suit = rank;
+              cards[i].rank = suit;                         #paired
+      =====
+              i++;
+            }
+         }
+      }

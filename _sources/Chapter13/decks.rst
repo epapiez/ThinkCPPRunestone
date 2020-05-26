@@ -11,14 +11,14 @@ The structure definition looks like this
 ::
 
    struct Deck {
-     apvector<Card> cards;
+     vector<Card> cards;
 
      Deck (int n);
    };
 
    Deck::Deck (int size)
    {
-     apvector<Card> temp (size);
+     vector<Card> temp (size);
      cards = temp;
    }
 
@@ -27,7 +27,7 @@ The name of the instance variable is ``cards`` to help distinguish the
 
 For now there is only one constructor. It creates a local variable named
 ``temp``, which it initializes by invoking the constructor for the
-``apvector`` class, passing the size as a parameter. Then it copies the
+``vector`` class, passing the size as a parameter. Then it copies the
 vector from ``temp`` into the instance variable ``cards``.
 
 Now we can create a deck of cards like this:
@@ -74,3 +74,12 @@ demonstrates how to traverse the deck and output each card.
 
    Take a look at the state diagram above. When we create a deck of cards using ``Deck deck (52)``, 
    the cards will be initialized to the correct suits and ranks of a standard deck of 52 cards. 
+
+.. mchoice:: question13_3_3
+   :answer_a: True
+   :answer_b: False
+   :correct: b
+   :feedback_a: Incorrect! Look at the enmumerated types that we defined earlier.
+   :feedback_b: Correct! We assigned ``ACE`` to have a value of 1.
+
+   A rank of value 0 corresponds to ``ACE``. 

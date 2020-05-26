@@ -47,3 +47,112 @@ The output of this code is:
 
    2 + 3i
    3.60555 e^ 0.982794i
+
+.. activecode:: fourteensix
+   :language: cpp
+
+   The active code below uses the print functions for ``Complex`` objects.
+   Feel free to modify the code and experiment around!
+   ~~~~
+   #include <iostream>
+   #include <cmath>
+   using namespace std;
+
+   class Complex
+   {
+     double real, imag;
+     double mag, theta;
+     bool cartesian, polar;
+
+   public:
+     Complex ();
+     Complex (double r, double i);
+     void calculateCartesian ();
+     double getReal ();
+     double getImag ();
+     void calculatePolar ();
+     double getMag ();
+     double getTheta ();
+     void printCartesian ();
+     void printPolar ();
+   };
+
+   int main() {
+     Complex c1 (2.0, 3.0);
+     c1.printCartesian();
+     c1.printPolar();
+   }
+   ====
+   Complex::Complex () { cartesian = false;  polar = false; }
+
+   Complex::Complex (double r, double i) {
+     real = r;  imag = i;
+     cartesian = true;  polar = false;
+   }
+
+   void Complex::calculateCartesian () {
+     real = mag * cos (theta);
+     imag = mag * sin (theta);
+     cartesian = true;
+   }
+
+   double Complex::getReal () {
+     if (cartesian == false) calculateCartesian ();
+     return real;
+   }
+
+   double Complex::getImag () {
+     if (cartesian == false) calculateCartesian ();
+     return imag;
+   }
+
+   void Complex::calculatePolar () {
+     mag = sqrt(pow(real, 2) + pow(imag, 2));
+     theta = atan(imag / real);
+     polar = true;
+   }
+
+   double Complex::getMag () {
+     if (polar == false) {
+       calculatePolar ();
+     }
+     return mag;
+   }
+
+   double Complex::getTheta () {
+     if (polar == false) {
+       calculatePolar ();
+     }
+     return theta;
+   }
+
+   void Complex::printCartesian () {
+     cout << getReal() << " + " << getImag() << "i" << endl;
+   }
+
+   void Complex::printPolar () {
+     cout << getMag() << " e^ " << getTheta() << "i" << endl;
+   }
+
+.. mchoice:: question14_5_1
+   :practice: T
+   :answer_a: 5 e^ 0.927295i
+   :answer_b: 3 + 4i
+   :answer_c: 2 + 3i
+   :answer_d: 5 e^ 1
+   :correct: a
+   :feedback_a: Correct!
+   :feedback_b: Incorrect! Try using the active code above.
+   :feedback_c: Incorrect! Try using the active code above.
+   :feedback_d: Incorrect! Try using the active code above.
+
+   What is the correct output of the code below?
+
+   .. code-block:: cpp
+
+      int main() {
+        Complex c1 (3.0, 4.0);
+        // c1.printCartesian();
+        c1.printPolar();
+      }
+   
